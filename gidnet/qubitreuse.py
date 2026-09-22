@@ -132,7 +132,10 @@ class GidNET:
         self.dynamic_circuit_dag.add_creg(cregs)
         clbits_indices = {i: clbit for i, clbit in enumerate(self.dynamic_circuit_dag.clbits)}
     
-        measure_reset_nodes = [edge[0].__hash__() for edge in self.reuse_edges]
+        # BUGFIX: was built from DAGOutNode hashes (self.reuse_edges), which the
+        # loop below always skips, so the reset condition could never fire.
+        # Now built from the actual last DAGOpNode on each qubit being reused.
+        reset_after_hashes = [n.__hash__() for n in self.reset_after_nodes]
         remove_input_nodes = [edge[1].__hash__() for edge in self.reuse_edges]
     
         # Iterate through the DAG nodes and apply transformations
@@ -154,7 +157,11 @@ class GidNET:
             new_node = DAGOpNode(op=node.op, qargs=new_qargs, cargs=new_cargs)
             self.dynamic_circuit_dag.apply_operation_back(new_node.op, qargs=new_node.qargs, cargs=new_node.cargs)
     
-            if node.__hash__() in measure_reset_nodes:
+            if node.__hash__() in reset_after_hashes:
+                # This was the last operation on a qubit that is about to be
+                # reused by a different logical qubit -- insert an explicit
+                # reset so the transpiler sees a real physical boundary here
+                # (previously this branch was unreachable; see BUGFIX above).
                 reset_node = self._add_reset_op(new_qargs)
                 self.dynamic_circuit_dag.apply_operation_back(reset_node.op, qargs=reset_node.qargs)
     
@@ -444,6 +451,7 @@ class GidNET:
         terminals = list(self.circuit_dag_with_reuse_edges.output_map.values())  # Output qubits (terminals)
     
         self.reuse_edges = []  # Store reuse edges for tracking
+        self.reset_after_nodes = []  # Actual last op-node on each qubit being reused (for M/R insertion)
     
         # Iterate through each reuse sequence to establish edges
         for qubit_sequence in self.qubit_reuse_sequences:
@@ -455,6 +463,24 @@ class GidNET:
                     # The root was previously a terminal before reuse
                     # The terminal is the qubit that will be reused by the root
                     self.reuse_edges.append((terminals[root], roots[terminal]))
+
+                    # BUGFIX: `terminals[root]` is a DAGOutNode, which the main
+                    # topological loop in compile_to_dynamic_circuit() always skips
+                    # (isinstance check on DAGInNode/DAGOutNode -> continue), so a
+                    # hash-match against it can never fire and no reset is ever
+                    # emitted. What we actually need is the real DAGOpNode
+                    # immediately preceding that output node on this qubit's wire
+                    # -- i.e. the last physical gate touching the qubit before it
+                    # gets reused -- so the reset can be inserted right after it.
+                    terminal_out_node = terminals[root]
+                    predecessors = list(
+                        self.circuit_dag_with_reuse_edges.predecessors(terminal_out_node)
+                    )
+                    last_op_node = next(
+                        (n for n in predecessors if isinstance(n, DAGOpNode)), None
+                    )
+                    if last_op_node is not None:
+                        self.reset_after_nodes.append(last_op_node)
     
         # Add the reuse edges to the DAG
         for root_node, terminal_node in self.reuse_edges:
@@ -491,4 +517,3 @@ class GidNET:
 
 if __name__ == "__main__":
     logging.info("GidNET Qubit Reuse Algorithm Initialized")
-
