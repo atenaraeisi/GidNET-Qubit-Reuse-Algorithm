@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+*.egg
+build/
+dist/
+.venv/
+venv/
+env/
+.venv_gidnet/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Experiment outputs (اگه می‌خوای generate شدن)
+# output/
+# *.log
+
+# Large CSVs (فقط اگه می‌خوای exclude کنی)
+# *_large.csv
