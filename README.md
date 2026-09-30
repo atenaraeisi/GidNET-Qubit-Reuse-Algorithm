@@ -1,229 +1,155 @@
-# GidNET: Graph-Based Identification of Qubit Network for Qubit Reuse
+# GidNET — Qubit Reuse Research Fork
 
-## Overview
-GidNET (Graph-Based Identification of Qubit Network) is a **qubit reuse algorithm** designed to optimize quantum circuits by minimizing the number of qubits required while preserving computational integrity. The algorithm applies a **graph-theoretic approach** to dynamically reassign logical qubits, leveraging structural properties of quantum circuits to enable efficient execution on quantum hardware with limited qubit resources.
+This repository is a research fork of [GidNET](https://github.com/gideonuchehara/GidNET-Qubit-Reuse-Algorithm), a graph-based qubit-reuse compiler for dynamic quantum circuits.
 
-This repository provides an **implementation of GidNET**, along with benchmark experiments comparing it to other qubit reuse techniques such as **Qiskit qubit reuse** and **QNET random qubit reuse**. The repository also includes scripts for reproducing experimental results, analyzing runtime trade-offs, and evaluating optimal iteration counts.
+The original GidNET implementation and algorithm are by **Gideon Uchehara et al.** This fork keeps the original implementation and adds fixes, validation code, and experimental tooling that I use while studying qubit reuse and its physical compilation cost.
 
-## Key Features
-- **Graph-Based Qubit Reuse**: GidNET identifies reuse opportunities using graph-based techniques.
-- **Comparison with Existing Approaches**: Benchmarks against **Qiskit** and **QNET** reuse methods.
-- **Flexible Experimentation Framework**: Supports various quantum circuit types, including **QAOA** and **GRCS (Google Random Circuit Sampling)**.
-- **Iteration Analysis**: Evaluates the optimal number of iterations to maximize qubit reuse efficiency.
-- **Robust Data Processing & Visualization**: Generates plots and tables for analysis.
+## What I changed
 
-## Repository Structure
-This repository is organized as follows:
+### Reset insertion at reuse boundaries
 
----
+In the original dynamic-circuit construction, reuse edges were represented using DAG output nodes. The compilation loop skips `DAGOutNode` objects, so matching reset locations against those nodes could leave the reset-insertion branch unreachable.
 
-## 📂 Repository Structure
+The fork tracks the last actual `DAGOpNode` before each reused qubit boundary and inserts the reset after that operation instead.
 
-```
-GidNET-Qubit-Reuse-Algorithm/
-│── gidnet/                     # Implementation of GidNET
-│   ├── __init__.py             # Package initialization
-│   ├── qubitreuse.py           # GidNET algorithm
-│   ├── utils.py                # Utility functions
-│
-│── results/                    # Experimental results and plots
-│   ├── GRCS_result/            # GidNET results for GRCS circuits
-│   ├── QAOA_result/            # GidNET results for QAOA circuits
-│   ├── Optimal_iterations/      # Iteration analysis for optimal qubit reuse
-│   ├── gidnet_iteration_analysis.py # Script for analyzing optimal iterations
-│   ├── plot_GRCS_result.py     # Plot script for GRCS results
-│   ├── plot_QAOA_result.py     # Plot script for QAOA results
-│   ├── run_GRCS_experiments.py # Script to run GRCS circuit experiments
-│   ├── run_QAOA_experiments.py # Script to run QAOA circuit experiments
-│
-│── docs/                       # Documentation
-│   ├── iteration_analysis.md   # Detailed explanation of iteration analysis
-│
-│── notebook.ipynb              # Jupyter notebook for explaining how GidNET is used
-│── README.md                   # This readme file
+This makes the reuse boundary explicit in the compiled circuit and allows later compilation and routing stages to see the physical reset operation.
+
+Relevant code:
+
+- `gidnet/qubitreuse.py`
+
+### Reset lowering for Qiskit experiments
+
+I also added an experimental reset-lowering helper for Qiskit 0.45.x:
+
+```text
+reset q
 ```
 
----
+can be represented as an active reset:
 
-<!--
+```text
+measure q -> c
+x q if c == 1
+```
 
-### **1. Core Algorithm (gidnet/)**
-- **`gidnet/qubitreuse.py`** - Implementation of GidNET’s qubit reuse algorithm.
-- **`gidnet/utils.py`** - Helper functions, including circuit transformations and analysis tools.
-- **`gidnet/__init__.py`** - Package initialization.
+When a valid measurement already immediately precedes the reset boundary, its classical result is reused instead of inserting a duplicate measurement.
 
-### **2. Experimental Results (results/)**
-Contains data, scripts, and plots generated from benchmark experiments:
+Relevant code:
 
-- **GRCS_result/** - Results from Google Random Circuit Sampling experiments.
-- **QAOA_result/** - Results from Quantum Approximate Optimization Algorithm (QAOA) circuits.
-- **Optimal_iterations/** - Analysis of iteration count needed to achieve optimal qubit reuse.
-- **data/** - Raw datasets used in experiments.
-- **`run_GRCS_experiments.py`** - Script for running GRCS circuit experiments.
-- **`run_QAOA_experiments.py`** - Script for running QAOA circuit experiments.
-- **`plot_GRCS_result.py`** - Script for visualizing GRCS results.
-- **`plot_QAOA_result.py`** - Script for visualizing QAOA results.
-- **`gidnet_iteration_analysis.py`** - Computes the optimal number of iterations for GidNET.
+- `gidnet/reset_lowering.py`
+- `test_reset_lowering.py`
+- `test_reset_lowering_semantics.py`
 
-### **3. Documentation (docs/)**
-Contains explanatory materials and theoretical insights:
-- **`docs/optimal_iterations_analysis.md`** - Explanation of how optimal iterations for GidNET are determined.
- -->
- 
- ---
+The tests cover structural behavior, reuse of existing measurements, stale-measurement handling, GidNET integration, input immutability, and ideal-simulator semantic checks.
 
-## 🔧 Installation
+### Reset-noise diagnostic
 
-To use GidNET, first clone the repository and install dependencies:
+`inspect_reset_noise.py` examines how a backend-derived Aer `NoiseModel` treats reset, measurement, and conditional-X operations. It also compares native reset with the measurement-based lowering and includes an explicit reset-noise sanity check.
+
+This script is diagnostic rather than part of the GidNET algorithm itself.
+
+### Benchmark runner
+
+`run_gidnet_on_all_95.py` runs the modified GidNET compiler across the benchmark set used in my local experiments and records width, depth, measurement, reset, and CX counts.
+
+The script currently contains local experiment paths, so those paths need to be adjusted before running it on another machine.
+
+## Current focus
+
+I am using this fork to study a broader question:
+
+> How much can physically relevant compilation cost vary between qubit-reuse solutions that achieve the same logical width?
+
+My current experiments look at fixed-width reuse plans, routing behavior, SWAP overhead, routed depth, and small bounded changes to reuse plans.
+
+The research experiments themselves are still in progress, so this repository will continue to change.
+
+## Original GidNET
+
+GidNET (**Graph-Based Identification of Qubit Network**) is a qubit-reuse algorithm that reduces the number of physical qubits required to execute a quantum circuit. It identifies valid reuse relationships from circuit dependencies and compiles the circuit into a dynamic form.
+
+For the original implementation, experiments, and full algorithm description, see:
+
+- [Original GitHub repository](https://github.com/gideonuchehara/GidNET-Qubit-Reuse-Algorithm)
+- [GidNET preprint](https://arxiv.org/abs/2410.08817)
+- [IEEE publication](https://ieeexplore.ieee.org/document/10821360)
+
+## Installation
+
+This fork has been used with **Qiskit 0.45.x** for the current experiments.
 
 ```bash
-git clone https://github.com/gideonuchehara/GidNET-Qubit-Reuse-Algorithm.git
+git clone https://github.com/atenaraeisi/GidNET-Qubit-Reuse-Algorithm.git
 cd GidNET-Qubit-Reuse-Algorithm
 pip install -r requirements.txt
 ```
 
-GidNET relies on Qiskit, NumPy, and Matplotlib for quantum circuit generation, analysis, and visualization.
+Some experiment scripts also use Qiskit Aer, pandas, and NetworkX.
 
-## Installing Baidu's QCompute for QNET
-
-To install Baidu's **QCompute** package for QNET, you have two options:
-
-### **Option 1: Install from Baidu's GitHub Repository**
-```
-git clone https://github.com/baidu/QCompute.git
-cd QCompute
-pip install -e .
-```
-
-### **Option 2: Ensure Consistency with Our Version of QCompute**
-To ensure compatibility with our version of QCompute, navigate to `benchmarks.QCompute` and install the package from there:
-```
-cd benchmarks.QCompute
-pip install -e .
-```
-
-
----
-
-## 📌 Usage Example
-
-To use GidNET for optimizing a quantum circuit, follow this example:
+## Basic usage
 
 ```python
-from gidnet.qubitreuse import GidNET
 from qiskit import QuantumCircuit
+from gidnet.qubitreuse import GidNET
 
-# Define a sample quantum circuit
-circ = QuantumCircuit(5)
+circuit = QuantumCircuit(5)
 
-circ.cx(1, 2)
-circ.cx(0, 3)
+circuit.cx(1, 2)
+circuit.cx(0, 3)
+circuit.cx(1, 4)
+circuit.cx(2, 4)
+circuit.cx(3, 4)
 
-circ.cx(1, 4)
-circ.cx(2, 4)
-circ.cx(3, 4)
+compiler = GidNET(circuit)
+dynamic_circuit = compiler.compile_to_dynamic_circuit(
+    iterations=20,
+    draw=False,
+)
 
-circ.measure_all()
-
-# Draw the original circuit
-circ.draw('mpl')
-
-# Apply GidNET to compile it into a dynamic circuit
-gidnet = GidNET(circ)
-dynamic_circ = gidnet.compile_to_dynamic_circuit(iterations=20, draw=True)
-
-# Check the width of the compiled dynamic circuit
-print("Dynamic Circuit Width:", gidnet.dynamic_circuit_width)
+print("Original width:", circuit.num_qubits)
+print("Dynamic width:", dynamic_circuit.num_qubits)
+print(dynamic_circuit.count_ops())
 ```
 
+## Reset lowering
 
-## 🚀 Running Experiments
+To lower native reset operations into measurement plus conditional-X:
 
-### 1️⃣ **Running GRCS Circuit Experiments**
+```python
+from gidnet.reset_lowering import lower_reset_to_measure_x
 
-To run the experiments on Google Random Circuit Sampling (GRCS) circuits:
+lowered = lower_reset_to_measure_x(dynamic_circuit)
 
-```bash
-python results/run_GRCS_experiments.py
+print(dynamic_circuit.count_ops())
+print(lowered.count_ops())
 ```
 
-Results will be saved in `results/GRCS_result/`.
+## Repository notes
 
-### 2️⃣ **Running QAOA Circuit Experiments**
+The repository contains the original GidNET code and experiment material together with my fork-specific changes. The most relevant additions for my current work are:
 
-To run the experiments on QAOA circuits:
+```text
+gidnet/
+├── qubitreuse.py
+└── reset_lowering.py
 
-```bash
-python results/run_QAOA_experiments.py
+test_reset_lowering.py
+test_reset_lowering_semantics.py
+inspect_reset_noise.py
+run_gidnet_on_all_95.py
 ```
 
-Results will be saved in `results/QAOA_result/`.
+Additional research code and experiments may be added as the project develops.
 
----
+## Attribution
 
-## 📊 Analyzing and Visualizing Results
+The **GidNET algorithm and original codebase are not my work**. They were developed by Gideon Uchehara and collaborators.
 
-### **Plotting GRCS Circuit Results**
-```bash
-python results/plot_GRCS_result.py
-```
-This generates plots comparing GidNET, QNET, and Qiskit in terms of circuit width reduction and runtime.
+My contributions in this fork are limited to the fixes, validation code, diagnostics, and experimental tooling described above.
 
-### **Plotting QAOA Circuit Results**
-```bash
-python results/plot_QAOA_result.py
-```
-This generates plots for the QAOA experiment results.
-
-### **Iteration Analysis**
-To determine the optimal number of iterations for GidNET to find the smallest qubit width:
-```bash
-python results/gidnet_iteration_analysis.py
-```
-Results will be stored in `results/Optimal_iterations/`.
-
----
-
-## 📖 Understanding the Iteration Analysis
-
-Since GidNET is a probabilistic algorithm, multiple iterations are performed to ensure the best qubit reuse outcome. However, running too many iterations increases runtime without significant improvement in width reduction. We analyze optimal iterations using:
-
-| Iteration Setting  | Description |
-|--------------------|-------------|
-| **n**             | Total number of qubits in the circuit |
-| **n/2**           | Half the total qubits |
-| **n/4**           | A quarter of the total qubits |
-| **log(n)**        | Logarithmic scaling of qubits |
-| **log(n/2)**      | Logarithmic scaling of half the qubits |
-| **log(n/4)**      | Logarithmic scaling of a quarter of the qubits |
-
-We score each iteration count based on its effectiveness in finding the minimal circuit width:
-
-```
-score = probability × (min_width / obtained_width)
-```
-
-A higher score indicates a better iteration setting.
-
----
-
-## Contributing
-Contributions to GidNET are welcome! Feel free to open **issues** or submit **pull requests** for bug fixes, enhancements, or new features.
+If you use GidNET in academic work, please cite the original authors and paper.
 
 ## License
-This project is licensed under the **MIT License**.
 
-## 📜 References
-
-📄 **Official Paper:** [IEEE Xplore](https://ieeexplore.ieee.org/abstract/document/10821360?casa_token=F2Zpmr1CPiMAAAAA:mu8Zo15ZlD9sAoOst3680nRpIaIB5Tu_HXSiKofl6KUnf69q6yf__uJrVKdnaSuw0sP3q1MxdQ)  
-📄 **Preprint Version:** [arXiv](https://arxiv.org/abs/2410.08817)
-
----
-
-## 👨‍💻 Author
-
-**Gideon Uchehara**  
-Email: [gideonuchehara@gmail.com](mailto:gideonuchehara@gmail.com)  
-GitHub: [@gideonuchehara](https://github.com/gideonuchehara)
-
-
+This fork follows the license of the original GidNET repository.
