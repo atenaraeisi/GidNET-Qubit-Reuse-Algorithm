@@ -14,7 +14,7 @@ from qiskit.dagcircuit.dagcircuit import DAGCircuit
 from qiskit.dagcircuit.dagnode import DAGInNode, DAGNode, DAGOpNode, DAGOutNode
 from qiskit.circuit.quantumregister import QuantumRegister, Qubit
 from qiskit.circuit.classicalregister import ClassicalRegister, Clbit
-from qiskit.circuit.instruction import Instruction
+from qiskit.circuit import Reset
 
 from typing import List, Tuple, Optional, Union, Any
 
@@ -57,6 +57,7 @@ class GidNET:
         self.candidate_matrix_copy = np.copy(self.candidate_matrix) # make a copy of the candidate matrix
         self.qubit_reuse_sequences = None
         self.reuse_edges = None
+        self.reset_after_nodes = []
         self.circuit_dag_with_reuse_edges = None
         self.dynamic_circuit = None
         self.dynamic_circuit_dag = None
@@ -491,23 +492,14 @@ class GidNET:
 
     def _add_reset_op(self, qargs: List[Qubit]) -> DAGOpNode:
         """
-        Creates a reset operation node to be added to a DAGCircuit.
-
-        The reset operation resets the qubit state to |0⟩, ensuring that it can be reused.
-        This function constructs a DAGOpNode containing the reset instruction.
-
-        Args:
-            qargs (List[Qubit]): List of qubits to be reset.
-
-        Returns:
-            DAGOpNode: A DAG node representing the reset operation.
+        Creates a standard Qiskit reset operation node.
         """
-        # Define a reset operation with no classical bits
-        reset_op = Instruction(name='reset', num_qubits=1, num_clbits=0, params=[])
-        
-        # Create and return a DAGOpNode representing the reset operation
-        reset_node = DAGOpNode(op=reset_op, qargs=qargs, cargs=())
-        return reset_node
+        reset_op = Reset()
+        return DAGOpNode(
+            op=reset_op,
+            qargs=qargs,
+            cargs=()
+        )
 
     
 
