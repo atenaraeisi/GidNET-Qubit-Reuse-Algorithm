@@ -58,6 +58,8 @@ class GidNET:
         self.qubit_reuse_sequences = None
         self.reuse_edges = None
         self.reset_after_nodes = []
+        # Maps a terminal operation to the logical qubit(s) that end at it.
+        self.reset_after_node_qubits = defaultdict(set)
         self.circuit_dag_with_reuse_edges = None
         self.dynamic_circuit = None
         self.dynamic_circuit_dag = None
@@ -136,7 +138,7 @@ class GidNET:
         # BUGFIX: was built from DAGOutNode hashes (self.reuse_edges), which the
         # loop below always skips, so the reset condition could never fire.
         # Now built from the actual last DAGOpNode on each qubit being reused.
-        reset_after_hashes = [n.__hash__() for n in self.reset_after_nodes]
+        # Reset targets are tracked separately from the operation's other qargs.
         remove_input_nodes = [edge[1].__hash__() for edge in self.reuse_edges]
     
         # Iterate through the DAG nodes and apply transformations
@@ -144,8 +146,8 @@ class GidNET:
             if isinstance(node, (DAGInNode, DAGOutNode)):
                 continue  # Skip input and output nodes
     
-            old_qubits = [n.index for n in node.qargs]
-            clbits = [n.index for n in node.cargs]
+            old_qubits = [self.circuit_dag_with_reuse_edges.find_bit(n).index for n in node.qargs]
+            clbits = [self.circuit_dag_with_reuse_edges.find_bit(n).index for n in node.cargs]
     
             if len(old_qubits) > 1:
                 new_qubits = [old_to_new_qubit_remap_dict[q] for q in old_qubits]
@@ -158,13 +160,16 @@ class GidNET:
             new_node = DAGOpNode(op=node.op, qargs=new_qargs, cargs=new_cargs)
             self.dynamic_circuit_dag.apply_operation_back(new_node.op, qargs=new_node.qargs, cargs=new_node.cargs)
     
-            if node.__hash__() in reset_after_hashes:
-                # This was the last operation on a qubit that is about to be
-                # reused by a different logical qubit -- insert an explicit
-                # reset so the transpiler sees a real physical boundary here
-                # (previously this branch was unreachable; see BUGFIX above).
-                reset_node = self._add_reset_op(new_qargs)
-                self.dynamic_circuit_dag.apply_operation_back(reset_node.op, qargs=reset_node.qargs)
+            # One final multi-qubit operation may end the lifetime of just
+            # one of its operands (or of several operands). Reset *only*
+            # the retired wire(s), once per reuse boundary.
+            for old_qubit in sorted(self.reset_after_node_qubits.get(node.__hash__(), ())):
+                physical_wire = old_to_new_qubit_remap_dict[old_qubit]
+                reset_qargs = (qubits_indices[physical_wire],)
+                reset_node = self._add_reset_op(reset_qargs)
+                self.dynamic_circuit_dag.apply_operation_back(
+                    reset_node.op, qargs=reset_node.qargs
+                )
     
         self.dynamic_circuit = dag_to_circuit(self.dynamic_circuit_dag)
         self.dynamic_circuit_width = self.dynamic_circuit.num_qubits
@@ -452,7 +457,8 @@ class GidNET:
         terminals = list(self.circuit_dag_with_reuse_edges.output_map.values())  # Output qubits (terminals)
     
         self.reuse_edges = []  # Store reuse edges for tracking
-        self.reset_after_nodes = []  # Actual last op-node on each qubit being reused (for M/R insertion)
+        self.reset_after_nodes = []  # Actual last op-node on each reused qubit
+        self.reset_after_node_qubits = defaultdict(set)  # op-node hash -> retired old qubits
     
         # Iterate through each reuse sequence to establish edges
         for qubit_sequence in self.qubit_reuse_sequences:
@@ -482,6 +488,7 @@ class GidNET:
                     )
                     if last_op_node is not None:
                         self.reset_after_nodes.append(last_op_node)
+                        self.reset_after_node_qubits[last_op_node.__hash__()].add(root)
     
         # Add the reuse edges to the DAG
         for root_node, terminal_node in self.reuse_edges:
