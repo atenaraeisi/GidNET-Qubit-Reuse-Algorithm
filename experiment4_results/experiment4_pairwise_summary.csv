@@ -1,0 +1,11 @@
+circuit,target,num_different_depth_pairs,inversion_pairs,tied_physical_pairs,inversion_rate_pct
+alu-bdd_288.qasm,routed_depth,12,5,0,41.666666666666664
+alu-bdd_288.qasm,swaps,12,10,0,83.33333333333333
+mini_alu_305.qasm,routed_depth,107,46,0,42.99065420560748
+mini_alu_305.qasm,swaps,107,49,1,45.794392523364486
+rd73_140.qasm,routed_depth,8,4,0,50.0
+rd73_140.qasm,swaps,8,5,0,62.5
+sym9_146.qasm,routed_depth,28,14,0,50.0
+sym9_146.qasm,swaps,28,18,0,64.28571428571429
+system9.qasm,routed_depth,71,31,0,43.66197183098591
+system9.qasm,swaps,71,27,0,38.028169014084504

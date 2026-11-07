@@ -1,0 +1,238 @@
+{
+  "qiskit_version": "0.46.0",
+  "gidnet_source": "C:\\Users\\ASUS\\Documents\\Quantum computing\\Qiskit\\GidNET-Qubit-Reuse-Algorithm\\gidnet\\qubitreuse.py",
+  "gidnet_sha256": "c714c14f28e782c771653d74d3592ac8a694c509cae52a81f2fbc35c409b6b24",
+  "archive_summary_sha256": "ce6edd84003bd4977016a7790bb4d49c2b3834dad03a6d5f7c81e379b0f2b94a",
+  "experiment2_features_sha256": "97c8cd98060eccfe99a2f8ef3c77752ade7df1b5f208ca0ddd30947fae7faf16",
+  "purpose": "Non-destructive depth drift diagnosis; no routing, no source modifications",
+  "cases": [
+    {
+      "circuit": "system9.qasm",
+      "plan": "P5",
+      "original_qasm_sha256": "dba5bd422814d4adabaeae1f2a47c21d00fb32adb038123f2a74a1a9abfc5661",
+      "archived_raw_depth": 173,
+      "current_raw_depth": 173,
+      "raw_depth_drift": 0,
+      "archived_normalized_depth": 175,
+      "current_normalized_depth": 177,
+      "current_legacy_style_normalized_depth": 177,
+      "normalized_depth_drift": 2,
+      "normalizer_depth_difference": 0,
+      "reuse_boundary_count": 5,
+      "native_reset_count": 5,
+      "normalized_measurement_count": 5,
+      "normalized_conditional_x_count": 5,
+      "legacy_measurement_count": 5,
+      "legacy_conditional_x_count": 5,
+      "gate_multiset_preserved": true,
+      "source_gate_counts": {
+        "cx": 150,
+        "t": 80,
+        "tdg": 60,
+        "h": 40
+      },
+      "compiled_gate_counts": {
+        "cx": 150,
+        "t": 80,
+        "tdg": 60,
+        "h": 40
+      },
+      "compiled_op_counts": {
+        "cx": 150,
+        "t": 80,
+        "tdg": 60,
+        "h": 40,
+        "reset": 5
+      },
+      "new_normalized_op_counts": {
+        "cx": 150,
+        "t": 80,
+        "tdg": 60,
+        "h": 40,
+        "measure": 5,
+        "x": 5
+      },
+      "legacy_normalized_op_counts": {
+        "cx": 150,
+        "t": 80,
+        "tdg": 60,
+        "h": 40,
+        "measure": 5,
+        "x": 5
+      },
+      "width": 7,
+      "status": "COUNTS_OK"
+    },
+    {
+      "circuit": "system9.qasm",
+      "plan": "P4",
+      "original_qasm_sha256": "dba5bd422814d4adabaeae1f2a47c21d00fb32adb038123f2a74a1a9abfc5661",
+      "archived_raw_depth": 173,
+      "current_raw_depth": 173,
+      "raw_depth_drift": 0,
+      "archived_normalized_depth": 175,
+      "current_normalized_depth": 177,
+      "current_legacy_style_normalized_depth": 177,
+      "normalized_depth_drift": 2,
+      "normalizer_depth_difference": 0,
+      "reuse_boundary_count": 5,
+      "native_reset_count": 5,
+      "normalized_measurement_count": 5,
+      "normalized_conditional_x_count": 5,
+      "legacy_measurement_count": 5,
+      "legacy_conditional_x_count": 5,
+      "gate_multiset_preserved": true,
+      "source_gate_counts": {
+        "cx": 150,
+        "t": 80,
+        "tdg": 60,
+        "h": 40
+      },
+      "compiled_gate_counts": {
+        "cx": 150,
+        "t": 80,
+        "tdg": 60,
+        "h": 40
+      },
+      "compiled_op_counts": {
+        "cx": 150,
+        "t": 80,
+        "tdg": 60,
+        "h": 40,
+        "reset": 5
+      },
+      "new_normalized_op_counts": {
+        "cx": 150,
+        "t": 80,
+        "tdg": 60,
+        "h": 40,
+        "measure": 5,
+        "x": 5
+      },
+      "legacy_normalized_op_counts": {
+        "cx": 150,
+        "t": 80,
+        "tdg": 60,
+        "h": 40,
+        "measure": 5,
+        "x": 5
+      },
+      "width": 7,
+      "status": "COUNTS_OK"
+    },
+    {
+      "circuit": "sym9_146.qasm",
+      "plan": "P8",
+      "original_qasm_sha256": "68b843e5d6b93704016d02904fcce595e139e7b164541a6c1acac2739d6d1a87",
+      "archived_raw_depth": 195,
+      "current_raw_depth": 195,
+      "raw_depth_drift": 0,
+      "archived_normalized_depth": 200,
+      "current_normalized_depth": 202,
+      "current_legacy_style_normalized_depth": 202,
+      "normalized_depth_drift": 2,
+      "normalizer_depth_difference": 0,
+      "reuse_boundary_count": 7,
+      "native_reset_count": 7,
+      "normalized_measurement_count": 7,
+      "normalized_conditional_x_count": 7,
+      "legacy_measurement_count": 7,
+      "legacy_conditional_x_count": 7,
+      "gate_multiset_preserved": true,
+      "source_gate_counts": {
+        "cx": 148,
+        "t": 80,
+        "tdg": 60,
+        "h": 40
+      },
+      "compiled_gate_counts": {
+        "cx": 148,
+        "t": 80,
+        "tdg": 60,
+        "h": 40
+      },
+      "compiled_op_counts": {
+        "cx": 148,
+        "t": 80,
+        "tdg": 60,
+        "h": 40,
+        "reset": 7
+      },
+      "new_normalized_op_counts": {
+        "cx": 148,
+        "t": 80,
+        "tdg": 60,
+        "h": 40,
+        "measure": 7,
+        "x": 7
+      },
+      "legacy_normalized_op_counts": {
+        "cx": 148,
+        "t": 80,
+        "tdg": 60,
+        "h": 40,
+        "measure": 7,
+        "x": 7
+      },
+      "width": 5,
+      "status": "COUNTS_OK"
+    },
+    {
+      "circuit": "sym9_146.qasm",
+      "plan": "P4",
+      "original_qasm_sha256": "68b843e5d6b93704016d02904fcce595e139e7b164541a6c1acac2739d6d1a87",
+      "archived_raw_depth": 195,
+      "current_raw_depth": 195,
+      "raw_depth_drift": 0,
+      "archived_normalized_depth": 200,
+      "current_normalized_depth": 202,
+      "current_legacy_style_normalized_depth": 202,
+      "normalized_depth_drift": 2,
+      "normalizer_depth_difference": 0,
+      "reuse_boundary_count": 7,
+      "native_reset_count": 7,
+      "normalized_measurement_count": 7,
+      "normalized_conditional_x_count": 7,
+      "legacy_measurement_count": 7,
+      "legacy_conditional_x_count": 7,
+      "gate_multiset_preserved": true,
+      "source_gate_counts": {
+        "cx": 148,
+        "t": 80,
+        "tdg": 60,
+        "h": 40
+      },
+      "compiled_gate_counts": {
+        "cx": 148,
+        "t": 80,
+        "tdg": 60,
+        "h": 40
+      },
+      "compiled_op_counts": {
+        "cx": 148,
+        "t": 80,
+        "tdg": 60,
+        "h": 40,
+        "reset": 7
+      },
+      "new_normalized_op_counts": {
+        "cx": 148,
+        "t": 80,
+        "tdg": 60,
+        "h": 40,
+        "measure": 7,
+        "x": 7
+      },
+      "legacy_normalized_op_counts": {
+        "cx": 148,
+        "t": 80,
+        "tdg": 60,
+        "h": 40,
+        "measure": 7,
+        "x": 7
+      },
+      "width": 5,
+      "status": "COUNTS_OK"
+    }
+  ]
+}

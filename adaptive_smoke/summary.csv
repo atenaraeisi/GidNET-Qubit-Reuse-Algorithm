@@ -1,0 +1,7 @@
+objective,policy,n_sources,n_missing,mean_scored,mean_search_time_sec,macro_gain_pct
+routed_depth,adaptive_beam,1,0,120.0,8.462253800000326,-0.6136183689627859
+routed_depth,random_beam,1,0,120.0,8.252882599999793,0.2375296912114048
+routed_depth,ridge_one_step,1,0,12.0,0.19322319999992033,1.009501187648466
+swap_count,adaptive_beam,1,0,120.0,6.470538999999917,-1.0774410774410736
+swap_count,random_beam,1,0,120.0,4.300783999999112,-1.0774410774410736
+swap_count,ridge_one_step,1,0,12.0,0.3695986999991874,-1.0774410774410736

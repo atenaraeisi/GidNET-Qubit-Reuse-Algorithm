@@ -1,0 +1,28 @@
+{
+  "plan_circuits_in_CSV": [
+    "alu-bdd_288.qasm",
+    "mini_alu_305.qasm",
+    "rd73_140.qasm",
+    "sym9_146.qasm",
+    "system9.qasm"
+  ],
+  "matched_original_QASM": [
+    "alu-bdd_288.qasm",
+    "mini_alu_305.qasm",
+    "rd73_140.qasm",
+    "sym9_146.qasm",
+    "system9.qasm"
+  ],
+  "missing_original_QASM": [],
+  "analysed_circuits": [
+    "alu-bdd_288.qasm",
+    "mini_alu_305.qasm",
+    "rd73_140.qasm",
+    "sym9_146.qasm",
+    "system9.qasm"
+  ],
+  "analysed_plans": 50,
+  "skipped_warnings": [],
+  "no_new_routing": true,
+  "no_new_plan_generation": true
+}

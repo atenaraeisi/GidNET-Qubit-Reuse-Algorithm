@@ -1,0 +1,11 @@
+circuit,source_plan_id,sig,is_original,in_A,in_B,in_C
+sym9_146.qasm,P0,1e54ff94a7bf58ebdba41a86,True,True,True,True
+sym9_146.qasm,P0,4455c3e5aa8f6eb4ad6acb1f,False,True,True,True
+sym9_146.qasm,P0,c47655f19f8df2a46f5490be,False,True,True,True
+sym9_146.qasm,P0,898245fd8506d0e81a5911dd,False,False,True,True
+sym9_146.qasm,P0,0ee9566ff5bac7def5c2794f,False,False,True,True
+sym9_146.qasm,P1,c47655f19f8df2a46f5490be,True,True,True,True
+sym9_146.qasm,P1,55e1336b4da56e21bd800064,False,True,True,True
+sym9_146.qasm,P1,1e54ff94a7bf58ebdba41a86,False,True,True,True
+sym9_146.qasm,P1,c747732aea550096d2e4fc3d,False,False,True,True
+sym9_146.qasm,P1,696e6a6695aa016cf61b9b30,False,False,True,True

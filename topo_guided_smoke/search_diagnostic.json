@@ -1,0 +1,7 @@
+{
+  "n_originals": 1,
+  "n_paired_repetitions": 1,
+  "same_topology_and_random": 1,
+  "same_topology_and_structural": 1,
+  "n_routing_jobs_if_fresh_5seeds": 10
+}

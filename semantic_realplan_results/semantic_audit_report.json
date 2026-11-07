@@ -1,0 +1,44 @@
+{
+  "experiment": "Real-plan end-to-end compilation and classical readout audit",
+  "source_circuits": 5,
+  "selected_cases": 25,
+  "original_cases": 10,
+  "mutated_cases": 15,
+  "status_counts": {
+    "COMPILE_OR_STRUCTURE_ERROR": 25
+  },
+  "by_operator": {
+    "chain_transfer": {
+      "COMPILE_OR_STRUCTURE_ERROR": 5
+    },
+    "node_swap_reconnect": {
+      "COMPILE_OR_STRUCTURE_ERROR": 5
+    },
+    "none": {
+      "COMPILE_OR_STRUCTURE_ERROR": 10
+    },
+    "suffix_swap": {
+      "COMPILE_OR_STRUCTURE_ERROR": 5
+    }
+  },
+  "probe_unmeasured": true,
+  "probed_cases": 25,
+  "semantics_compared": 0,
+  "semantic_passes": 0,
+  "semantic_mismatches": 0,
+  "structure_only": 0,
+  "structural_failures": 25,
+  "all_compilations_and_structures_pass": false,
+  "no_detected_failures": false,
+  "simulation_limits": {
+    "max_qubits": 8,
+    "max_branches": 4096,
+    "max_operations": 300
+  },
+  "caveats": [
+    "STRUCTURE_ONLY cases have NOT been semantically verified.",
+    "A terminal-readout probe tests the joint classical-output distribution of an instrumented source circuit, not its full quantum channel.",
+    "Tests assume a |0...0> input and ideal operations, not arbitrary states, hardware noise, or routing.",
+    "Mutations were selected from pre-validated static-valid cases; this audit independently tests their actual compilation."
+  ]
+}

@@ -1,0 +1,9 @@
+circuit,best_plan,worst_plan,reuse_edge,in_best,in_worst
+system9.qasm,P11,P1,"(0, 5)",False,True
+system9.qasm,P11,P1,"(0, 10)",True,False
+system9.qasm,P11,P1,"(1, 7)",True,False
+system9.qasm,P11,P1,"(2, 4)",False,True
+system9.qasm,P11,P1,"(2, 5)",True,False
+system9.qasm,P11,P1,"(4, 6)",True,True
+system9.qasm,P11,P1,"(5, 7)",False,True
+system9.qasm,P11,P1,"(6, 8)",True,True

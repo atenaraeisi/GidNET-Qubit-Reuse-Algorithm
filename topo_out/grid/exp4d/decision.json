@@ -1,0 +1,76 @@
+{
+  "thresholds": {
+    "min_gain_pct": 2.0,
+    "max_harm_pct": 0.5,
+    "min_capture": 0.5,
+    "min_circuit_frac": 0.6
+  },
+  "note": "deployable policies are the \"|accept\" variants and the rules; CIs treat sources as independent (they share neighbours) and use only the available circuits - treat as optimistic.",
+  "GO": false,
+  "policies": {
+    "ridge_all": {
+      "passes": false,
+      "passing_objectives": [],
+      "swap_count_gain_pct": 0.882,
+      "routed_depth_gain_pct": 1.247,
+      "swap_count_capture": 0.584,
+      "routed_depth_capture": 0.775
+    },
+    "ridge_all|accept": {
+      "passes": false,
+      "passing_objectives": [],
+      "swap_count_gain_pct": 0.61,
+      "routed_depth_gain_pct": 1.211,
+      "swap_count_capture": 0.404,
+      "routed_depth_capture": 0.753
+    },
+    "ridge_nb": {
+      "passes": false,
+      "passing_objectives": [],
+      "swap_count_gain_pct": 0.184,
+      "routed_depth_gain_pct": 1.213,
+      "swap_count_capture": 0.122,
+      "routed_depth_capture": 0.754
+    },
+    "ridge_nb|accept": {
+      "passes": false,
+      "passing_objectives": [],
+      "swap_count_gain_pct": -0.252,
+      "routed_depth_gain_pct": 1.286,
+      "swap_count_capture": -0.167,
+      "routed_depth_capture": 0.799
+    },
+    "ridge_small_all": {
+      "passes": false,
+      "passing_objectives": [],
+      "swap_count_gain_pct": -0.271,
+      "routed_depth_gain_pct": 0.988,
+      "swap_count_capture": -0.18,
+      "routed_depth_capture": 0.614
+    },
+    "ridge_small_all|accept": {
+      "passes": false,
+      "passing_objectives": [],
+      "swap_count_gain_pct": 0.412,
+      "routed_depth_gain_pct": 1.093,
+      "swap_count_capture": 0.273,
+      "routed_depth_capture": 0.679
+    },
+    "rule_hotspot": {
+      "passes": false,
+      "passing_objectives": [],
+      "swap_count_gain_pct": -0.198,
+      "routed_depth_gain_pct": 0.426,
+      "swap_count_capture": -0.131,
+      "routed_depth_capture": 0.264
+    },
+    "rule_logical_depth": {
+      "passes": false,
+      "passing_objectives": [],
+      "swap_count_gain_pct": -0.169,
+      "routed_depth_gain_pct": 1.225,
+      "swap_count_capture": -0.112,
+      "routed_depth_capture": 0.761
+    }
+  }
+}

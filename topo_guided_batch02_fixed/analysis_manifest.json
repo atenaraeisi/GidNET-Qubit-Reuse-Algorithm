@@ -1,0 +1,14 @@
+{
+  "schema": "topology_guided_repair_v1_2026_11_06",
+  "topology": "hh7",
+  "routing_seeds": [
+    400,
+    401,
+    402,
+    403,
+    404
+  ],
+  "n_decisions": 304,
+  "status": "routed_final_plans_only",
+  "note": "Old benchmark family; exploratory until independent new circuits and family-aware uncertainty evaluated."
+}

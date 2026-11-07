@@ -1,0 +1,13 @@
+{
+  "mutations": 8642,
+  "valid_static_mutations": 485,
+  "sources": 50,
+  "circuits": 5,
+  "unique_physical_plans_including_originals": 137,
+  "cumulative_neighborhood_counts": {
+    "A_suffix": 130,
+    "B_suffix_chain": 289,
+    "C_all": 291
+  },
+  "semantic_equivalence_proven": false
+}

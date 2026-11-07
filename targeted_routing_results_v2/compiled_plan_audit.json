@@ -1,0 +1,235 @@
+{
+  "plans": {
+    "system9.qasm:P5": {
+      "native_depth": 173,
+      "native_count_ops": {
+        "cx": 150,
+        "t": 80,
+        "tdg": 60,
+        "h": 40,
+        "reset": 5
+      },
+      "normalized_depth": 177,
+      "archived_normalized_depth": 175,
+      "verified_normalized_depth_offset": 2,
+      "normalized_count_ops": {
+        "cx": 150,
+        "t": 80,
+        "tdg": 60,
+        "h": 40,
+        "measure": 5,
+        "x": 5
+      },
+      "fingerprint": "57e038c6db8afb5559eec71300c6317736fab484a71b6f6200334784d630cc73",
+      "chains": [
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          7,
+          8
+        ],
+        [
+          2,
+          4,
+          6
+        ],
+        [
+          5
+        ],
+        [
+          9
+        ],
+        [
+          10
+        ],
+        [
+          11
+        ]
+      ],
+      "reconstructed_exp2": {
+        "max_weighted_degree": 63,
+        "weighted_degree_cv": 0.38328985260649817,
+        "quotient_unique_edges": 19
+      }
+    },
+    "system9.qasm:P4": {
+      "native_depth": 173,
+      "native_count_ops": {
+        "cx": 150,
+        "t": 80,
+        "tdg": 60,
+        "h": 40,
+        "reset": 5
+      },
+      "normalized_depth": 177,
+      "archived_normalized_depth": 175,
+      "verified_normalized_depth_offset": 2,
+      "normalized_count_ops": {
+        "cx": 150,
+        "t": 80,
+        "tdg": 60,
+        "h": 40,
+        "measure": 5,
+        "x": 5
+      },
+      "fingerprint": "a0eb2a3ced266eff2cfb58345b7c4cff79ad72a211c2bbf0539b66ee8406067d",
+      "chains": [
+        [
+          0,
+          11
+        ],
+        [
+          1,
+          7,
+          8
+        ],
+        [
+          2,
+          4,
+          6
+        ],
+        [
+          3
+        ],
+        [
+          5
+        ],
+        [
+          9
+        ],
+        [
+          10
+        ]
+      ],
+      "reconstructed_exp2": {
+        "max_weighted_degree": 63,
+        "weighted_degree_cv": 0.3845054543754151,
+        "quotient_unique_edges": 20
+      }
+    },
+    "sym9_146.qasm:P8": {
+      "native_depth": 195,
+      "native_count_ops": {
+        "cx": 148,
+        "t": 80,
+        "tdg": 60,
+        "h": 40,
+        "reset": 7
+      },
+      "normalized_depth": 202,
+      "archived_normalized_depth": 200,
+      "verified_normalized_depth_offset": 2,
+      "normalized_count_ops": {
+        "cx": 148,
+        "t": 80,
+        "tdg": 60,
+        "h": 40,
+        "measure": 7,
+        "x": 7
+      },
+      "fingerprint": "0907063b4c1ffb2c463534c474c44e361bf0d36d7b81fa7f5c552dce59064784",
+      "chains": [
+        [
+          0,
+          10
+        ],
+        [
+          1,
+          11
+        ],
+        [
+          2,
+          4,
+          6
+        ],
+        [
+          3,
+          5,
+          7,
+          8
+        ],
+        [
+          9
+        ]
+      ],
+      "reconstructed_exp2": {
+        "max_weighted_degree": 70,
+        "weighted_degree_cv": 0.19419064679999884,
+        "quotient_unique_edges": 10
+      }
+    },
+    "sym9_146.qasm:P4": {
+      "native_depth": 195,
+      "native_count_ops": {
+        "cx": 148,
+        "t": 80,
+        "tdg": 60,
+        "h": 40,
+        "reset": 7
+      },
+      "normalized_depth": 202,
+      "archived_normalized_depth": 200,
+      "verified_normalized_depth_offset": 2,
+      "normalized_count_ops": {
+        "cx": 148,
+        "t": 80,
+        "tdg": 60,
+        "h": 40,
+        "measure": 7,
+        "x": 7
+      },
+      "fingerprint": "f35f5beedd0bd3950995e77fc5ab4eb5e2c36a91a9cd333512f39daa6e85de65",
+      "chains": [
+        [
+          0,
+          2,
+          4,
+          6
+        ],
+        [
+          1,
+          11
+        ],
+        [
+          3,
+          5,
+          7,
+          8
+        ],
+        [
+          9
+        ],
+        [
+          10
+        ]
+      ],
+      "reconstructed_exp2": {
+        "max_weighted_degree": 70,
+        "weighted_degree_cv": 0.19768565997740262,
+        "quotient_unique_edges": 10
+      }
+    }
+  },
+  "matching": {
+    "system9.qasm": [
+      3,
+      1,
+      2,
+      4,
+      5,
+      6,
+      0
+    ],
+    "sym9_146.qasm": [
+      4,
+      1,
+      0,
+      2,
+      3
+    ]
+  },
+  "verified_depth_report_sha256": "50eb95d324e7dcf42fd262a8eb3540f91638571b4d73de09dbe7904b3e07d7a2"
+}

@@ -1,0 +1,5 @@
+﻿circuit,plan_A,plan_B,qasm_gate_index,gate_name,logical_qubits,n_qubits,asap_layer_A,asap_layer_B,B_minus_A_asap_layer,critical_A,critical_B,slack_A,slack_B,involves_reassigned_logical_qubit
+sym9_146.qasm,P8,P4,17,h,"(10,)",1,11,1,-10,True,False,0,10,False
+sym9_146.qasm,P8,P4,18,t,"(2,)",1,1,11,10,False,True,10,0,False
+sym9_146.qasm,P8,P4,20,t,"(10,)",1,12,2,-10,True,False,0,10,False
+sym9_146.qasm,P8,P4,21,cx,"(9, 2)",2,11,12,1,False,True,1,0,False

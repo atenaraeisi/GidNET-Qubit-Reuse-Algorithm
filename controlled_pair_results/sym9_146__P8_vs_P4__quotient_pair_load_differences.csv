@@ -1,0 +1,11 @@
+﻿circuit,plan_A,plan_B,aligned_chain_i,aligned_chain_j,n_2q_A,n_2q_B,B_minus_A
+sym9_146.qasm,P8,P4,0,1,17,13,-4
+sym9_146.qasm,P8,P4,0,2,12,12,0
+sym9_146.qasm,P8,P4,0,3,20,20,0
+sym9_146.qasm,P8,P4,0,4,16,14,-2
+sym9_146.qasm,P8,P4,1,2,8,12,4
+sym9_146.qasm,P8,P4,1,3,8,8,0
+sym9_146.qasm,P8,P4,1,4,4,4,0
+sym9_146.qasm,P8,P4,2,3,20,20,0
+sym9_146.qasm,P8,P4,2,4,21,23,2
+sym9_146.qasm,P8,P4,3,4,22,22,0

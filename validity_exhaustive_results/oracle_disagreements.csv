@@ -1,0 +1,1 @@
+circuit,plan_id,operator,sample_index,available_unique_neighborhood,candidate_chains,candidate_signature,checker_is_valid,checker_reason,reference_is_valid,oracle_agrees,preserved_width,preserved_partition,num_boundaries

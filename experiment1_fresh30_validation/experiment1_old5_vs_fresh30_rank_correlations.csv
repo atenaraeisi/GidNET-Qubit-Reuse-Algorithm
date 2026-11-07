@@ -1,0 +1,6 @@
+circuit,num_plans,spearman_old5_vs_fresh30_swaps,pearson_old5_vs_fresh30_swaps,spearman_old5_vs_fresh30_depth,pearson_old5_vs_fresh30_depth,old_best_swap_plan,fresh_best_swap_plan,same_best_swap_plan,old_best_depth_plan,fresh_best_depth_plan,same_best_depth_plan
+system9.qasm,13,0.8901098901098902,0.9313985462666307,0.8033019979058651,0.8647972298491661,P7,P7,True,P11,P11,True
+sym9_146.qasm,9,0.9666666666666667,0.9150836088002984,0.7166666666666667,0.8906645802875204,P1,P1,True,P1,P1,True
+rd73_140.qasm,6,0.942857142857143,0.9367301899293771,1.0,0.9302264986071851,P3,P3,True,P4,P4,True
+mini_alu_305.qasm,16,0.9312702171340019,0.9650435187015269,0.9749642385002278,0.9089740640711393,P2,P2,True,P5,P5,True
+alu-bdd_288.qasm,6,1.0,0.9630099420565008,0.8857142857142858,0.9440530882052215,P2,P2,True,P3,P2,False

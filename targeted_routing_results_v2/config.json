@@ -1,0 +1,41 @@
+{
+  "schema": 2,
+  "verified_depth_report_sha256": "50eb95d324e7dcf42fd262a8eb3540f91638571b4d73de09dbe7904b3e07d7a2",
+  "seeds": [
+    100,
+    101,
+    102
+  ],
+  "anchor_seed": 100,
+  "pairs": [
+    [
+      "system9.qasm",
+      "P5",
+      "P4"
+    ],
+    [
+      "sym9_146.qasm",
+      "P8",
+      "P4"
+    ]
+  ],
+  "qasm_sha256": {
+    "system9.qasm": "dba5bd422814d4adabaeae1f2a47c21d00fb32adb038123f2a74a1a9abfc5661",
+    "sym9_146.qasm": "68b843e5d6b93704016d02904fcce595e139e7b164541a6c1acac2739d6d1a87"
+  },
+  "inputs_sha256": {
+    "experiment1_fresh30_plan_summary.csv": "ce6edd84003bd4977016a7790bb4d49c2b3834dad03a6d5f7c81e379b0f2b94a",
+    "experiment1_fresh30_raw.csv": "a6f3b882dd7a6140cbd2048a1ff71eb4b821943d1a7e081e7cdebc708c2bca77",
+    "experiment2_plan_features.csv": "97c8cd98060eccfe99a2f8ef3c77752ade7df1b5f208ca0ddd30947fae7faf16"
+  },
+  "gidnet_python_sha256": "c714c14f28e782c771653d74d3592ac8a694c509cae52a81f2fbc35c409b6b24",
+  "qiskit_version": "0.46.0",
+  "coupling_edges_sha256": "367660bf555eb1550e24604d24cfe84d14874764af871803bce5ddc40a777036",
+  "mode": [
+    "free",
+    "anchor_better",
+    "anchor_worse"
+  ],
+  "opt": 1,
+  "script_sha256": "91c10bc1d88195445d9f792c019d08e90697a84b7c494d8609c0463dd6039157"
+}

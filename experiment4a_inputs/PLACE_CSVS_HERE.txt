@@ -1,0 +1,5 @@
+Place copies of your FULL coverage source data here:
+  adversarial_mutation_cases.csv           [8642 mutation rows]
+  width_and_original_plan_audit.csv         [50 source-plan rows]
+Do NOT use the smaller sampled adversarial_mutation_cases.csv file.
+Do NOT move or change Experiment 2 data; it stays at experiment2_results/experiment2_plan_features.csv.

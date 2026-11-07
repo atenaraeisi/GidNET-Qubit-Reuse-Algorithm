@@ -1,0 +1,7 @@
+{
+  "n_originals": 38,
+  "n_paired_repetitions": 76,
+  "same_topology_and_random": 54,
+  "same_topology_and_structural": 67,
+  "n_routing_jobs_if_fresh_5seeds": 365
+}

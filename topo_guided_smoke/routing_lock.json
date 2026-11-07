@@ -1,0 +1,13 @@
+{
+  "topology": "hh7",
+  "seeds": [
+    400,
+    401,
+    402,
+    403,
+    404
+  ],
+  "router": "router_topo._route; sabre layout+routing, opt1",
+  "qiskit": "0.45.3",
+  "adapter": "experiment3_pipeline_adapter"
+}

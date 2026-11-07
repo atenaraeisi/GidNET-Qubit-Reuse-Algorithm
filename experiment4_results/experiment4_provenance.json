@@ -1,0 +1,70 @@
+{
+  "experiment": "Experiment 4 — Logical vs. Physical Depth Analysis",
+  "input_paths_relative_to_project_root": [
+    "experiment1_results/experiment1_plan_summary.csv",
+    "experiment1_results/experiment1_raw.csv",
+    "experiment1_fresh30_validation/experiment1_fresh30_plan_summary.csv",
+    "experiment1_fresh30_validation/experiment1_fresh30_raw.csv",
+    "experiment2_results/experiment2_plan_features.csv"
+  ],
+  "input_sha256": {
+    "experiment1_results/experiment1_plan_summary.csv": "c78d5200975b442c417373290e95a782af714835f7a99585bbde3468de15c638",
+    "experiment1_results/experiment1_raw.csv": "992cd6f53b7108c855c440ad7eb383d52ac5854e8ee741a12ff49cff256e9777",
+    "experiment1_fresh30_validation/experiment1_fresh30_plan_summary.csv": "ce6edd84003bd4977016a7790bb4d49c2b3834dad03a6d5f7c81e379b0f2b94a",
+    "experiment1_fresh30_validation/experiment1_fresh30_raw.csv": "a6f3b882dd7a6140cbd2048a1ff71eb4b821943d1a7e081e7cdebc708c2bca77",
+    "experiment2_results/experiment2_plan_features.csv": "97c8cd98060eccfe99a2f8ef3c77752ade7df1b5f208ca0ddd30947fae7faf16"
+  },
+  "num_circuits": 5,
+  "num_unique_plans": 50,
+  "n_old_routing_seeds": 5,
+  "n_fresh_routing_seeds": 30,
+  "fresh_routing_seeds": [
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120,
+    121,
+    122,
+    123,
+    124,
+    125,
+    126,
+    127,
+    128,
+    129
+  ],
+  "logical_depth_field": "normalized_logical_depth",
+  "physical_targets": [
+    "fresh_mean_routed_depth",
+    "fresh_mean_swaps"
+  ],
+  "depth_min_tie_breaker": "gidnet_seed ascending, plan_id ascending; no physical outcome used",
+  "bootstrap": {
+    "repetitions": 500,
+    "rng_seed": 20261010,
+    "unit_resampled": "joint routing-seed indices within each circuit; plans not resampled",
+    "limitation": "seed sensitivity only; no cross-circuit generalization"
+  },
+  "python_version": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+  "pandas_version": "3.0.5",
+  "numpy_version": "1.26.4",
+  "scipy_version": "1.17.1",
+  "matplotlib_version": "3.11.1"
+}

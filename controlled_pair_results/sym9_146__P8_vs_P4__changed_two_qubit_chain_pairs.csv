@@ -1,0 +1,7 @@
+﻿circuit,plan_A,plan_B,qasm_gate_index,gate_name,logical_q0,logical_q1,physical_chain_pair_A,physical_chain_pair_B_aligned_to_A,chain_pair_changed_after_alignment,involves_reassigned_logical_qubit,asap_layer_A,asap_layer_B,B_minus_A_asap_layer,critical_A,critical_B
+sym9_146.qasm,P8,P4,4,cx,1,0,"(0, 1)","(1, 2)",True,True,2,2,0,True,True
+sym9_146.qasm,P8,P4,6,cx,0,9,"(0, 4)","(2, 4)",True,True,4,4,0,True,True
+sym9_146.qasm,P8,P4,8,cx,0,1,"(0, 1)","(1, 2)",True,True,5,5,0,True,True
+sym9_146.qasm,P8,P4,13,cx,0,9,"(0, 4)","(2, 4)",True,True,8,8,0,True,True
+sym9_146.qasm,P8,P4,14,cx,1,0,"(0, 1)","(1, 2)",True,True,9,9,0,True,True
+sym9_146.qasm,P8,P4,16,cx,0,1,"(0, 1)","(1, 2)",True,True,10,10,0,True,True

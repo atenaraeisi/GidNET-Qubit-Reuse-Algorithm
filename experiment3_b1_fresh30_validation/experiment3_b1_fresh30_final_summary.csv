@@ -1,0 +1,7 @@
+comparison,mean_improvement,median_improvement,improved,worsened,tied,n
+Repair vs Original SWAP,0.6694444444444435,0.3833333333333293,16,7,1,24
+Repair vs Original Depth,2.590277777777778,1.0833333333333286,15,9,0,24
+Restart-1 vs Original SWAP,1.4847222222222232,1.6666666666666679,15,9,0,24
+Restart-1 vs Original Depth,0.7638888888888898,0.6666666666666714,14,10,0,24
+Repair vs Restart-1 SWAP (restart - repair),-0.8152777777777797,-1.1166666666666707,11,13,0,24
+Repair vs Restart-1 Depth (restart - repair),1.8263888888888882,0.61666666666666,15,9,0,24

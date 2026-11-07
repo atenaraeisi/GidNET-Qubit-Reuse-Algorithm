@@ -1,0 +1,5 @@
+﻿circuit,plan_A,plan_B,reuse_predecessor,reuse_successor,A_has_edge,B_has_edge
+system9.qasm,P5,P4,0,3,True,False
+system9.qasm,P5,P4,0,11,False,True
+sym9_146.qasm,P8,P4,0,2,False,True
+sym9_146.qasm,P8,P4,0,10,True,False

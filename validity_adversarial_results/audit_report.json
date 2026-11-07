@@ -1,0 +1,15 @@
+{
+  "success": true,
+  "total_original_plans": 50,
+  "circuits": 5,
+  "mutations_tested": 2123,
+  "malformed_inputs_tested": 300,
+  "saved_width_agreement": true,
+  "all_original_plans_valid_both_methods": true,
+  "oracle_disagreements": 0,
+  "malformed_input_failures": 0,
+  "per_operator_cap": 12,
+  "rng_seed": 20261011,
+  "scope": "STATIC dependency feasibility; no dynamic semantics or routing",
+  "warnings": []
+}

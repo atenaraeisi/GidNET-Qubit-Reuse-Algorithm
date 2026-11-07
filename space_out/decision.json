@@ -1,0 +1,20 @@
+{
+  "routed_depth": {
+    "rel1": 1.7665662723009286,
+    "relmax": 4.074593498623164,
+    "relmax_eqK": 3.0785869592802118,
+    "max_depth": 3,
+    "growth_pp": 2.3080272263222357,
+    "beats_best_original": 0.9092373464741909
+  },
+  "swap_count": {
+    "rel1": 2.1068762329319592,
+    "relmax": 6.19492696829557,
+    "relmax_eqK": 3.8823774655877963,
+    "max_depth": 3,
+    "growth_pp": 4.088050735363611,
+    "beats_best_original": 0.33169511466441326
+  },
+  "verdict": "ceiling below threshold: multi-step does not rescue the effect size",
+  "target_pct": 5.0
+}

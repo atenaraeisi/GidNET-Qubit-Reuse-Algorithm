@@ -1,0 +1,13 @@
+objective,pool,depth_cap,sources,sources_better_than_original,sources_better_than_suffix,mean_gain_from_original,mean_extra_gain_from_suffix
+routed_depth,A_suffix,False,50,31,0,4.707333333333334,0.0
+routed_depth,A_suffix,True,50,31,0,4.707333333333334,0.0
+routed_depth,B_suffix_chain,False,50,43,16,5.537999999999999,0.8306666666666654
+routed_depth,B_suffix_chain,True,50,43,16,5.537999999999999,0.8306666666666654
+routed_depth,C_all,False,50,43,16,5.537999999999999,0.8306666666666654
+routed_depth,C_all,True,50,43,16,5.537999999999999,0.8306666666666654
+swap_count,A_suffix,False,50,30,0,1.853333333333333,0.0
+swap_count,A_suffix,True,50,30,0,1.853333333333333,0.0
+swap_count,B_suffix_chain,False,50,37,13,2.1293333333333333,0.276
+swap_count,B_suffix_chain,True,50,37,13,2.1293333333333333,0.276
+swap_count,C_all,False,50,37,13,2.1293333333333333,0.276
+swap_count,C_all,True,50,37,13,2.1293333333333333,0.276

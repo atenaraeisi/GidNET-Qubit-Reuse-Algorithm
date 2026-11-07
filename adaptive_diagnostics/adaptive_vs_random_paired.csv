@@ -1,0 +1,3 @@
+objective,n,adaptive_better,random_better,tie,identical_picks,mean_delta_pp,median_delta_pp
+routed_depth,179,21,47,111,111,-0.2789783693364181,0.0
+swap_count,179,33,44,102,102,-0.26802100626060993,0.0
