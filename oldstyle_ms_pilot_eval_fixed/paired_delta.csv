@@ -1,0 +1,13 @@
+objective,policy,circuit,source_plan_id,old_one_step,old_plus_deep,delta_deep_minus_old_pp
+swap_count,adaptive_beam,ising_model_16.qasm,P0,16.09195402298851,16.09195402298851,0.0
+swap_count,adaptive_beam,ising_model_16.qasm,P1,17.420814479638008,17.420814479638008,0.0
+swap_count,adaptive_beam,mini_alu_305.qasm,P0,-1.091703056768559,-0.29112081513828136,0.8005822416302777
+swap_count,adaptive_beam,mini_alu_305.qasm,P1,0.15588464536242294,0.15588464536242294,0.0
+swap_count,adaptive_beam,rd84_142.qasm,P0,9.084988603060891,5.79615760338651,-3.2888309996743814
+swap_count,adaptive_beam,rd84_142.qasm,P1,-0.27434842249656965,-0.27434842249656965,0.0
+swap_count,random_beam,ising_model_16.qasm,P0,16.09195402298851,16.09195402298851,0.0
+swap_count,random_beam,ising_model_16.qasm,P1,17.420814479638008,17.420814479638008,0.0
+swap_count,random_beam,mini_alu_305.qasm,P0,-1.091703056768559,-0.29112081513828136,0.8005822416302777
+swap_count,random_beam,mini_alu_305.qasm,P1,0.15588464536242294,0.15588464536242294,0.0
+swap_count,random_beam,rd84_142.qasm,P0,7.815043959622273,6.610224682513838,-1.2048192771084354
+swap_count,random_beam,rd84_142.qasm,P1,2.880658436213989,2.880658436213989,0.0

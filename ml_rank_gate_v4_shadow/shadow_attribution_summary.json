@@ -1,0 +1,33 @@
+{
+  "note": "Audit-only after routing-free ranker selection. A pre-gate positive is defined by true five-seed gain > specified margin. These truth values are not model features. Results are outer-OOF on TRAIN families, NOT untouched validation.",
+  "rows": [
+    {
+      "objective": "routed_depth",
+      "gate_margin": 0.2,
+      "originals": 65,
+      "ranker_policy_sources": 12,
+      "ranker_proposed_good": 11,
+      "ranker_proposed_nonpositive": 1,
+      "ranker_missed_available_gain": 1,
+      "gate_rejected_good": 8,
+      "gate_accepted_good": 3,
+      "gate_accepted_bad": 0,
+      "ranker_policy_gate_rejected": 9,
+      "policy_final_gain_total": 171.59999999999997
+    },
+    {
+      "objective": "swap_count",
+      "gate_margin": 0.2,
+      "originals": 65,
+      "ranker_policy_sources": 55,
+      "ranker_proposed_good": 30,
+      "ranker_proposed_nonpositive": 25,
+      "ranker_missed_available_gain": 15,
+      "gate_rejected_good": 28,
+      "gate_accepted_good": 2,
+      "gate_accepted_bad": 2,
+      "ranker_policy_gate_rejected": 51,
+      "policy_final_gain_total": -1.3988810110276972e-14
+    }
+  ]
+}

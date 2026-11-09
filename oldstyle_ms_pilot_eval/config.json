@@ -1,0 +1,58 @@
+{
+  "c1_dir": "exp4c1_all",
+  "space_dir": "space_out",
+  "qasm_dir": "benchmarks_compact",
+  "feature_file": "exp4d_features_all.csv",
+  "deep_data_dir": "oldstyle_ms_pilot",
+  "deep_pairs_file": "oldstyle_ms_pilot\\deep_pairs_35seed.csv",
+  "old_model_dir": "adaptive_ridge_models",
+  "multi_model_dir": "oldstyle_ms_models",
+  "model_mode": "auto",
+  "objectives": "swap_count",
+  "circuits": "rd84_142.qasm,mini_alu_305.qasm,ising_model_16.qasm",
+  "max_sources": 2,
+  "seed": 7,
+  "lams": [
+    1.0,
+    10.0,
+    100.0,
+    1000.0
+  ],
+  "beam_width": 5,
+  "max_depth": 5,
+  "budget": 120,
+  "per_expand": 40,
+  "max_attempts_per_expand": 500,
+  "ops": "suffix_swap,chain_transfer",
+  "reference_old": null,
+  "input_files": {
+    "C:\\Users\\ASUS\\Documents\\Quantum computing\\Qiskit\\GidNET-Qubit-Reuse-Algorithm\\exp4c1_all\\catalog.csv": [
+      168011,
+      1792904029967583300
+    ],
+    "C:\\Users\\ASUS\\Documents\\Quantum computing\\Qiskit\\GidNET-Qubit-Reuse-Algorithm\\exp4c1_all\\pools.csv": [
+      124817,
+      1792904190040864400
+    ],
+    "C:\\Users\\ASUS\\Documents\\Quantum computing\\Qiskit\\GidNET-Qubit-Reuse-Algorithm\\exp4c1_all\\features.csv": [
+      99308,
+      1792904165621640100
+    ],
+    "C:\\Users\\ASUS\\Documents\\Quantum computing\\Qiskit\\GidNET-Qubit-Reuse-Algorithm\\exp4c1_all\\cost_table.csv": [
+      3407000,
+      1792904142549640100
+    ],
+    "C:\\Users\\ASUS\\Documents\\Quantum computing\\Qiskit\\GidNET-Qubit-Reuse-Algorithm\\exp4d_features_all.csv": [
+      387895,
+      1792904465727905500
+    ],
+    "C:\\Users\\ASUS\\Documents\\Quantum computing\\Qiskit\\GidNET-Qubit-Reuse-Algorithm\\oldstyle_ms_pilot\\deep_pairs_35seed.csv": [
+      58217,
+      1794163093593927400
+    ],
+    "C:\\Users\\ASUS\\Documents\\Quantum computing\\Qiskit\\GidNET-Qubit-Reuse-Algorithm\\space_out\\cost_table.csv": [
+      13713067,
+      1792936741372227300
+    ]
+  }
+}

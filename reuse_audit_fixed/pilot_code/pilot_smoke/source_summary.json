@@ -1,0 +1,14 @@
+[
+  {
+    "circuit_id": "CaQR::cnt3-5_179.qasm",
+    "original_sig": "0ef45d1e5a4d574824458f02",
+    "width": 4,
+    "observed_plans": 44,
+    "selected_candidates": 4,
+    "attempted": 3574,
+    "valid": 156,
+    "found_at_1": 4,
+    "found_at_2": 13,
+    "found_at_3": 26
+  }
+]

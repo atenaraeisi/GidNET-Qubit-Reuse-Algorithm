@@ -1,0 +1,13 @@
+objective,arm,policy,circuit,gain_pct,n_sources,n_eval,harm_rate,n_scored
+swap_count,old_one_step,adaptive_beam,ising_model_16.qasm,16.756384251313257,2,2,0.0,7.0
+swap_count,old_one_step,adaptive_beam,mini_alu_305.qasm,-0.46790920570306804,2,2,0.5,17.0
+swap_count,old_one_step,adaptive_beam,rd84_142.qasm,4.405320090282161,2,2,0.5,120.0
+swap_count,old_one_step,random_beam,ising_model_16.qasm,16.756384251313257,2,2,0.0,7.0
+swap_count,old_one_step,random_beam,mini_alu_305.qasm,-0.46790920570306804,2,2,0.5,17.0
+swap_count,old_one_step,random_beam,rd84_142.qasm,5.347851197918131,2,2,0.0,120.0
+swap_count,old_plus_deep,adaptive_beam,ising_model_16.qasm,16.756384251313257,2,2,0.0,7.0
+swap_count,old_plus_deep,adaptive_beam,mini_alu_305.qasm,-0.06761808488792921,2,2,0.5,17.0
+swap_count,old_plus_deep,adaptive_beam,rd84_142.qasm,2.76090459044497,2,2,0.5,120.0
+swap_count,old_plus_deep,random_beam,ising_model_16.qasm,16.756384251313257,2,2,0.0,7.0
+swap_count,old_plus_deep,random_beam,mini_alu_305.qasm,-0.06761808488792921,2,2,0.5,17.0
+swap_count,old_plus_deep,random_beam,rd84_142.qasm,4.745441559363913,2,2,0.0,120.0

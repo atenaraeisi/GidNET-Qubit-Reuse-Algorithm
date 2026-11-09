@@ -1,0 +1,247 @@
+{
+  "protocol": "train_only_independent_gate_v4",
+  "data_checks": {
+    "routing_rows": 5810,
+    "unique_plans": 1162,
+    "label_rows": 2886,
+    "source_candidate_rows": 1443,
+    "source_originals": 65,
+    "seed_set": [
+      42,
+      43,
+      44,
+      45,
+      46
+    ],
+    "n_circuits": 28
+  },
+  "n_predictors": 60,
+  "outer_folds": 5,
+  "inner_folds": 3,
+  "gate_crossfit_folds": 3,
+  "feature_ablation": [
+    "compiled",
+    "structural",
+    "full"
+  ],
+  "ranker_types": [
+    "pair_logit"
+  ],
+  "gate_thresholds": [
+    0.5,
+    0.65,
+    0.75
+  ],
+  "rank_pair_margin": 0.2,
+  "gate_improvement_margin": 0.2,
+  "harm_penalty": 1.0,
+  "utility": "mean_family_gain_minus_lambda_mean_family_harm",
+  "method_comparison": [
+    {
+      "objective": "routed_depth",
+      "method": "logical_depth_rule",
+      "n_originals": 65,
+      "n_circuits": 28,
+      "n_families": 14,
+      "mean_gain_abs_by_original": 3.283076923076922,
+      "mean_gain_abs_by_circuit": 2.54047619047619,
+      "mean_gain_abs_by_family": 2.087619047619047,
+      "mean_gain_pct_by_original": 2.064214658029392,
+      "n_pct_defined": 65,
+      "harm_count": 4,
+      "repair_count": 33,
+      "no_repair_count": 32,
+      "missed_opportunity_count": 17,
+      "opportunity_count": 49,
+      "mean_regret": 5.867692307692304,
+      "total_harm_abs": 25.800000000000026
+    },
+    {
+      "objective": "routed_depth",
+      "method": "nested_selected",
+      "n_originals": 65,
+      "n_circuits": 28,
+      "n_families": 14,
+      "mean_gain_abs_by_original": 2.6399999999999997,
+      "mean_gain_abs_by_circuit": 2.0428571428571423,
+      "mean_gain_abs_by_family": 1.66063492063492,
+      "mean_gain_pct_by_original": 1.1084344631638567,
+      "n_pct_defined": 65,
+      "harm_count": 4,
+      "repair_count": 24,
+      "no_repair_count": 41,
+      "missed_opportunity_count": 26,
+      "opportunity_count": 49,
+      "mean_regret": 6.5107692307692275,
+      "total_harm_abs": 25.800000000000026
+    },
+    {
+      "objective": "routed_depth",
+      "method": "no_repair",
+      "n_originals": 65,
+      "n_circuits": 28,
+      "n_families": 14,
+      "mean_gain_abs_by_original": 0.0,
+      "mean_gain_abs_by_circuit": 0.0,
+      "mean_gain_abs_by_family": 0.0,
+      "mean_gain_pct_by_original": 0.0,
+      "n_pct_defined": 65,
+      "harm_count": 0,
+      "repair_count": 0,
+      "no_repair_count": 65,
+      "missed_opportunity_count": 49,
+      "opportunity_count": 49,
+      "mean_regret": 9.150769230769226,
+      "total_harm_abs": 0.0
+    },
+    {
+      "objective": "routed_depth",
+      "method": "oracle",
+      "n_originals": 65,
+      "n_circuits": 28,
+      "n_families": 14,
+      "mean_gain_abs_by_original": 9.150769230769226,
+      "mean_gain_abs_by_circuit": 7.158333333333331,
+      "mean_gain_abs_by_family": 7.036666666666663,
+      "mean_gain_pct_by_original": 4.5003203620422765,
+      "n_pct_defined": 65,
+      "harm_count": 0,
+      "repair_count": 49,
+      "no_repair_count": 16,
+      "missed_opportunity_count": 0,
+      "opportunity_count": 49,
+      "mean_regret": 0.0,
+      "total_harm_abs": 0.0
+    },
+    {
+      "objective": "swap_count",
+      "method": "logical_depth_rule",
+      "n_originals": 65,
+      "n_circuits": 28,
+      "n_families": 14,
+      "mean_gain_abs_by_original": -0.1384615384615387,
+      "mean_gain_abs_by_circuit": -0.10714285714285735,
+      "mean_gain_abs_by_family": -0.15476190476190493,
+      "mean_gain_pct_by_original": -1.0054440625600503,
+      "n_pct_defined": 53,
+      "harm_count": 13,
+      "repair_count": 33,
+      "no_repair_count": 32,
+      "missed_opportunity_count": 17,
+      "opportunity_count": 46,
+      "mean_regret": 3.110769230769231,
+      "total_harm_abs": 43.399999999999984
+    },
+    {
+      "objective": "swap_count",
+      "method": "nested_selected",
+      "n_originals": 65,
+      "n_circuits": 28,
+      "n_families": 14,
+      "mean_gain_abs_by_original": -2.1521246323503034e-16,
+      "mean_gain_abs_by_circuit": -1.6653345369377348e-16,
+      "mean_gain_abs_by_family": -0.006349206349206493,
+      "mean_gain_pct_by_original": 0.003809153898368298,
+      "n_pct_defined": 53,
+      "harm_count": 2,
+      "repair_count": 4,
+      "no_repair_count": 61,
+      "missed_opportunity_count": 43,
+      "opportunity_count": 46,
+      "mean_regret": 2.9723076923076928,
+      "total_harm_abs": 5.799999999999997
+    },
+    {
+      "objective": "swap_count",
+      "method": "no_repair",
+      "n_originals": 65,
+      "n_circuits": 28,
+      "n_families": 14,
+      "mean_gain_abs_by_original": 0.0,
+      "mean_gain_abs_by_circuit": 0.0,
+      "mean_gain_abs_by_family": 0.0,
+      "mean_gain_pct_by_original": 0.0,
+      "n_pct_defined": 53,
+      "harm_count": 0,
+      "repair_count": 0,
+      "no_repair_count": 65,
+      "missed_opportunity_count": 46,
+      "opportunity_count": 46,
+      "mean_regret": 2.9723076923076923,
+      "total_harm_abs": 0.0
+    },
+    {
+      "objective": "swap_count",
+      "method": "oracle",
+      "n_originals": 65,
+      "n_circuits": 28,
+      "n_families": 14,
+      "mean_gain_abs_by_original": 2.9723076923076923,
+      "mean_gain_abs_by_circuit": 2.330952380952381,
+      "mean_gain_abs_by_family": 2.2887301587301585,
+      "mean_gain_pct_by_original": 9.65116232156426,
+      "n_pct_defined": 53,
+      "harm_count": 0,
+      "repair_count": 46,
+      "no_repair_count": 19,
+      "missed_opportunity_count": 0,
+      "opportunity_count": 46,
+      "mean_regret": 0.0,
+      "total_harm_abs": 0.0
+    }
+  ],
+  "outer_policy_counts": [
+    {
+      "objective": "routed_depth",
+      "method": "logical_depth_rule",
+      "count": 4
+    },
+    {
+      "objective": "routed_depth",
+      "method": "pair_logit__compiled__gate_0.65",
+      "count": 1
+    },
+    {
+      "objective": "swap_count",
+      "method": "pair_logit__compiled__gate_0.65",
+      "count": 1
+    },
+    {
+      "objective": "swap_count",
+      "method": "pair_logit__full__gate_0.65",
+      "count": 3
+    },
+    {
+      "objective": "swap_count",
+      "method": "pair_logit__structural__gate_0.75",
+      "count": 1
+    }
+  ],
+  "final_train_only_policies": {
+    "swap_count": {
+      "selected_method": "no_repair",
+      "threshold": null,
+      "model_file": null,
+      "score": 0.0,
+      "no_repair_fallback": true
+    },
+    "routed_depth": {
+      "selected_method": "logical_depth_rule",
+      "threshold": null,
+      "model_file": null,
+      "score": 1.80095238095238,
+      "no_repair_fallback": true
+    }
+  },
+  "warnings": [
+    "Train-only NESTED grouped CV; external Validation and Final Test untouched.",
+    "Gate is fit on cross-fitted ranker-selected candidate outcomes from training families only.",
+    "Ranking model does NOT use baseline physical SWAP/depth at inference, including zero-baseline guard.",
+    "Gate probabilities are not empirically calibrated; a threshold is a model score threshold.",
+    "Source Originals with no discovered candidates always produce No Repair.",
+    "Only offline candidate reranking; no learned beam search yet.",
+    "Oracle uses routed true labels and is only an optimistic bound.",
+    "Only 14 training families, labels average 5 routing seeds: estimates are unstable.",
+    "Threshold/feature selection inside inner CV, never on outer heldout folds."
+  ]
+}

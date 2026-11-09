@@ -1,0 +1,15 @@
+{
+  "seeds": [
+    42,
+    43,
+    44,
+    45,
+    46
+  ],
+  "router": "router_template:route",
+  "backend": "Heavy-hex distance 7",
+  "layout_method": "sabre",
+  "routing_method": "sabre",
+  "optimization_level": 1,
+  "qiskit": "0.45.3"
+}

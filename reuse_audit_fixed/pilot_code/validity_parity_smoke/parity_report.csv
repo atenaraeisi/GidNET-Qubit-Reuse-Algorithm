@@ -1,0 +1,3 @@
+﻿circuit_id,original_sig,width,operator,attempted,legacy_valid,fast_valid,parity,legacy_scan_ms,fast_scan_ms,engine_setup_ms,fast_reject_illegal,fast_reject_cycle,duplicate,same_plan
+CaQR::cnt3-5_179.qasm,0ef45d1e5a4d574824458f02,4,suffix_swap,95,12,12,PASS,16.888,12.505,0.865,77,0,0,6
+CaQR::cnt3-5_179.qasm,0ef45d1e5a4d574824458f02,4,chain_transfer,180,0,0,PASS,5.8,1.963,0.865,171,0,9,0

@@ -1,0 +1,10 @@
+method,delta_vs_ridge_pp,n_circuits,improved_circuits,worsened_circuits,tied_circuits
+repeat_best_5seed,0.17934914175170943,15,10,4,1
+top1_3seed,-0.12103565191294893,15,8,7,0
+top5_common1seed,-0.2971172359291587,15,9,6,0
+top3_common1seed,-0.3214015134511696,15,9,6,0
+top2_2seed_confirm1,-0.5441593997804467,15,9,6,0
+top3_screen2_refine2,-0.5587332598517134,15,9,6,0
+top2_2seed,-0.681078841866976,15,9,6,0
+top1_common1seed,-0.7018391073323772,15,7,8,0
+random5_common1seed,-0.8144198805406976,15,7,8,0

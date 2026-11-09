@@ -1,0 +1,37 @@
+{
+  "n_new_pairs": 129,
+  "counts": {
+    "labeled": 129
+  },
+  "columns": [
+    "quotient_unique_edges",
+    "quotient_density",
+    "max_degree",
+    "max_weighted_degree",
+    "max_edge_weight",
+    "mean_raw_jaccard_incompat",
+    "max_raw_jaccard_incompat",
+    "top2_raw_jaccard_incompat",
+    "mean_raw_weighted_incompat",
+    "max_raw_weighted_incompat",
+    "mean_chain_jaccard_incompat",
+    "max_chain_jaccard_incompat",
+    "top2_chain_jaccard_incompat",
+    "mean_chain_weighted_incompat",
+    "max_chain_weighted_incompat",
+    "mean_first_2q_local_delay",
+    "mean_first_2q_layer_delay",
+    "edge_weight_cv",
+    "max_edge_share",
+    "edge_weight_hhi",
+    "normalized_edge_entropy",
+    "edge_weight_concentration",
+    "weighted_degree_cv",
+    "logical_depth",
+    "norm_depth"
+  ],
+  "normalization": "original exp4c1_all catalog, same as historical Ridge",
+  "labels": "same complete 35 seeds 42..46+100..129 as original Ridge",
+  "old_B_untouched": true,
+  "warning": "discovery depth is encountered valid path length; not certified minimal graph distance"
+}

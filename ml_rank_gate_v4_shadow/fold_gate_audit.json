@@ -1,0 +1,6194 @@
+[
+  {
+    "objective": "swap_count",
+    "outer_fold": 0,
+    "inner_audits": [
+      {
+        "inner_fold": 0,
+        "training_families": [
+          "alu",
+          "cnt3_5",
+          "entangled_states",
+          "gcm_h6",
+          "symmetry",
+          "system",
+          "variational"
+        ],
+        "heldout_families": [
+          "bernstein_vazirani",
+          "cc_n10",
+          "cm",
+          "multiplication"
+        ],
+        "models": [
+          {
+            "objective": "swap_count",
+            "mode": "compiled",
+            "ranker": "pair_logit",
+            "train_families": 7,
+            "heldout_families": 4,
+            "heldout_originals": 18,
+            "rank_training_pairs": 7284,
+            "n_gate_examples": 29,
+            "n_positive": 13,
+            "positive_fraction": 0.4482758620689655,
+            "gate_model": "regularized_logistic",
+            "crossfit_fold_details": [
+              {
+                "fold": 0,
+                "train_families": 5,
+                "heldout_families": [
+                  "cnt3_5",
+                  "system"
+                ],
+                "originals_with_pairs": 17,
+                "n_oriented_pairs": 3122,
+                "n_anchor_oriented_pairs": 618
+              },
+              {
+                "fold": 1,
+                "train_families": 5,
+                "heldout_families": [
+                  "alu",
+                  "symmetry"
+                ],
+                "originals_with_pairs": 18,
+                "n_oriented_pairs": 5260,
+                "n_anchor_oriented_pairs": 1048
+              },
+              {
+                "fold": 2,
+                "train_families": 4,
+                "heldout_families": [
+                  "entangled_states",
+                  "gcm_h6",
+                  "variational"
+                ],
+                "originals_with_pairs": 23,
+                "n_oriented_pairs": 6186,
+                "n_anchor_oriented_pairs": 1174
+              }
+            ]
+          },
+          {
+            "objective": "swap_count",
+            "mode": "structural",
+            "ranker": "pair_logit",
+            "train_families": 7,
+            "heldout_families": 4,
+            "heldout_originals": 18,
+            "rank_training_pairs": 7284,
+            "n_gate_examples": 29,
+            "n_positive": 14,
+            "positive_fraction": 0.4827586206896552,
+            "gate_model": "regularized_logistic",
+            "crossfit_fold_details": [
+              {
+                "fold": 0,
+                "train_families": 5,
+                "heldout_families": [
+                  "cnt3_5",
+                  "system"
+                ],
+                "originals_with_pairs": 17,
+                "n_oriented_pairs": 3122,
+                "n_anchor_oriented_pairs": 618
+              },
+              {
+                "fold": 1,
+                "train_families": 5,
+                "heldout_families": [
+                  "alu",
+                  "symmetry"
+                ],
+                "originals_with_pairs": 18,
+                "n_oriented_pairs": 5260,
+                "n_anchor_oriented_pairs": 1048
+              },
+              {
+                "fold": 2,
+                "train_families": 4,
+                "heldout_families": [
+                  "entangled_states",
+                  "gcm_h6",
+                  "variational"
+                ],
+                "originals_with_pairs": 23,
+                "n_oriented_pairs": 6186,
+                "n_anchor_oriented_pairs": 1174
+              }
+            ]
+          },
+          {
+            "objective": "swap_count",
+            "mode": "full",
+            "ranker": "pair_logit",
+            "train_families": 7,
+            "heldout_families": 4,
+            "heldout_originals": 18,
+            "rank_training_pairs": 7284,
+            "n_gate_examples": 29,
+            "n_positive": 14,
+            "positive_fraction": 0.4827586206896552,
+            "gate_model": "regularized_logistic",
+            "crossfit_fold_details": [
+              {
+                "fold": 0,
+                "train_families": 5,
+                "heldout_families": [
+                  "cnt3_5",
+                  "system"
+                ],
+                "originals_with_pairs": 17,
+                "n_oriented_pairs": 3122,
+                "n_anchor_oriented_pairs": 618
+              },
+              {
+                "fold": 1,
+                "train_families": 5,
+                "heldout_families": [
+                  "alu",
+                  "symmetry"
+                ],
+                "originals_with_pairs": 18,
+                "n_oriented_pairs": 5260,
+                "n_anchor_oriented_pairs": 1048
+              },
+              {
+                "fold": 2,
+                "train_families": 4,
+                "heldout_families": [
+                  "entangled_states",
+                  "gcm_h6",
+                  "variational"
+                ],
+                "originals_with_pairs": 23,
+                "n_oriented_pairs": 6186,
+                "n_anchor_oriented_pairs": 1174
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "inner_fold": 1,
+        "training_families": [
+          "bernstein_vazirani",
+          "cc_n10",
+          "cm",
+          "cnt3_5",
+          "gcm_h6",
+          "multiplication",
+          "symmetry",
+          "variational"
+        ],
+        "heldout_families": [
+          "alu",
+          "entangled_states",
+          "system"
+        ],
+        "models": [
+          {
+            "objective": "swap_count",
+            "mode": "compiled",
+            "ranker": "pair_logit",
+            "train_families": 8,
+            "heldout_families": 3,
+            "heldout_originals": 17,
+            "rank_training_pairs": 7040,
+            "n_gate_examples": 29,
+            "n_positive": 13,
+            "positive_fraction": 0.4482758620689655,
+            "gate_model": "regularized_logistic",
+            "crossfit_fold_details": [
+              {
+                "fold": 0,
+                "train_families": 6,
+                "heldout_families": [
+                  "bernstein_vazirani",
+                  "multiplication"
+                ],
+                "originals_with_pairs": 20,
+                "n_oriented_pairs": 4838,
+                "n_anchor_oriented_pairs": 1028
+              },
+              {
+                "fold": 1,
+                "train_families": 5,
+                "heldout_families": [
+                  "cc_n10",
+                  "cm",
+                  "symmetry"
+                ],
+                "originals_with_pairs": 18,
+                "n_oriented_pairs": 5414,
+                "n_anchor_oriented_pairs": 1154
+              },
+              {
+                "fold": 2,
+                "train_families": 5,
+                "heldout_families": [
+                  "cnt3_5",
+                  "gcm_h6",
+                  "variational"
+                ],
+                "originals_with_pairs": 20,
+                "n_oriented_pairs": 3828,
+                "n_anchor_oriented_pairs": 798
+              }
+            ]
+          },
+          {
+            "objective": "swap_count",
+            "mode": "structural",
+            "ranker": "pair_logit",
+            "train_families": 8,
+            "heldout_families": 3,
+            "heldout_originals": 17,
+            "rank_training_pairs": 7040,
+            "n_gate_examples": 29,
+            "n_positive": 15,
+            "positive_fraction": 0.5172413793103449,
+            "gate_model": "regularized_logistic",
+            "crossfit_fold_details": [
+              {
+                "fold": 0,
+                "train_families": 6,
+                "heldout_families": [
+                  "bernstein_vazirani",
+                  "multiplication"
+                ],
+                "originals_with_pairs": 20,
+                "n_oriented_pairs": 4838,
+                "n_anchor_oriented_pairs": 1028
+              },
+              {
+                "fold": 1,
+                "train_families": 5,
+                "heldout_families": [
+                  "cc_n10",
+                  "cm",
+                  "symmetry"
+                ],
+                "originals_with_pairs": 18,
+                "n_oriented_pairs": 5414,
+                "n_anchor_oriented_pairs": 1154
+              },
+              {
+                "fold": 2,
+                "train_families": 5,
+                "heldout_families": [
+                  "cnt3_5",
+                  "gcm_h6",
+                  "variational"
+                ],
+                "originals_with_pairs": 20,
+                "n_oriented_pairs": 3828,
+                "n_anchor_oriented_pairs": 798
+              }
+            ]
+          },
+          {
+            "objective": "swap_count",
+            "mode": "full",
+            "ranker": "pair_logit",
+            "train_families": 8,
+            "heldout_families": 3,
+            "heldout_originals": 17,
+            "rank_training_pairs": 7040,
+            "n_gate_examples": 29,
+            "n_positive": 15,
+            "positive_fraction": 0.5172413793103449,
+            "gate_model": "regularized_logistic",
+            "crossfit_fold_details": [
+              {
+                "fold": 0,
+                "train_families": 6,
+                "heldout_families": [
+                  "bernstein_vazirani",
+                  "multiplication"
+                ],
+                "originals_with_pairs": 20,
+                "n_oriented_pairs": 4838,
+                "n_anchor_oriented_pairs": 1028
+              },
+              {
+                "fold": 1,
+                "train_families": 5,
+                "heldout_families": [
+                  "cc_n10",
+                  "cm",
+                  "symmetry"
+                ],
+                "originals_with_pairs": 18,
+                "n_oriented_pairs": 5414,
+                "n_anchor_oriented_pairs": 1154
+              },
+              {
+                "fold": 2,
+                "train_families": 5,
+                "heldout_families": [
+                  "cnt3_5",
+                  "gcm_h6",
+                  "variational"
+                ],
+                "originals_with_pairs": 20,
+                "n_oriented_pairs": 3828,
+                "n_anchor_oriented_pairs": 798
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "inner_fold": 2,
+        "training_families": [
+          "alu",
+          "bernstein_vazirani",
+          "cc_n10",
+          "cm",
+          "entangled_states",
+          "multiplication",
+          "system"
+        ],
+        "heldout_families": [
+          "cnt3_5",
+          "gcm_h6",
+          "symmetry",
+          "variational"
+        ],
+        "models": [
+          {
+            "objective": "swap_count",
+            "mode": "compiled",
+            "ranker": "pair_logit",
+            "train_families": 7,
+            "heldout_families": 4,
+            "heldout_originals": 17,
+            "rank_training_pairs": 4980,
+            "n_gate_examples": 28,
+            "n_positive": 12,
+            "positive_fraction": 0.42857142857142855,
+            "gate_model": "regularized_logistic",
+            "crossfit_fold_details": [
+              {
+                "fold": 0,
+                "train_families": 5,
+                "heldout_families": [
+                  "bernstein_vazirani",
+                  "multiplication"
+                ],
+                "originals_with_pairs": 19,
+                "n_oriented_pairs": 2778,
+                "n_anchor_oriented_pairs": 484
+              },
+              {
+                "fold": 1,
+                "train_families": 4,
+                "heldout_families": [
+                  "cc_n10",
+                  "cm",
+                  "system"
+                ],
+                "originals_with_pairs": 17,
+                "n_oriented_pairs": 2790,
+                "n_anchor_oriented_pairs": 556
+              },
+              {
+                "fold": 2,
+                "train_families": 5,
+                "heldout_families": [
+                  "alu",
+                  "entangled_states"
+                ],
+                "originals_with_pairs": 20,
+                "n_oriented_pairs": 4392,
+                "n_anchor_oriented_pairs": 852
+              }
+            ]
+          },
+          {
+            "objective": "swap_count",
+            "mode": "structural",
+            "ranker": "pair_logit",
+            "train_families": 7,
+            "heldout_families": 4,
+            "heldout_originals": 17,
+            "rank_training_pairs": 4980,
+            "n_gate_examples": 28,
+            "n_positive": 10,
+            "positive_fraction": 0.35714285714285715,
+            "gate_model": "regularized_logistic",
+            "crossfit_fold_details": [
+              {
+                "fold": 0,
+                "train_families": 5,
+                "heldout_families": [
+                  "bernstein_vazirani",
+                  "multiplication"
+                ],
+                "originals_with_pairs": 19,
+                "n_oriented_pairs": 2778,
+                "n_anchor_oriented_pairs": 484
+              },
+              {
+                "fold": 1,
+                "train_families": 4,
+                "heldout_families": [
+                  "cc_n10",
+                  "cm",
+                  "system"
+                ],
+                "originals_with_pairs": 17,
+                "n_oriented_pairs": 2790,
+                "n_anchor_oriented_pairs": 556
+              },
+              {
+                "fold": 2,
+                "train_families": 5,
+                "heldout_families": [
+                  "alu",
+                  "entangled_states"
+                ],
+                "originals_with_pairs": 20,
+                "n_oriented_pairs": 4392,
+                "n_anchor_oriented_pairs": 852
+              }
+            ]
+          },
+          {
+            "objective": "swap_count",
+            "mode": "full",
+            "ranker": "pair_logit",
+            "train_families": 7,
+            "heldout_families": 4,
+            "heldout_originals": 17,
+            "rank_training_pairs": 4980,
+            "n_gate_examples": 28,
+            "n_positive": 10,
+            "positive_fraction": 0.35714285714285715,
+            "gate_model": "regularized_logistic",
+            "crossfit_fold_details": [
+              {
+                "fold": 0,
+                "train_families": 5,
+                "heldout_families": [
+                  "bernstein_vazirani",
+                  "multiplication"
+                ],
+                "originals_with_pairs": 19,
+                "n_oriented_pairs": 2778,
+                "n_anchor_oriented_pairs": 484
+              },
+              {
+                "fold": 1,
+                "train_families": 4,
+                "heldout_families": [
+                  "cc_n10",
+                  "cm",
+                  "system"
+                ],
+                "originals_with_pairs": 17,
+                "n_oriented_pairs": 2790,
+                "n_anchor_oriented_pairs": 556
+              },
+              {
+                "fold": 2,
+                "train_families": 5,
+                "heldout_families": [
+                  "alu",
+                  "entangled_states"
+                ],
+                "originals_with_pairs": 20,
+                "n_oriented_pairs": 4392,
+                "n_anchor_oriented_pairs": 852
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "objective": "swap_count",
+    "outer_fold": 1,
+    "inner_audits": [
+      {
+        "inner_fold": 0,
+        "training_families": [
+          "alu",
+          "cnt3_5",
+          "entangled_states",
+          "lpn",
+          "symmetry",
+          "system",
+          "variational"
+        ],
+        "heldout_families": [
+          "bernstein_vazirani",
+          "cm",
+          "graycode6",
+          "rd"
+        ],
+        "models": [
+          {
+            "objective": "swap_count",
+            "mode": "compiled",
+            "ranker": "pair_logit",
+            "train_families": 7,
+            "heldout_families": 4,
+            "heldout_originals": 18,
+            "rank_training_pairs": 6210,
+            "n_gate_examples": 29,
+            "n_positive": 10,
+            "positive_fraction": 0.3448275862068966,
+            "gate_model": "regularized_logistic",
+            "crossfit_fold_details": [
+              {
+                "fold": 0,
+                "train_families": 5,
+                "heldout_families": [
+                  "cnt3_5",
+                  "system"
+                ],
+                "originals_with_pairs": 14,
+                "n_oriented_pairs": 2048,
+                "n_anchor_oriented_pairs": 384
+              },
+              {
+                "fold": 1,
+                "train_families": 5,
+                "heldout_families": [
+                  "alu",
+                  "symmetry"
+                ],
+                "originals_with_pairs": 15,
+                "n_oriented_pairs": 4186,
+                "n_anchor_oriented_pairs": 814
+              },
+              {
+                "fold": 2,
+                "train_families": 4,
+                "heldout_families": [
+                  "entangled_states",
+                  "lpn",
+                  "variational"
+                ],
+                "originals_with_pairs": 23,
+                "n_oriented_pairs": 6186,
+                "n_anchor_oriented_pairs": 1174
+              }
+            ]
+          },
+          {
+            "objective": "swap_count",
+            "mode": "structural",
+            "ranker": "pair_logit",
+            "train_families": 7,
+            "heldout_families": 4,
+            "heldout_originals": 18,
+            "rank_training_pairs": 6210,
+            "n_gate_examples": 29,
+            "n_positive": 12,
+            "positive_fraction": 0.41379310344827586,
+            "gate_model": "regularized_logistic",
+            "crossfit_fold_details": [
+              {
+                "fold": 0,
+                "train_families": 5,
+                "heldout_families": [
+                  "cnt3_5",
+                  "system"
+                ],
+                "originals_with_pairs": 14,
+                "n_oriented_pairs": 2048,
+                "n_anchor_oriented_pairs": 384
+              },
+              {
+                "fold": 1,
+                "train_families": 5,
+                "heldout_families": [
+                  "alu",
+                  "symmetry"
+                ],
+                "originals_with_pairs": 15,
+                "n_oriented_pairs": 4186,
+                "n_anchor_oriented_pairs": 814
+              },
+              {
+                "fold": 2,
+                "train_families": 4,
+                "heldout_families": [
+                  "entangled_states",
+                  "lpn",
+                  "variational"
+                ],
+                "originals_with_pairs": 23,
+                "n_oriented_pairs": 6186,
+                "n_anchor_oriented_pairs": 1174
+              }
+            ]
+          },
+          {
+            "objective": "swap_count",
+            "mode": "full",
+            "ranker": "pair_logit",
+            "train_families": 7,
+            "heldout_families": 4,
+            "heldout_originals": 18,
+            "rank_training_pairs": 6210,
+            "n_gate_examples": 29,
+            "n_positive": 11,
+            "positive_fraction": 0.3793103448275862,
+            "gate_model": "regularized_logistic",
+            "crossfit_fold_details": [
+              {
+                "fold": 0,
+                "train_families": 5,
+                "heldout_families": [
+                  "cnt3_5",
+                  "system"
+                ],
+                "originals_with_pairs": 14,
+                "n_oriented_pairs": 2048,
+                "n_anchor_oriented_pairs": 384
+              },
+              {
+                "fold": 1,
+                "train_families": 5,
+                "heldout_families": [
+                  "alu",
+                  "symmetry"
+                ],
+                "originals_with_pairs": 15,
+                "n_oriented_pairs": 4186,
+                "n_anchor_oriented_pairs": 814
+              },
+              {
+                "fold": 2,
+                "train_families": 4,
+                "heldout_families": [
+                  "entangled_states",
+                  "lpn",
+                  "variational"
+                ],
+                "originals_with_pairs": 23,
+                "n_oriented_pairs": 6186,
+                "n_anchor_oriented_pairs": 1174
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "inner_fold": 1,
+        "training_families": [
+          "bernstein_vazirani",
+          "cm",
+          "cnt3_5",
+          "graycode6",
+          "lpn",
+          "rd",
+          "symmetry",
+          "variational"
+        ],
+        "heldout_families": [
+          "alu",
+          "entangled_states",
+          "system"
+        ],
+        "models": [
+          {
+            "objective": "swap_count",
+            "mode": "compiled",
+            "ranker": "pair_logit",
+            "train_families": 8,
+            "heldout_families": 3,
+            "heldout_originals": 17,
+            "rank_training_pairs": 5996,
+            "n_gate_examples": 29,
+            "n_positive": 12,
+            "positive_fraction": 0.41379310344827586,
+            "gate_model": "regularized_logistic",
+            "crossfit_fold_details": [
+              {
+                "fold": 0,
+                "train_families": 6,
+                "heldout_families": [
+                  "bernstein_vazirani",
+                  "rd"
+                ],
+                "originals_with_pairs": 17,
+                "n_oriented_pairs": 3764,
+                "n_anchor_oriented_pairs": 794
+              },
+              {
+                "fold": 1,
+                "train_families": 5,
+                "heldout_families": [
+                  "cm",
+                  "graycode6",
+                  "symmetry"
+                ],
+                "originals_with_pairs": 15,
+                "n_oriented_pairs": 4370,
+                "n_anchor_oriented_pairs": 950
+              },
+              {
+                "fold": 2,
+                "train_families": 5,
+                "heldout_families": [
+                  "cnt3_5",
+                  "lpn",
+                  "variational"
+                ],
+                "originals_with_pairs": 20,
+                "n_oriented_pairs": 3858,
+                "n_anchor_oriented_pairs": 828
+              }
+            ]
+          },
+          {
+            "objective": "swap_count",
+            "mode": "structural",
+            "ranker": "pair_logit",
+            "train_families": 8,
+            "heldout_families": 3,
+            "heldout_originals": 17,
+            "rank_training_pairs": 5996,
+            "n_gate_examples": 29,
+            "n_positive": 14,
+            "positive_fraction": 0.4827586206896552,
+            "gate_model": "regularized_logistic",
+            "crossfit_fold_details": [
+              {
+                "fold": 0,
+                "train_families": 6,
+                "heldout_families": [
+                  "bernstein_vazirani",
+                  "rd"
+                ],
+                "originals_with_pairs": 17,
+                "n_oriented_pairs": 3764,
+                "n_anchor_oriented_pairs": 794
+              },
+              {
+                "fold": 1,
+                "train_families": 5,
+                "heldout_families": [
+                  "cm",
+                  "graycode6",
+                  "symmetry"
+                ],
+                "originals_with_pairs": 15,
+                "n_oriented_pairs": 4370,
+                "n_anchor_oriented_pairs": 950
+              },
+              {
+                "fold": 2,
+                "train_families": 5,
+                "heldout_families": [
+                  "cnt3_5",
+                  "lpn",
+                  "variational"
+                ],
+                "originals_with_pairs": 20,
+                "n_oriented_pairs": 3858,
+                "n_anchor_oriented_pairs": 828
+              }
+            ]
+          },
+          {
+            "objective": "swap_count",
+            "mode": "full",
+            "ranker": "pair_logit",
+            "train_families": 8,
+            "heldout_families": 3,
+            "heldout_originals": 17,
+            "rank_training_pairs": 5996,
+            "n_gate_examples": 29,
+            "n_positive": 15,
+            "positive_fraction": 0.5172413793103449,
+            "gate_model": "regularized_logistic",
+            "crossfit_fold_details": [
+              {
+                "fold": 0,
+                "train_families": 6,
+                "heldout_families": [
+                  "bernstein_vazirani",
+                  "rd"
+                ],
+                "originals_with_pairs": 17,
+                "n_oriented_pairs": 3764,
+                "n_anchor_oriented_pairs": 794
+              },
+              {
+                "fold": 1,
+                "train_families": 5,
+                "heldout_families": [
+                  "cm",
+                  "graycode6",
+                  "symmetry"
+                ],
+                "originals_with_pairs": 15,
+                "n_oriented_pairs": 4370,
+                "n_anchor_oriented_pairs": 950
+              },
+              {
+                "fold": 2,
+                "train_families": 5,
+                "heldout_families": [
+                  "cnt3_5",
+                  "lpn",
+                  "variational"
+                ],
+                "originals_with_pairs": 20,
+                "n_oriented_pairs": 3858,
+                "n_anchor_oriented_pairs": 828
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "inner_fold": 2,
+        "training_families": [
+          "alu",
+          "bernstein_vazirani",
+          "cm",
+          "entangled_states",
+          "graycode6",
+          "rd",
+          "system"
+        ],
+        "heldout_families": [
+          "cnt3_5",
+          "lpn",
+          "symmetry",
+          "variational"
+        ],
+        "models": [
+          {
+            "objective": "swap_count",
+            "mode": "compiled",
+            "ranker": "pair_logit",
+            "train_families": 7,
+            "heldout_families": 4,
+            "heldout_originals": 17,
+            "rank_training_pairs": 5010,
+            "n_gate_examples": 28,
+            "n_positive": 8,
+            "positive_fraction": 0.2857142857142857,
+            "gate_model": "regularized_logistic",
+            "crossfit_fold_details": [
+              {
+                "fold": 0,
+                "train_families": 5,
+                "heldout_families": [
+                  "bernstein_vazirani",
+                  "rd"
+                ],
+                "originals_with_pairs": 19,
+                "n_oriented_pairs": 2778,
+                "n_anchor_oriented_pairs": 484
+              },
+              {
+                "fold": 1,
+                "train_families": 4,
+                "heldout_families": [
+                  "cm",
+                  "graycode6",
+                  "system"
+                ],
+                "originals_with_pairs": 17,
+                "n_oriented_pairs": 2820,
+                "n_anchor_oriented_pairs": 586
+              },
+              {
+                "fold": 2,
+                "train_families": 5,
+                "heldout_families": [
+                  "alu",
+                  "entangled_states"
+                ],
+                "originals_with_pairs": 20,
+                "n_oriented_pairs": 4422,
+                "n_anchor_oriented_pairs": 882
+              }
+            ]
+          },
+          {
+            "objective": "swap_count",
+            "mode": "structural",
+            "ranker": "pair_logit",
+            "train_families": 7,
+            "heldout_families": 4,
+            "heldout_originals": 17,
+            "rank_training_pairs": 5010,
+            "n_gate_examples": 28,
+            "n_positive": 10,
+            "positive_fraction": 0.35714285714285715,
+            "gate_model": "regularized_logistic",
+            "crossfit_fold_details": [
+              {
+                "fold": 0,
+                "train_families": 5,
+                "heldout_families": [
+                  "bernstein_vazirani",
+                  "rd"
+                ],
+                "originals_with_pairs": 19,
+                "n_oriented_pairs": 2778,
+                "n_anchor_oriented_pairs": 484
+              },
+              {
+                "fold": 1,
+                "train_families": 4,
+                "heldout_families": [
+                  "cm",
+                  "graycode6",
+                  "system"
+                ],
+                "originals_with_pairs": 17,
+                "n_oriented_pairs": 2820,
+                "n_anchor_oriented_pairs": 586
+              },
+              {
+                "fold": 2,
+                "train_families": 5,
+                "heldout_families": [
+                  "alu",
+                  "entangled_states"
+                ],
+                "originals_with_pairs": 20,
+                "n_oriented_pairs": 4422,
+                "n_anchor_oriented_pairs": 882
+              }
+            ]
+          },
+          {
+            "objective": "swap_count",
+            "mode": "full",
+            "ranker": "pair_logit",
+            "train_families": 7,
+            "heldout_families": 4,
+            "heldout_originals": 17,
+            "rank_training_pairs": 5010,
+            "n_gate_examples": 28,
+            "n_positive": 8,
+            "positive_fraction": 0.2857142857142857,
+            "gate_model": "regularized_logistic",
+            "crossfit_fold_details": [
+              {
+                "fold": 0,
+                "train_families": 5,
+                "heldout_families": [
+                  "bernstein_vazirani",
+                  "rd"
+                ],
+                "originals_with_pairs": 19,
+                "n_oriented_pairs": 2778,
+                "n_anchor_oriented_pairs": 484
+              },
+              {
+                "fold": 1,
+                "train_families": 4,
+                "heldout_families": [
+                  "cm",
+                  "graycode6",
+                  "system"
+                ],
+                "originals_with_pairs": 17,
+                "n_oriented_pairs": 2820,
+                "n_anchor_oriented_pairs": 586
+              },
+              {
+                "fold": 2,
+                "train_families": 5,
+                "heldout_families": [
+                  "alu",
+                  "entangled_states"
+                ],
+                "originals_with_pairs": 20,
+                "n_oriented_pairs": 4422,
+                "n_anchor_oriented_pairs": 882
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "objective": "swap_count",
+    "outer_fold": 2,
+    "inner_audits": [
+      {
+        "inner_fold": 0,
+        "training_families": [
+          "alu",
+          "bernstein_vazirani",
+          "cc_n10",
+          "entangled_states",
+          "lpn",
+          "multiplication",
+          "symmetry",
+          "variational"
+        ],
+        "heldout_families": [
+          "cm",
+          "gcm_h6",
+          "graycode6",
+          "rd"
+        ],
+        "models": [
+          {
+            "objective": "swap_count",
+            "mode": "compiled",
+            "ranker": "pair_logit",
+            "train_families": 8,
+            "heldout_families": 4,
+            "heldout_originals": 18,
+            "rank_training_pairs": 4250,
+            "n_gate_examples": 26,
+            "n_positive": 10,
+            "positive_fraction": 0.38461538461538464,
+            "gate_model": "regularized_logistic",
+            "crossfit_fold_details": [
+              {
+                "fold": 0,
+                "train_families": 6,
+                "heldout_families": [
+                  "bernstein_vazirani",
+                  "multiplication"
+                ],
+                "originals_with_pairs": 14,
+                "n_oriented_pairs": 2048,
+                "n_anchor_oriented_pairs": 384
+              },
+              {
+                "fold": 1,
+                "train_families": 5,
+                "heldout_families": [
+                  "alu",
+                  "cc_n10",
+                  "symmetry"
+                ],
+                "originals_with_pairs": 12,
+                "n_oriented_pairs": 2226,
+                "n_anchor_oriented_pairs": 474
+              },
+              {
+                "fold": 2,
+                "train_families": 5,
+                "heldout_families": [
+                  "entangled_states",
+                  "lpn",
+                  "variational"
+                ],
+                "originals_with_pairs": 20,
+                "n_oriented_pairs": 4226,
+                "n_anchor_oriented_pairs": 834
+              }
+            ]
+          },
+          {
+            "objective": "swap_count",
+            "mode": "structural",
+            "ranker": "pair_logit",
+            "train_families": 8,
+            "heldout_families": 4,
+            "heldout_originals": 18,
+            "rank_training_pairs": 4250,
+            "n_gate_examples": 26,
+            "n_positive": 9,
+            "positive_fraction": 0.34615384615384615,
+            "gate_model": "regularized_logistic",
+            "crossfit_fold_details": [
+              {
+                "fold": 0,
+                "train_families": 6,
+                "heldout_families": [
+                  "bernstein_vazirani",
+                  "multiplication"
+                ],
+                "originals_with_pairs": 14,
+                "n_oriented_pairs": 2048,
+                "n_anchor_oriented_pairs": 384
+              },
+              {
+                "fold": 1,
+                "train_families": 5,
+                "heldout_families": [
+                  "alu",
+                  "cc_n10",
+                  "symmetry"
+                ],
+                "originals_with_pairs": 12,
+                "n_oriented_pairs": 2226,
+                "n_anchor_oriented_pairs": 474
+              },
+              {
+                "fold": 2,
+                "train_families": 5,
+                "heldout_families": [
+                  "entangled_states",
+                  "lpn",
+                  "variational"
+                ],
+                "originals_with_pairs": 20,
+                "n_oriented_pairs": 4226,
+                "n_anchor_oriented_pairs": 834
+              }
+            ]
+          },
+          {
+            "objective": "swap_count",
+            "mode": "full",
+            "ranker": "pair_logit",
+            "train_families": 8,
+            "heldout_families": 4,
+            "heldout_originals": 18,
+            "rank_training_pairs": 4250,
+            "n_gate_examples": 26,
+            "n_positive": 9,
+            "positive_fraction": 0.34615384615384615,
+            "gate_model": "regularized_logistic",
+            "crossfit_fold_details": [
+              {
+                "fold": 0,
+                "train_families": 6,
+                "heldout_families": [
+                  "bernstein_vazirani",
+                  "multiplication"
+                ],
+                "originals_with_pairs": 14,
+                "n_oriented_pairs": 2048,
+                "n_anchor_oriented_pairs": 384
+              },
+              {
+                "fold": 1,
+                "train_families": 5,
+                "heldout_families": [
+                  "alu",
+                  "cc_n10",
+                  "symmetry"
+                ],
+                "originals_with_pairs": 12,
+                "n_oriented_pairs": 2226,
+                "n_anchor_oriented_pairs": 474
+              },
+              {
+                "fold": 2,
+                "train_families": 5,
+                "heldout_families": [
+                  "entangled_states",
+                  "lpn",
+                  "variational"
+                ],
+                "originals_with_pairs": 20,
+                "n_oriented_pairs": 4226,
+                "n_anchor_oriented_pairs": 834
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "inner_fold": 1,
+        "training_families": [
+          "cm",
+          "entangled_states",
+          "gcm_h6",
+          "graycode6",
+          "lpn",
+          "rd",
+          "symmetry",
+          "variational"
+        ],
+        "heldout_families": [
+          "alu",
+          "bernstein_vazirani",
+          "cc_n10",
+          "multiplication"
+        ],
+        "models": [
+          {
+            "objective": "swap_count",
+            "mode": "compiled",
+            "ranker": "pair_logit",
+            "train_families": 8,
+            "heldout_families": 4,
+            "heldout_originals": 18,
+            "rank_training_pairs": 4956,
+            "n_gate_examples": 29,
+            "n_positive": 13,
+            "positive_fraction": 0.4482758620689655,
+            "gate_model": "regularized_logistic",
+            "crossfit_fold_details": [
+              {
+                "fold": 0,
+                "train_families": 6,
+                "heldout_families": [
+                  "gcm_h6",
+                  "rd"
+                ],
+                "originals_with_pairs": 14,
+                "n_oriented_pairs": 1650,
+                "n_anchor_oriented_pairs": 348
+              },
+              {
+                "fold": 1,
+                "train_families": 5,
+                "heldout_families": [
+                  "cm",
+                  "graycode6",
+                  "symmetry"
+                ],
+                "originals_with_pairs": 15,
+                "n_oriented_pairs": 3330,
+                "n_anchor_oriented_pairs": 738
+              },
+              {
+                "fold": 2,
+                "train_families": 5,
+                "heldout_families": [
+                  "entangled_states",
+                  "lpn",
+                  "variational"
+                ],
+                "originals_with_pairs": 23,
+                "n_oriented_pairs": 4932,
+                "n_anchor_oriented_pairs": 1062
+              }
+            ]
+          },
+          {
+            "objective": "swap_count",
+            "mode": "structural",
+            "ranker": "pair_logit",
+            "train_families": 8,
+            "heldout_families": 4,
+            "heldout_originals": 18,
+            "rank_training_pairs": 4956,
+            "n_gate_examples": 29,
+            "n_positive": 9,
+            "positive_fraction": 0.3103448275862069,
+            "gate_model": "regularized_logistic",
+            "crossfit_fold_details": [
+              {
+                "fold": 0,
+                "train_families": 6,
+                "heldout_families": [
+                  "gcm_h6",
+                  "rd"
+                ],
+                "originals_with_pairs": 14,
+                "n_oriented_pairs": 1650,
+                "n_anchor_oriented_pairs": 348
+              },
+              {
+                "fold": 1,
+                "train_families": 5,
+                "heldout_families": [
+                  "cm",
+                  "graycode6",
+                  "symmetry"
+                ],
+                "originals_with_pairs": 15,
+                "n_oriented_pairs": 3330,
+                "n_anchor_oriented_pairs": 738
+              },
+              {
+                "fold": 2,
+                "train_families": 5,
+                "heldout_families": [
+                  "entangled_states",
+                  "lpn",
+                  "variational"
+                ],
+                "originals_with_pairs": 23,
+                "n_oriented_pairs": 4932,
+                "n_anchor_oriented_pairs": 1062
+              }
+            ]
+          },
+          {
+            "objective": "swap_count",
+            "mode": "full",
+            "ranker": "pair_logit",
+            "train_families": 8,
+            "heldout_families": 4,
+            "heldout_originals": 18,
+            "rank_training_pairs": 4956,
+            "n_gate_examples": 29,
+            "n_positive": 12,
+            "positive_fraction": 0.41379310344827586,
+            "gate_model": "regularized_logistic",
+            "crossfit_fold_details": [
+              {
+                "fold": 0,
+                "train_families": 6,
+                "heldout_families": [
+                  "gcm_h6",
+                  "rd"
+                ],
+                "originals_with_pairs": 14,
+                "n_oriented_pairs": 1650,
+                "n_anchor_oriented_pairs": 348
+              },
+              {
+                "fold": 1,
+                "train_families": 5,
+                "heldout_families": [
+                  "cm",
+                  "graycode6",
+                  "symmetry"
+                ],
+                "originals_with_pairs": 15,
+                "n_oriented_pairs": 3330,
+                "n_anchor_oriented_pairs": 738
+              },
+              {
+                "fold": 2,
+                "train_families": 5,
+                "heldout_families": [
+                  "entangled_states",
+                  "lpn",
+                  "variational"
+                ],
+                "originals_with_pairs": 23,
+                "n_oriented_pairs": 4932,
+                "n_anchor_oriented_pairs": 1062
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "inner_fold": 2,
+        "training_families": [
+          "alu",
+          "bernstein_vazirani",
+          "cc_n10",
+          "cm",
+          "gcm_h6",
+          "graycode6",
+          "multiplication",
+          "rd"
+        ],
+        "heldout_families": [
+          "entangled_states",
+          "lpn",
+          "symmetry",
+          "variational"
+        ],
+        "models": [
+          {
+            "objective": "swap_count",
+            "mode": "compiled",
+            "ranker": "pair_logit",
+            "train_families": 8,
+            "heldout_families": 4,
+            "heldout_originals": 17,
+            "rank_training_pairs": 6238,
+            "n_gate_examples": 31,
+            "n_positive": 14,
+            "positive_fraction": 0.45161290322580644,
+            "gate_model": "regularized_logistic",
+            "crossfit_fold_details": [
+              {
+                "fold": 0,
+                "train_families": 6,
+                "heldout_families": [
+                  "gcm_h6",
+                  "rd"
+                ],
+                "originals_with_pairs": 19,
+                "n_oriented_pairs": 2932,
+                "n_anchor_oriented_pairs": 590
+              },
+              {
+                "fold": 1,
+                "train_families": 6,
+                "heldout_families": [
+                  "bernstein_vazirani",
+                  "multiplication"
+                ],
+                "originals_with_pairs": 22,
+                "n_oriented_pairs": 4036,
+                "n_anchor_oriented_pairs": 854
+              },
+              {
+                "fold": 2,
+                "train_families": 4,
+                "heldout_families": [
+                  "alu",
+                  "cc_n10",
+                  "cm",
+                  "graycode6"
+                ],
+                "originals_with_pairs": 21,
+                "n_oriented_pairs": 5508,
+                "n_anchor_oriented_pairs": 1188
+              }
+            ]
+          },
+          {
+            "objective": "swap_count",
+            "mode": "structural",
+            "ranker": "pair_logit",
+            "train_families": 8,
+            "heldout_families": 4,
+            "heldout_originals": 17,
+            "rank_training_pairs": 6238,
+            "n_gate_examples": 31,
+            "n_positive": 16,
+            "positive_fraction": 0.5161290322580645,
+            "gate_model": "regularized_logistic",
+            "crossfit_fold_details": [
+              {
+                "fold": 0,
+                "train_families": 6,
+                "heldout_families": [
+                  "gcm_h6",
+                  "rd"
+                ],
+                "originals_with_pairs": 19,
+                "n_oriented_pairs": 2932,
+                "n_anchor_oriented_pairs": 590
+              },
+              {
+                "fold": 1,
+                "train_families": 6,
+                "heldout_families": [
+                  "bernstein_vazirani",
+                  "multiplication"
+                ],
+                "originals_with_pairs": 22,
+                "n_oriented_pairs": 4036,
+                "n_anchor_oriented_pairs": 854
+              },
+              {
+                "fold": 2,
+                "train_families": 4,
+                "heldout_families": [
+                  "alu",
+                  "cc_n10",
+                  "cm",
+                  "graycode6"
+                ],
+                "originals_with_pairs": 21,
+                "n_oriented_pairs": 5508,
+                "n_anchor_oriented_pairs": 1188
+              }
+            ]
+          },
+          {
+            "objective": "swap_count",
+            "mode": "full",
+            "ranker": "pair_logit",
+            "train_families": 8,
+            "heldout_families": 4,
+            "heldout_originals": 17,
+            "rank_training_pairs": 6238,
+            "n_gate_examples": 31,
+            "n_positive": 16,
+            "positive_fraction": 0.5161290322580645,
+            "gate_model": "regularized_logistic",
+            "crossfit_fold_details": [
+              {
+                "fold": 0,
+                "train_families": 6,
+                "heldout_families": [
+                  "gcm_h6",
+                  "rd"
+                ],
+                "originals_with_pairs": 19,
+                "n_oriented_pairs": 2932,
+                "n_anchor_oriented_pairs": 590
+              },
+              {
+                "fold": 1,
+                "train_families": 6,
+                "heldout_families": [
+                  "bernstein_vazirani",
+                  "multiplication"
+                ],
+                "originals_with_pairs": 22,
+                "n_oriented_pairs": 4036,
+                "n_anchor_oriented_pairs": 854
+              },
+              {
+                "fold": 2,
+                "train_families": 4,
+                "heldout_families": [
+                  "alu",
+                  "cc_n10",
+                  "cm",
+                  "graycode6"
+                ],
+                "originals_with_pairs": 21,
+                "n_oriented_pairs": 5508,
+                "n_anchor_oriented_pairs": 1188
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "objective": "swap_count",
+    "outer_fold": 3,
+    "inner_audits": [
+      {
+        "inner_fold": 0,
+        "training_families": [
+          "alu",
+          "cc_n10",
+          "entangled_states",
+          "gcm_h6",
+          "graycode6",
+          "lpn",
+          "multiplication",
+          "system"
+        ],
+        "heldout_families": [
+          "cnt3_5",
+          "rd",
+          "variational"
+        ],
+        "models": [
+          {
+            "objective": "swap_count",
+            "mode": "compiled",
+            "ranker": "pair_logit",
+            "train_families": 8,
+            "heldout_families": 3,
+            "heldout_originals": 17,
+            "rank_training_pairs": 5888,
+            "n_gate_examples": 29,
+            "n_positive": 10,
+            "positive_fraction": 0.3448275862068966,
+            "gate_model": "regularized_logistic",
+            "crossfit_fold_details": [
+              {
+                "fold": 0,
+                "train_families": 6,
+                "heldout_families": [
+                  "gcm_h6",
+                  "multiplication"
+                ],
+                "originals_with_pairs": 14,
+                "n_oriented_pairs": 2612,
+                "n_anchor_oriented_pairs": 438
+              },
+              {
+                "fold": 1,
+                "train_families": 6,
+                "heldout_families": [
+                  "alu",
+                  "system"
+                ],
+                "originals_with_pairs": 15,
+                "n_oriented_pairs": 3300,
+                "n_anchor_oriented_pairs": 708
+              },
+              {
+                "fold": 2,
+                "train_families": 4,
+                "heldout_families": [
+                  "cc_n10",
+                  "entangled_states",
+                  "graycode6",
+                  "lpn"
+                ],
+                "originals_with_pairs": 23,
+                "n_oriented_pairs": 5864,
+                "n_anchor_oriented_pairs": 1122
+              }
+            ]
+          },
+          {
+            "objective": "swap_count",
+            "mode": "structural",
+            "ranker": "pair_logit",
+            "train_families": 8,
+            "heldout_families": 3,
+            "heldout_originals": 17,
+            "rank_training_pairs": 5888,
+            "n_gate_examples": 29,
+            "n_positive": 14,
+            "positive_fraction": 0.4827586206896552,
+            "gate_model": "regularized_logistic",
+            "crossfit_fold_details": [
+              {
+                "fold": 0,
+                "train_families": 6,
+                "heldout_families": [
+                  "gcm_h6",
+                  "multiplication"
+                ],
+                "originals_with_pairs": 14,
+                "n_oriented_pairs": 2612,
+                "n_anchor_oriented_pairs": 438
+              },
+              {
+                "fold": 1,
+                "train_families": 6,
+                "heldout_families": [
+                  "alu",
+                  "system"
+                ],
+                "originals_with_pairs": 15,
+                "n_oriented_pairs": 3300,
+                "n_anchor_oriented_pairs": 708
+              },
+              {
+                "fold": 2,
+                "train_families": 4,
+                "heldout_families": [
+                  "cc_n10",
+                  "entangled_states",
+                  "graycode6",
+                  "lpn"
+                ],
+                "originals_with_pairs": 23,
+                "n_oriented_pairs": 5864,
+                "n_anchor_oriented_pairs": 1122
+              }
+            ]
+          },
+          {
+            "objective": "swap_count",
+            "mode": "full",
+            "ranker": "pair_logit",
+            "train_families": 8,
+            "heldout_families": 3,
+            "heldout_originals": 17,
+            "rank_training_pairs": 5888,
+            "n_gate_examples": 29,
+            "n_positive": 9,
+            "positive_fraction": 0.3103448275862069,
+            "gate_model": "regularized_logistic",
+            "crossfit_fold_details": [
+              {
+                "fold": 0,
+                "train_families": 6,
+                "heldout_families": [
+                  "gcm_h6",
+                  "multiplication"
+                ],
+                "originals_with_pairs": 14,
+                "n_oriented_pairs": 2612,
+                "n_anchor_oriented_pairs": 438
+              },
+              {
+                "fold": 1,
+                "train_families": 6,
+                "heldout_families": [
+                  "alu",
+                  "system"
+                ],
+                "originals_with_pairs": 15,
+                "n_oriented_pairs": 3300,
+                "n_anchor_oriented_pairs": 708
+              },
+              {
+                "fold": 2,
+                "train_families": 4,
+                "heldout_families": [
+                  "cc_n10",
+                  "entangled_states",
+                  "graycode6",
+                  "lpn"
+                ],
+                "originals_with_pairs": 23,
+                "n_oriented_pairs": 5864,
+                "n_anchor_oriented_pairs": 1122
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "inner_fold": 1,
+        "training_families": [
+          "cc_n10",
+          "cnt3_5",
+          "entangled_states",
+          "graycode6",
+          "lpn",
+          "rd",
+          "system",
+          "variational"
+        ],
+        "heldout_families": [
+          "alu",
+          "gcm_h6",
+          "multiplication"
+        ],
+        "models": [
+          {
+            "objective": "swap_count",
+            "mode": "compiled",
+            "ranker": "pair_logit",
+            "train_families": 8,
+            "heldout_families": 3,
+            "heldout_originals": 17,
+            "rank_training_pairs": 6418,
+            "n_gate_examples": 27,
+            "n_positive": 9,
+            "positive_fraction": 0.3333333333333333,
+            "gate_model": "regularized_logistic",
+            "crossfit_fold_details": [
+              {
+                "fold": 0,
+                "train_families": 6,
+                "heldout_families": [
+                  "rd",
+                  "variational"
+                ],
+                "originals_with_pairs": 15,
+                "n_oriented_pairs": 4186,
+                "n_anchor_oriented_pairs": 814
+              },
+              {
+                "fold": 1,
+                "train_families": 6,
+                "heldout_families": [
+                  "cnt3_5",
+                  "system"
+                ],
+                "originals_with_pairs": 12,
+                "n_oriented_pairs": 2256,
+                "n_anchor_oriented_pairs": 504
+              },
+              {
+                "fold": 2,
+                "train_families": 4,
+                "heldout_families": [
+                  "cc_n10",
+                  "entangled_states",
+                  "graycode6",
+                  "lpn"
+                ],
+                "originals_with_pairs": 21,
+                "n_oriented_pairs": 6394,
+                "n_anchor_oriented_pairs": 1294
+              }
+            ]
+          },
+          {
+            "objective": "swap_count",
+            "mode": "structural",
+            "ranker": "pair_logit",
+            "train_families": 8,
+            "heldout_families": 3,
+            "heldout_originals": 17,
+            "rank_training_pairs": 6418,
+            "n_gate_examples": 27,
+            "n_positive": 11,
+            "positive_fraction": 0.4074074074074074,
+            "gate_model": "regularized_logistic",
+            "crossfit_fold_details": [
+              {
+                "fold": 0,
+                "train_families": 6,
+                "heldout_families": [
+                  "rd",
+                  "variational"
+                ],
+                "originals_with_pairs": 15,
+                "n_oriented_pairs": 4186,
+                "n_anchor_oriented_pairs": 814
+              },
+              {
+                "fold": 1,
+                "train_families": 6,
+                "heldout_families": [
+                  "cnt3_5",
+                  "system"
+                ],
+                "originals_with_pairs": 12,
+                "n_oriented_pairs": 2256,
+                "n_anchor_oriented_pairs": 504
+              },
+              {
+                "fold": 2,
+                "train_families": 4,
+                "heldout_families": [
+                  "cc_n10",
+                  "entangled_states",
+                  "graycode6",
+                  "lpn"
+                ],
+                "originals_with_pairs": 21,
+                "n_oriented_pairs": 6394,
+                "n_anchor_oriented_pairs": 1294
+              }
+            ]
+          },
+          {
+            "objective": "swap_count",
+            "mode": "full",
+            "ranker": "pair_logit",
+            "train_families": 8,
+            "heldout_families": 3,
+            "heldout_originals": 17,
+            "rank_training_pairs": 6418,
+            "n_gate_examples": 27,
+            "n_positive": 9,
+            "positive_fraction": 0.3333333333333333,
+            "gate_model": "regularized_logistic",
+            "crossfit_fold_details": [
+              {
+                "fold": 0,
+                "train_families": 6,
+                "heldout_families": [
+                  "rd",
+                  "variational"
+                ],
+                "originals_with_pairs": 15,
+                "n_oriented_pairs": 4186,
+                "n_anchor_oriented_pairs": 814
+              },
+              {
+                "fold": 1,
+                "train_families": 6,
+                "heldout_families": [
+                  "cnt3_5",
+                  "system"
+                ],
+                "originals_with_pairs": 12,
+                "n_oriented_pairs": 2256,
+                "n_anchor_oriented_pairs": 504
+              },
+              {
+                "fold": 2,
+                "train_families": 4,
+                "heldout_families": [
+                  "cc_n10",
+                  "entangled_states",
+                  "graycode6",
+                  "lpn"
+                ],
+                "originals_with_pairs": 21,
+                "n_oriented_pairs": 6394,
+                "n_anchor_oriented_pairs": 1294
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "inner_fold": 2,
+        "training_families": [
+          "alu",
+          "cnt3_5",
+          "gcm_h6",
+          "multiplication",
+          "rd",
+          "variational"
+        ],
+        "heldout_families": [
+          "cc_n10",
+          "entangled_states",
+          "graycode6",
+          "lpn",
+          "system"
+        ],
+        "models": [
+          {
+            "objective": "swap_count",
+            "mode": "compiled",
+            "ranker": "pair_logit",
+            "train_families": 6,
+            "heldout_families": 5,
+            "heldout_originals": 17,
+            "rank_training_pairs": 8210,
+            "n_gate_examples": 32,
+            "n_positive": 13,
+            "positive_fraction": 0.40625,
+            "gate_model": "regularized_logistic",
+            "crossfit_fold_details": [
+              {
+                "fold": 0,
+                "train_families": 4,
+                "heldout_families": [
+                  "gcm_h6",
+                  "rd"
+                ],
+                "originals_with_pairs": 20,
+                "n_oriented_pairs": 4904,
+                "n_anchor_oriented_pairs": 1002
+              },
+              {
+                "fold": 1,
+                "train_families": 4,
+                "heldout_families": [
+                  "multiplication",
+                  "variational"
+                ],
+                "originals_with_pairs": 23,
+                "n_oriented_pairs": 6008,
+                "n_anchor_oriented_pairs": 1266
+              },
+              {
+                "fold": 2,
+                "train_families": 4,
+                "heldout_families": [
+                  "alu",
+                  "cnt3_5"
+                ],
+                "originals_with_pairs": 21,
+                "n_oriented_pairs": 5508,
+                "n_anchor_oriented_pairs": 1188
+              }
+            ]
+          },
+          {
+            "objective": "swap_count",
+            "mode": "structural",
+            "ranker": "pair_logit",
+            "train_families": 6,
+            "heldout_families": 5,
+            "heldout_originals": 17,
+            "rank_training_pairs": 8210,
+            "n_gate_examples": 32,
+            "n_positive": 14,
+            "positive_fraction": 0.4375,
+            "gate_model": "regularized_logistic",
+            "crossfit_fold_details": [
+              {
+                "fold": 0,
+                "train_families": 4,
+                "heldout_families": [
+                  "gcm_h6",
+                  "rd"
+                ],
+                "originals_with_pairs": 20,
+                "n_oriented_pairs": 4904,
+                "n_anchor_oriented_pairs": 1002
+              },
+              {
+                "fold": 1,
+                "train_families": 4,
+                "heldout_families": [
+                  "multiplication",
+                  "variational"
+                ],
+                "originals_with_pairs": 23,
+                "n_oriented_pairs": 6008,
+                "n_anchor_oriented_pairs": 1266
+              },
+              {
+                "fold": 2,
+                "train_families": 4,
+                "heldout_families": [
+                  "alu",
+                  "cnt3_5"
+                ],
+                "originals_with_pairs": 21,
+                "n_oriented_pairs": 5508,
+                "n_anchor_oriented_pairs": 1188
+              }
+            ]
+          },
+          {
+            "objective": "swap_count",
+            "mode": "full",
+            "ranker": "pair_logit",
+            "train_families": 6,
+            "heldout_families": 5,
+            "heldout_originals": 17,
+            "rank_training_pairs": 8210,
+            "n_gate_examples": 32,
+            "n_positive": 14,
+            "positive_fraction": 0.4375,
+            "gate_model": "regularized_logistic",
+            "crossfit_fold_details": [
+              {
+                "fold": 0,
+                "train_families": 4,
+                "heldout_families": [
+                  "gcm_h6",
+                  "rd"
+                ],
+                "originals_with_pairs": 20,
+                "n_oriented_pairs": 4904,
+                "n_anchor_oriented_pairs": 1002
+              },
+              {
+                "fold": 1,
+                "train_families": 4,
+                "heldout_families": [
+                  "multiplication",
+                  "variational"
+                ],
+                "originals_with_pairs": 23,
+                "n_oriented_pairs": 6008,
+                "n_anchor_oriented_pairs": 1266
+              },
+              {
+                "fold": 2,
+                "train_families": 4,
+                "heldout_families": [
+                  "alu",
+                  "cnt3_5"
+                ],
+                "originals_with_pairs": 21,
+                "n_oriented_pairs": 5508,
+                "n_anchor_oriented_pairs": 1188
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "objective": "swap_count",
+    "outer_fold": 4,
+    "inner_audits": [
+      {
+        "inner_fold": 0,
+        "training_families": [
+          "cc_n10",
+          "cm",
+          "gcm_h6",
+          "graycode6",
+          "lpn",
+          "multiplication",
+          "symmetry",
+          "system"
+        ],
+        "heldout_families": [
+          "bernstein_vazirani",
+          "cnt3_5",
+          "rd"
+        ],
+        "models": [
+          {
+            "objective": "swap_count",
+            "mode": "compiled",
+            "ranker": "pair_logit",
+            "train_families": 8,
+            "heldout_families": 3,
+            "heldout_originals": 18,
+            "rank_training_pairs": 6926,
+            "n_gate_examples": 32,
+            "n_positive": 12,
+            "positive_fraction": 0.375,
+            "gate_model": "regularized_logistic",
+            "crossfit_fold_details": [
+              {
+                "fold": 0,
+                "train_families": 6,
+                "heldout_families": [
+                  "gcm_h6",
+                  "multiplication"
+                ],
+                "originals_with_pairs": 17,
+                "n_oriented_pairs": 3650,
+                "n_anchor_oriented_pairs": 680
+              },
+              {
+                "fold": 1,
+                "train_families": 6,
+                "heldout_families": [
+                  "cm",
+                  "system"
+                ],
+                "originals_with_pairs": 18,
+                "n_oriented_pairs": 4736,
+                "n_anchor_oriented_pairs": 986
+              },
+              {
+                "fold": 2,
+                "train_families": 4,
+                "heldout_families": [
+                  "cc_n10",
+                  "graycode6",
+                  "lpn",
+                  "symmetry"
+                ],
+                "originals_with_pairs": 23,
+                "n_oriented_pairs": 5466,
+                "n_anchor_oriented_pairs": 1086
+              }
+            ]
+          },
+          {
+            "objective": "swap_count",
+            "mode": "structural",
+            "ranker": "pair_logit",
+            "train_families": 8,
+            "heldout_families": 3,
+            "heldout_originals": 18,
+            "rank_training_pairs": 6926,
+            "n_gate_examples": 32,
+            "n_positive": 20,
+            "positive_fraction": 0.625,
+            "gate_model": "regularized_logistic",
+            "crossfit_fold_details": [
+              {
+                "fold": 0,
+                "train_families": 6,
+                "heldout_families": [
+                  "gcm_h6",
+                  "multiplication"
+                ],
+                "originals_with_pairs": 17,
+                "n_oriented_pairs": 3650,
+                "n_anchor_oriented_pairs": 680
+              },
+              {
+                "fold": 1,
+                "train_families": 6,
+                "heldout_families": [
+                  "cm",
+                  "system"
+                ],
+                "originals_with_pairs": 18,
+                "n_oriented_pairs": 4736,
+                "n_anchor_oriented_pairs": 986
+              },
+              {
+                "fold": 2,
+                "train_families": 4,
+                "heldout_families": [
+                  "cc_n10",
+                  "graycode6",
+                  "lpn",
+                  "symmetry"
+                ],
+                "originals_with_pairs": 23,
+                "n_oriented_pairs": 5466,
+                "n_anchor_oriented_pairs": 1086
+              }
+            ]
+          },
+          {
+            "objective": "swap_count",
+            "mode": "full",
+            "ranker": "pair_logit",
+            "train_families": 8,
+            "heldout_families": 3,
+            "heldout_originals": 18,
+            "rank_training_pairs": 6926,
+            "n_gate_examples": 32,
+            "n_positive": 17,
+            "positive_fraction": 0.53125,
+            "gate_model": "regularized_logistic",
+            "crossfit_fold_details": [
+              {
+                "fold": 0,
+                "train_families": 6,
+                "heldout_families": [
+                  "gcm_h6",
+                  "multiplication"
+                ],
+                "originals_with_pairs": 17,
+                "n_oriented_pairs": 3650,
+                "n_anchor_oriented_pairs": 680
+              },
+              {
+                "fold": 1,
+                "train_families": 6,
+                "heldout_families": [
+                  "cm",
+                  "system"
+                ],
+                "originals_with_pairs": 18,
+                "n_oriented_pairs": 4736,
+                "n_anchor_oriented_pairs": 986
+              },
+              {
+                "fold": 2,
+                "train_families": 4,
+                "heldout_families": [
+                  "cc_n10",
+                  "graycode6",
+                  "lpn",
+                  "symmetry"
+                ],
+                "originals_with_pairs": 23,
+                "n_oriented_pairs": 5466,
+                "n_anchor_oriented_pairs": 1086
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "inner_fold": 1,
+        "training_families": [
+          "bernstein_vazirani",
+          "cc_n10",
+          "cnt3_5",
+          "graycode6",
+          "lpn",
+          "rd",
+          "symmetry",
+          "system"
+        ],
+        "heldout_families": [
+          "cm",
+          "gcm_h6",
+          "multiplication"
+        ],
+        "models": [
+          {
+            "objective": "swap_count",
+            "mode": "compiled",
+            "ranker": "pair_logit",
+            "train_families": 8,
+            "heldout_families": 3,
+            "heldout_originals": 17,
+            "rank_training_pairs": 7854,
+            "n_gate_examples": 30,
+            "n_positive": 10,
+            "positive_fraction": 0.3333333333333333,
+            "gate_model": "regularized_logistic",
+            "crossfit_fold_details": [
+              {
+                "fold": 0,
+                "train_families": 6,
+                "heldout_families": [
+                  "bernstein_vazirani",
+                  "rd"
+                ],
+                "originals_with_pairs": 18,
+                "n_oriented_pairs": 5622,
+                "n_anchor_oriented_pairs": 1092
+              },
+              {
+                "fold": 1,
+                "train_families": 6,
+                "heldout_families": [
+                  "cnt3_5",
+                  "system"
+                ],
+                "originals_with_pairs": 15,
+                "n_oriented_pairs": 3692,
+                "n_anchor_oriented_pairs": 782
+              },
+              {
+                "fold": 2,
+                "train_families": 4,
+                "heldout_families": [
+                  "cc_n10",
+                  "graycode6",
+                  "lpn",
+                  "symmetry"
+                ],
+                "originals_with_pairs": 21,
+                "n_oriented_pairs": 6394,
+                "n_anchor_oriented_pairs": 1294
+              }
+            ]
+          },
+          {
+            "objective": "swap_count",
+            "mode": "structural",
+            "ranker": "pair_logit",
+            "train_families": 8,
+            "heldout_families": 3,
+            "heldout_originals": 17,
+            "rank_training_pairs": 7854,
+            "n_gate_examples": 30,
+            "n_positive": 10,
+            "positive_fraction": 0.3333333333333333,
+            "gate_model": "regularized_logistic",
+            "crossfit_fold_details": [
+              {
+                "fold": 0,
+                "train_families": 6,
+                "heldout_families": [
+                  "bernstein_vazirani",
+                  "rd"
+                ],
+                "originals_with_pairs": 18,
+                "n_oriented_pairs": 5622,
+                "n_anchor_oriented_pairs": 1092
+              },
+              {
+                "fold": 1,
+                "train_families": 6,
+                "heldout_families": [
+                  "cnt3_5",
+                  "system"
+                ],
+                "originals_with_pairs": 15,
+                "n_oriented_pairs": 3692,
+                "n_anchor_oriented_pairs": 782
+              },
+              {
+                "fold": 2,
+                "train_families": 4,
+                "heldout_families": [
+                  "cc_n10",
+                  "graycode6",
+                  "lpn",
+                  "symmetry"
+                ],
+                "originals_with_pairs": 21,
+                "n_oriented_pairs": 6394,
+                "n_anchor_oriented_pairs": 1294
+              }
+            ]
+          },
+          {
+            "objective": "swap_count",
+            "mode": "full",
+            "ranker": "pair_logit",
+            "train_families": 8,
+            "heldout_families": 3,
+            "heldout_originals": 17,
+            "rank_training_pairs": 7854,
+            "n_gate_examples": 30,
+            "n_positive": 10,
+            "positive_fraction": 0.3333333333333333,
+            "gate_model": "regularized_logistic",
+            "crossfit_fold_details": [
+              {
+                "fold": 0,
+                "train_families": 6,
+                "heldout_families": [
+                  "bernstein_vazirani",
+                  "rd"
+                ],
+                "originals_with_pairs": 18,
+                "n_oriented_pairs": 5622,
+                "n_anchor_oriented_pairs": 1092
+              },
+              {
+                "fold": 1,
+                "train_families": 6,
+                "heldout_families": [
+                  "cnt3_5",
+                  "system"
+                ],
+                "originals_with_pairs": 15,
+                "n_oriented_pairs": 3692,
+                "n_anchor_oriented_pairs": 782
+              },
+              {
+                "fold": 2,
+                "train_families": 4,
+                "heldout_families": [
+                  "cc_n10",
+                  "graycode6",
+                  "lpn",
+                  "symmetry"
+                ],
+                "originals_with_pairs": 21,
+                "n_oriented_pairs": 6394,
+                "n_anchor_oriented_pairs": 1294
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "inner_fold": 2,
+        "training_families": [
+          "bernstein_vazirani",
+          "cm",
+          "cnt3_5",
+          "gcm_h6",
+          "multiplication",
+          "rd"
+        ],
+        "heldout_families": [
+          "cc_n10",
+          "graycode6",
+          "lpn",
+          "symmetry",
+          "system"
+        ],
+        "models": [
+          {
+            "objective": "swap_count",
+            "mode": "compiled",
+            "ranker": "pair_logit",
+            "train_families": 6,
+            "heldout_families": 5,
+            "heldout_originals": 17,
+            "rank_training_pairs": 7812,
+            "n_gate_examples": 32,
+            "n_positive": 16,
+            "positive_fraction": 0.5,
+            "gate_model": "regularized_logistic",
+            "crossfit_fold_details": [
+              {
+                "fold": 0,
+                "train_families": 4,
+                "heldout_families": [
+                  "gcm_h6",
+                  "rd"
+                ],
+                "originals_with_pairs": 20,
+                "n_oriented_pairs": 4506,
+                "n_anchor_oriented_pairs": 966
+              },
+              {
+                "fold": 1,
+                "train_families": 4,
+                "heldout_families": [
+                  "bernstein_vazirani",
+                  "multiplication"
+                ],
+                "originals_with_pairs": 23,
+                "n_oriented_pairs": 5610,
+                "n_anchor_oriented_pairs": 1230
+              },
+              {
+                "fold": 2,
+                "train_families": 4,
+                "heldout_families": [
+                  "cm",
+                  "cnt3_5"
+                ],
+                "originals_with_pairs": 21,
+                "n_oriented_pairs": 5508,
+                "n_anchor_oriented_pairs": 1188
+              }
+            ]
+          },
+          {
+            "objective": "swap_count",
+            "mode": "structural",
+            "ranker": "pair_logit",
+            "train_families": 6,
+            "heldout_families": 5,
+            "heldout_originals": 17,
+            "rank_training_pairs": 7812,
+            "n_gate_examples": 32,
+            "n_positive": 16,
+            "positive_fraction": 0.5,
+            "gate_model": "regularized_logistic",
+            "crossfit_fold_details": [
+              {
+                "fold": 0,
+                "train_families": 4,
+                "heldout_families": [
+                  "gcm_h6",
+                  "rd"
+                ],
+                "originals_with_pairs": 20,
+                "n_oriented_pairs": 4506,
+                "n_anchor_oriented_pairs": 966
+              },
+              {
+                "fold": 1,
+                "train_families": 4,
+                "heldout_families": [
+                  "bernstein_vazirani",
+                  "multiplication"
+                ],
+                "originals_with_pairs": 23,
+                "n_oriented_pairs": 5610,
+                "n_anchor_oriented_pairs": 1230
+              },
+              {
+                "fold": 2,
+                "train_families": 4,
+                "heldout_families": [
+                  "cm",
+                  "cnt3_5"
+                ],
+                "originals_with_pairs": 21,
+                "n_oriented_pairs": 5508,
+                "n_anchor_oriented_pairs": 1188
+              }
+            ]
+          },
+          {
+            "objective": "swap_count",
+            "mode": "full",
+            "ranker": "pair_logit",
+            "train_families": 6,
+            "heldout_families": 5,
+            "heldout_originals": 17,
+            "rank_training_pairs": 7812,
+            "n_gate_examples": 32,
+            "n_positive": 16,
+            "positive_fraction": 0.5,
+            "gate_model": "regularized_logistic",
+            "crossfit_fold_details": [
+              {
+                "fold": 0,
+                "train_families": 4,
+                "heldout_families": [
+                  "gcm_h6",
+                  "rd"
+                ],
+                "originals_with_pairs": 20,
+                "n_oriented_pairs": 4506,
+                "n_anchor_oriented_pairs": 966
+              },
+              {
+                "fold": 1,
+                "train_families": 4,
+                "heldout_families": [
+                  "bernstein_vazirani",
+                  "multiplication"
+                ],
+                "originals_with_pairs": 23,
+                "n_oriented_pairs": 5610,
+                "n_anchor_oriented_pairs": 1230
+              },
+              {
+                "fold": 2,
+                "train_families": 4,
+                "heldout_families": [
+                  "cm",
+                  "cnt3_5"
+                ],
+                "originals_with_pairs": 21,
+                "n_oriented_pairs": 5508,
+                "n_anchor_oriented_pairs": 1188
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "objective": "swap_count",
+    "outer_fold": "all_training_for_final_lock",
+    "inner_audits": [
+      {
+        "inner_fold": 0,
+        "training_families": [
+          "bernstein_vazirani",
+          "cc_n10",
+          "cm",
+          "cnt3_5",
+          "gcm_h6",
+          "graycode6",
+          "lpn",
+          "multiplication",
+          "symmetry",
+          "system"
+        ],
+        "heldout_families": [
+          "alu",
+          "entangled_states",
+          "rd",
+          "variational"
+        ],
+        "models": [
+          {
+            "objective": "swap_count",
+            "mode": "compiled",
+            "ranker": "pair_logit",
+            "train_families": 10,
+            "heldout_families": 4,
+            "heldout_originals": 22,
+            "rank_training_pairs": 9064,
+            "n_gate_examples": 38,
+            "n_positive": 11,
+            "positive_fraction": 0.2894736842105263,
+            "gate_model": "regularized_logistic",
+            "crossfit_fold_details": [
+              {
+                "fold": 0,
+                "train_families": 7,
+                "heldout_families": [
+                  "bernstein_vazirani",
+                  "lpn",
+                  "multiplication"
+                ],
+                "originals_with_pairs": 26,
+                "n_oriented_pairs": 6862,
+                "n_anchor_oriented_pairs": 1372
+              },
+              {
+                "fold": 1,
+                "train_families": 6,
+                "heldout_families": [
+                  "cc_n10",
+                  "cnt3_5",
+                  "graycode6",
+                  "system"
+                ],
+                "originals_with_pairs": 23,
+                "n_oriented_pairs": 4902,
+                "n_anchor_oriented_pairs": 1032
+              },
+              {
+                "fold": 2,
+                "train_families": 7,
+                "heldout_families": [
+                  "cm",
+                  "gcm_h6",
+                  "symmetry"
+                ],
+                "originals_with_pairs": 21,
+                "n_oriented_pairs": 6364,
+                "n_anchor_oriented_pairs": 1264
+              }
+            ]
+          },
+          {
+            "objective": "swap_count",
+            "mode": "structural",
+            "ranker": "pair_logit",
+            "train_families": 10,
+            "heldout_families": 4,
+            "heldout_originals": 22,
+            "rank_training_pairs": 9064,
+            "n_gate_examples": 38,
+            "n_positive": 17,
+            "positive_fraction": 0.4473684210526316,
+            "gate_model": "regularized_logistic",
+            "crossfit_fold_details": [
+              {
+                "fold": 0,
+                "train_families": 7,
+                "heldout_families": [
+                  "bernstein_vazirani",
+                  "lpn",
+                  "multiplication"
+                ],
+                "originals_with_pairs": 26,
+                "n_oriented_pairs": 6862,
+                "n_anchor_oriented_pairs": 1372
+              },
+              {
+                "fold": 1,
+                "train_families": 6,
+                "heldout_families": [
+                  "cc_n10",
+                  "cnt3_5",
+                  "graycode6",
+                  "system"
+                ],
+                "originals_with_pairs": 23,
+                "n_oriented_pairs": 4902,
+                "n_anchor_oriented_pairs": 1032
+              },
+              {
+                "fold": 2,
+                "train_families": 7,
+                "heldout_families": [
+                  "cm",
+                  "gcm_h6",
+                  "symmetry"
+                ],
+                "originals_with_pairs": 21,
+                "n_oriented_pairs": 6364,
+                "n_anchor_oriented_pairs": 1264
+              }
+            ]
+          },
+          {
+            "objective": "swap_count",
+            "mode": "full",
+            "ranker": "pair_logit",
+            "train_families": 10,
+            "heldout_families": 4,
+            "heldout_originals": 22,
+            "rank_training_pairs": 9064,
+            "n_gate_examples": 38,
+            "n_positive": 16,
+            "positive_fraction": 0.42105263157894735,
+            "gate_model": "regularized_logistic",
+            "crossfit_fold_details": [
+              {
+                "fold": 0,
+                "train_families": 7,
+                "heldout_families": [
+                  "bernstein_vazirani",
+                  "lpn",
+                  "multiplication"
+                ],
+                "originals_with_pairs": 26,
+                "n_oriented_pairs": 6862,
+                "n_anchor_oriented_pairs": 1372
+              },
+              {
+                "fold": 1,
+                "train_families": 6,
+                "heldout_families": [
+                  "cc_n10",
+                  "cnt3_5",
+                  "graycode6",
+                  "system"
+                ],
+                "originals_with_pairs": 23,
+                "n_oriented_pairs": 4902,
+                "n_anchor_oriented_pairs": 1032
+              },
+              {
+                "fold": 2,
+                "train_families": 7,
+                "heldout_families": [
+                  "cm",
+                  "gcm_h6",
+                  "symmetry"
+                ],
+                "originals_with_pairs": 21,
+                "n_oriented_pairs": 6364,
+                "n_anchor_oriented_pairs": 1264
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "inner_fold": 1,
+        "training_families": [
+          "alu",
+          "cm",
+          "entangled_states",
+          "gcm_h6",
+          "graycode6",
+          "rd",
+          "symmetry",
+          "system",
+          "variational"
+        ],
+        "heldout_families": [
+          "bernstein_vazirani",
+          "cc_n10",
+          "cnt3_5",
+          "lpn",
+          "multiplication"
+        ],
+        "models": [
+          {
+            "objective": "swap_count",
+            "mode": "compiled",
+            "ranker": "pair_logit",
+            "train_families": 9,
+            "heldout_families": 5,
+            "heldout_originals": 22,
+            "rank_training_pairs": 7544,
+            "n_gate_examples": 37,
+            "n_positive": 12,
+            "positive_fraction": 0.32432432432432434,
+            "gate_model": "regularized_logistic",
+            "crossfit_fold_details": [
+              {
+                "fold": 0,
+                "train_families": 6,
+                "heldout_families": [
+                  "alu",
+                  "graycode6",
+                  "rd"
+                ],
+                "originals_with_pairs": 23,
+                "n_oriented_pairs": 4748,
+                "n_anchor_oriented_pairs": 926
+              },
+              {
+                "fold": 1,
+                "train_families": 6,
+                "heldout_families": [
+                  "entangled_states",
+                  "system",
+                  "variational"
+                ],
+                "originals_with_pairs": 28,
+                "n_oriented_pairs": 5496,
+                "n_anchor_oriented_pairs": 1144
+              },
+              {
+                "fold": 2,
+                "train_families": 6,
+                "heldout_families": [
+                  "cm",
+                  "gcm_h6",
+                  "symmetry"
+                ],
+                "originals_with_pairs": 23,
+                "n_oriented_pairs": 4844,
+                "n_anchor_oriented_pairs": 930
+              }
+            ]
+          },
+          {
+            "objective": "swap_count",
+            "mode": "structural",
+            "ranker": "pair_logit",
+            "train_families": 9,
+            "heldout_families": 5,
+            "heldout_originals": 22,
+            "rank_training_pairs": 7544,
+            "n_gate_examples": 37,
+            "n_positive": 13,
+            "positive_fraction": 0.35135135135135137,
+            "gate_model": "regularized_logistic",
+            "crossfit_fold_details": [
+              {
+                "fold": 0,
+                "train_families": 6,
+                "heldout_families": [
+                  "alu",
+                  "graycode6",
+                  "rd"
+                ],
+                "originals_with_pairs": 23,
+                "n_oriented_pairs": 4748,
+                "n_anchor_oriented_pairs": 926
+              },
+              {
+                "fold": 1,
+                "train_families": 6,
+                "heldout_families": [
+                  "entangled_states",
+                  "system",
+                  "variational"
+                ],
+                "originals_with_pairs": 28,
+                "n_oriented_pairs": 5496,
+                "n_anchor_oriented_pairs": 1144
+              },
+              {
+                "fold": 2,
+                "train_families": 6,
+                "heldout_families": [
+                  "cm",
+                  "gcm_h6",
+                  "symmetry"
+                ],
+                "originals_with_pairs": 23,
+                "n_oriented_pairs": 4844,
+                "n_anchor_oriented_pairs": 930
+              }
+            ]
+          },
+          {
+            "objective": "swap_count",
+            "mode": "full",
+            "ranker": "pair_logit",
+            "train_families": 9,
+            "heldout_families": 5,
+            "heldout_originals": 22,
+            "rank_training_pairs": 7544,
+            "n_gate_examples": 37,
+            "n_positive": 13,
+            "positive_fraction": 0.35135135135135137,
+            "gate_model": "regularized_logistic",
+            "crossfit_fold_details": [
+              {
+                "fold": 0,
+                "train_families": 6,
+                "heldout_families": [
+                  "alu",
+                  "graycode6",
+                  "rd"
+                ],
+                "originals_with_pairs": 23,
+                "n_oriented_pairs": 4748,
+                "n_anchor_oriented_pairs": 926
+              },
+              {
+                "fold": 1,
+                "train_families": 6,
+                "heldout_families": [
+                  "entangled_states",
+                  "system",
+                  "variational"
+                ],
+                "originals_with_pairs": 28,
+                "n_oriented_pairs": 5496,
+                "n_anchor_oriented_pairs": 1144
+              },
+              {
+                "fold": 2,
+                "train_families": 6,
+                "heldout_families": [
+                  "cm",
+                  "gcm_h6",
+                  "symmetry"
+                ],
+                "originals_with_pairs": 23,
+                "n_oriented_pairs": 4844,
+                "n_anchor_oriented_pairs": 930
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "inner_fold": 2,
+        "training_families": [
+          "alu",
+          "bernstein_vazirani",
+          "cc_n10",
+          "cnt3_5",
+          "entangled_states",
+          "lpn",
+          "multiplication",
+          "rd",
+          "variational"
+        ],
+        "heldout_families": [
+          "cm",
+          "gcm_h6",
+          "graycode6",
+          "symmetry",
+          "system"
+        ],
+        "models": [
+          {
+            "objective": "swap_count",
+            "mode": "compiled",
+            "ranker": "pair_logit",
+            "train_families": 9,
+            "heldout_families": 5,
+            "heldout_originals": 21,
+            "rank_training_pairs": 7160,
+            "n_gate_examples": 35,
+            "n_positive": 16,
+            "positive_fraction": 0.45714285714285713,
+            "gate_model": "regularized_logistic",
+            "crossfit_fold_details": [
+              {
+                "fold": 0,
+                "train_families": 6,
+                "heldout_families": [
+                  "alu",
+                  "cc_n10",
+                  "rd"
+                ],
+                "originals_with_pairs": 18,
+                "n_oriented_pairs": 4364,
+                "n_anchor_oriented_pairs": 932
+              },
+              {
+                "fold": 1,
+                "train_families": 6,
+                "heldout_families": [
+                  "bernstein_vazirani",
+                  "lpn",
+                  "multiplication"
+                ],
+                "originals_with_pairs": 23,
+                "n_oriented_pairs": 4958,
+                "n_anchor_oriented_pairs": 1044
+              },
+              {
+                "fold": 2,
+                "train_families": 6,
+                "heldout_families": [
+                  "cnt3_5",
+                  "entangled_states",
+                  "variational"
+                ],
+                "originals_with_pairs": 23,
+                "n_oriented_pairs": 4998,
+                "n_anchor_oriented_pairs": 1036
+              }
+            ]
+          },
+          {
+            "objective": "swap_count",
+            "mode": "structural",
+            "ranker": "pair_logit",
+            "train_families": 9,
+            "heldout_families": 5,
+            "heldout_originals": 21,
+            "rank_training_pairs": 7160,
+            "n_gate_examples": 35,
+            "n_positive": 13,
+            "positive_fraction": 0.37142857142857144,
+            "gate_model": "regularized_logistic",
+            "crossfit_fold_details": [
+              {
+                "fold": 0,
+                "train_families": 6,
+                "heldout_families": [
+                  "alu",
+                  "cc_n10",
+                  "rd"
+                ],
+                "originals_with_pairs": 18,
+                "n_oriented_pairs": 4364,
+                "n_anchor_oriented_pairs": 932
+              },
+              {
+                "fold": 1,
+                "train_families": 6,
+                "heldout_families": [
+                  "bernstein_vazirani",
+                  "lpn",
+                  "multiplication"
+                ],
+                "originals_with_pairs": 23,
+                "n_oriented_pairs": 4958,
+                "n_anchor_oriented_pairs": 1044
+              },
+              {
+                "fold": 2,
+                "train_families": 6,
+                "heldout_families": [
+                  "cnt3_5",
+                  "entangled_states",
+                  "variational"
+                ],
+                "originals_with_pairs": 23,
+                "n_oriented_pairs": 4998,
+                "n_anchor_oriented_pairs": 1036
+              }
+            ]
+          },
+          {
+            "objective": "swap_count",
+            "mode": "full",
+            "ranker": "pair_logit",
+            "train_families": 9,
+            "heldout_families": 5,
+            "heldout_originals": 21,
+            "rank_training_pairs": 7160,
+            "n_gate_examples": 35,
+            "n_positive": 14,
+            "positive_fraction": 0.4,
+            "gate_model": "regularized_logistic",
+            "crossfit_fold_details": [
+              {
+                "fold": 0,
+                "train_families": 6,
+                "heldout_families": [
+                  "alu",
+                  "cc_n10",
+                  "rd"
+                ],
+                "originals_with_pairs": 18,
+                "n_oriented_pairs": 4364,
+                "n_anchor_oriented_pairs": 932
+              },
+              {
+                "fold": 1,
+                "train_families": 6,
+                "heldout_families": [
+                  "bernstein_vazirani",
+                  "lpn",
+                  "multiplication"
+                ],
+                "originals_with_pairs": 23,
+                "n_oriented_pairs": 4958,
+                "n_anchor_oriented_pairs": 1044
+              },
+              {
+                "fold": 2,
+                "train_families": 6,
+                "heldout_families": [
+                  "cnt3_5",
+                  "entangled_states",
+                  "variational"
+                ],
+                "originals_with_pairs": 23,
+                "n_oriented_pairs": 4998,
+                "n_anchor_oriented_pairs": 1036
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "objective": "routed_depth",
+    "outer_fold": 0,
+    "inner_audits": [
+      {
+        "inner_fold": 0,
+        "training_families": [
+          "alu",
+          "cnt3_5",
+          "entangled_states",
+          "gcm_h6",
+          "symmetry",
+          "system",
+          "variational"
+        ],
+        "heldout_families": [
+          "bernstein_vazirani",
+          "cc_n10",
+          "cm",
+          "multiplication"
+        ],
+        "models": [
+          {
+            "objective": "routed_depth",
+            "mode": "compiled",
+            "ranker": "pair_logit",
+            "train_families": 7,
+            "heldout_families": 4,
+            "heldout_originals": 18,
+            "rank_training_pairs": 7362,
+            "n_gate_examples": 29,
+            "n_positive": 13,
+            "positive_fraction": 0.4482758620689655,
+            "gate_model": "regularized_logistic",
+            "crossfit_fold_details": [
+              {
+                "fold": 0,
+                "train_families": 5,
+                "heldout_families": [
+                  "cnt3_5",
+                  "system"
+                ],
+                "originals_with_pairs": 17,
+                "n_oriented_pairs": 3158,
+                "n_anchor_oriented_pairs": 642
+              },
+              {
+                "fold": 1,
+                "train_families": 5,
+                "heldout_families": [
+                  "alu",
+                  "symmetry"
+                ],
+                "originals_with_pairs": 18,
+                "n_oriented_pairs": 5316,
+                "n_anchor_oriented_pairs": 1098
+              },
+              {
+                "fold": 2,
+                "train_families": 4,
+                "heldout_families": [
+                  "entangled_states",
+                  "gcm_h6",
+                  "variational"
+                ],
+                "originals_with_pairs": 23,
+                "n_oriented_pairs": 6250,
+                "n_anchor_oriented_pairs": 1232
+              }
+            ]
+          },
+          {
+            "objective": "routed_depth",
+            "mode": "structural",
+            "ranker": "pair_logit",
+            "train_families": 7,
+            "heldout_families": 4,
+            "heldout_originals": 18,
+            "rank_training_pairs": 7362,
+            "n_gate_examples": 29,
+            "n_positive": 17,
+            "positive_fraction": 0.5862068965517241,
+            "gate_model": "regularized_logistic",
+            "crossfit_fold_details": [
+              {
+                "fold": 0,
+                "train_families": 5,
+                "heldout_families": [
+                  "cnt3_5",
+                  "system"
+                ],
+                "originals_with_pairs": 17,
+                "n_oriented_pairs": 3158,
+                "n_anchor_oriented_pairs": 642
+              },
+              {
+                "fold": 1,
+                "train_families": 5,
+                "heldout_families": [
+                  "alu",
+                  "symmetry"
+                ],
+                "originals_with_pairs": 18,
+                "n_oriented_pairs": 5316,
+                "n_anchor_oriented_pairs": 1098
+              },
+              {
+                "fold": 2,
+                "train_families": 4,
+                "heldout_families": [
+                  "entangled_states",
+                  "gcm_h6",
+                  "variational"
+                ],
+                "originals_with_pairs": 23,
+                "n_oriented_pairs": 6250,
+                "n_anchor_oriented_pairs": 1232
+              }
+            ]
+          },
+          {
+            "objective": "routed_depth",
+            "mode": "full",
+            "ranker": "pair_logit",
+            "train_families": 7,
+            "heldout_families": 4,
+            "heldout_originals": 18,
+            "rank_training_pairs": 7362,
+            "n_gate_examples": 29,
+            "n_positive": 17,
+            "positive_fraction": 0.5862068965517241,
+            "gate_model": "regularized_logistic",
+            "crossfit_fold_details": [
+              {
+                "fold": 0,
+                "train_families": 5,
+                "heldout_families": [
+                  "cnt3_5",
+                  "system"
+                ],
+                "originals_with_pairs": 17,
+                "n_oriented_pairs": 3158,
+                "n_anchor_oriented_pairs": 642
+              },
+              {
+                "fold": 1,
+                "train_families": 5,
+                "heldout_families": [
+                  "alu",
+                  "symmetry"
+                ],
+                "originals_with_pairs": 18,
+                "n_oriented_pairs": 5316,
+                "n_anchor_oriented_pairs": 1098
+              },
+              {
+                "fold": 2,
+                "train_families": 4,
+                "heldout_families": [
+                  "entangled_states",
+                  "gcm_h6",
+                  "variational"
+                ],
+                "originals_with_pairs": 23,
+                "n_oriented_pairs": 6250,
+                "n_anchor_oriented_pairs": 1232
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "inner_fold": 1,
+        "training_families": [
+          "bernstein_vazirani",
+          "cc_n10",
+          "cm",
+          "cnt3_5",
+          "gcm_h6",
+          "multiplication",
+          "symmetry",
+          "variational"
+        ],
+        "heldout_families": [
+          "alu",
+          "entangled_states",
+          "system"
+        ],
+        "models": [
+          {
+            "objective": "routed_depth",
+            "mode": "compiled",
+            "ranker": "pair_logit",
+            "train_families": 8,
+            "heldout_families": 3,
+            "heldout_originals": 17,
+            "rank_training_pairs": 7106,
+            "n_gate_examples": 29,
+            "n_positive": 13,
+            "positive_fraction": 0.4482758620689655,
+            "gate_model": "regularized_logistic",
+            "crossfit_fold_details": [
+              {
+                "fold": 0,
+                "train_families": 6,
+                "heldout_families": [
+                  "bernstein_vazirani",
+                  "multiplication"
+                ],
+                "originals_with_pairs": 20,
+                "n_oriented_pairs": 4864,
+                "n_anchor_oriented_pairs": 1048
+              },
+              {
+                "fold": 1,
+                "train_families": 5,
+                "heldout_families": [
+                  "cc_n10",
+                  "cm",
+                  "symmetry"
+                ],
+                "originals_with_pairs": 18,
+                "n_oriented_pairs": 5466,
+                "n_anchor_oriented_pairs": 1206
+              },
+              {
+                "fold": 2,
+                "train_families": 5,
+                "heldout_families": [
+                  "cnt3_5",
+                  "gcm_h6",
+                  "variational"
+                ],
+                "originals_with_pairs": 20,
+                "n_oriented_pairs": 3882,
+                "n_anchor_oriented_pairs": 846
+              }
+            ]
+          },
+          {
+            "objective": "routed_depth",
+            "mode": "structural",
+            "ranker": "pair_logit",
+            "train_families": 8,
+            "heldout_families": 3,
+            "heldout_originals": 17,
+            "rank_training_pairs": 7106,
+            "n_gate_examples": 29,
+            "n_positive": 14,
+            "positive_fraction": 0.4827586206896552,
+            "gate_model": "regularized_logistic",
+            "crossfit_fold_details": [
+              {
+                "fold": 0,
+                "train_families": 6,
+                "heldout_families": [
+                  "bernstein_vazirani",
+                  "multiplication"
+                ],
+                "originals_with_pairs": 20,
+                "n_oriented_pairs": 4864,
+                "n_anchor_oriented_pairs": 1048
+              },
+              {
+                "fold": 1,
+                "train_families": 5,
+                "heldout_families": [
+                  "cc_n10",
+                  "cm",
+                  "symmetry"
+                ],
+                "originals_with_pairs": 18,
+                "n_oriented_pairs": 5466,
+                "n_anchor_oriented_pairs": 1206
+              },
+              {
+                "fold": 2,
+                "train_families": 5,
+                "heldout_families": [
+                  "cnt3_5",
+                  "gcm_h6",
+                  "variational"
+                ],
+                "originals_with_pairs": 20,
+                "n_oriented_pairs": 3882,
+                "n_anchor_oriented_pairs": 846
+              }
+            ]
+          },
+          {
+            "objective": "routed_depth",
+            "mode": "full",
+            "ranker": "pair_logit",
+            "train_families": 8,
+            "heldout_families": 3,
+            "heldout_originals": 17,
+            "rank_training_pairs": 7106,
+            "n_gate_examples": 29,
+            "n_positive": 12,
+            "positive_fraction": 0.41379310344827586,
+            "gate_model": "regularized_logistic",
+            "crossfit_fold_details": [
+              {
+                "fold": 0,
+                "train_families": 6,
+                "heldout_families": [
+                  "bernstein_vazirani",
+                  "multiplication"
+                ],
+                "originals_with_pairs": 20,
+                "n_oriented_pairs": 4864,
+                "n_anchor_oriented_pairs": 1048
+              },
+              {
+                "fold": 1,
+                "train_families": 5,
+                "heldout_families": [
+                  "cc_n10",
+                  "cm",
+                  "symmetry"
+                ],
+                "originals_with_pairs": 18,
+                "n_oriented_pairs": 5466,
+                "n_anchor_oriented_pairs": 1206
+              },
+              {
+                "fold": 2,
+                "train_families": 5,
+                "heldout_families": [
+                  "cnt3_5",
+                  "gcm_h6",
+                  "variational"
+                ],
+                "originals_with_pairs": 20,
+                "n_oriented_pairs": 3882,
+                "n_anchor_oriented_pairs": 846
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "inner_fold": 2,
+        "training_families": [
+          "alu",
+          "bernstein_vazirani",
+          "cc_n10",
+          "cm",
+          "entangled_states",
+          "multiplication",
+          "system"
+        ],
+        "heldout_families": [
+          "cnt3_5",
+          "gcm_h6",
+          "symmetry",
+          "variational"
+        ],
+        "models": [
+          {
+            "objective": "routed_depth",
+            "mode": "compiled",
+            "ranker": "pair_logit",
+            "train_families": 7,
+            "heldout_families": 4,
+            "heldout_originals": 17,
+            "rank_training_pairs": 5084,
+            "n_gate_examples": 28,
+            "n_positive": 16,
+            "positive_fraction": 0.5714285714285714,
+            "gate_model": "regularized_logistic",
+            "crossfit_fold_details": [
+              {
+                "fold": 0,
+                "train_families": 5,
+                "heldout_families": [
+                  "bernstein_vazirani",
+                  "multiplication"
+                ],
+                "originals_with_pairs": 19,
+                "n_oriented_pairs": 2842,
+                "n_anchor_oriented_pairs": 530
+              },
+              {
+                "fold": 1,
+                "train_families": 4,
+                "heldout_families": [
+                  "cc_n10",
+                  "cm",
+                  "system"
+                ],
+                "originals_with_pairs": 17,
+                "n_oriented_pairs": 2856,
+                "n_anchor_oriented_pairs": 610
+              },
+              {
+                "fold": 2,
+                "train_families": 5,
+                "heldout_families": [
+                  "alu",
+                  "entangled_states"
+                ],
+                "originals_with_pairs": 20,
+                "n_oriented_pairs": 4470,
+                "n_anchor_oriented_pairs": 924
+              }
+            ]
+          },
+          {
+            "objective": "routed_depth",
+            "mode": "structural",
+            "ranker": "pair_logit",
+            "train_families": 7,
+            "heldout_families": 4,
+            "heldout_originals": 17,
+            "rank_training_pairs": 5084,
+            "n_gate_examples": 28,
+            "n_positive": 8,
+            "positive_fraction": 0.2857142857142857,
+            "gate_model": "regularized_logistic",
+            "crossfit_fold_details": [
+              {
+                "fold": 0,
+                "train_families": 5,
+                "heldout_families": [
+                  "bernstein_vazirani",
+                  "multiplication"
+                ],
+                "originals_with_pairs": 19,
+                "n_oriented_pairs": 2842,
+                "n_anchor_oriented_pairs": 530
+              },
+              {
+                "fold": 1,
+                "train_families": 4,
+                "heldout_families": [
+                  "cc_n10",
+                  "cm",
+                  "system"
+                ],
+                "originals_with_pairs": 17,
+                "n_oriented_pairs": 2856,
+                "n_anchor_oriented_pairs": 610
+              },
+              {
+                "fold": 2,
+                "train_families": 5,
+                "heldout_families": [
+                  "alu",
+                  "entangled_states"
+                ],
+                "originals_with_pairs": 20,
+                "n_oriented_pairs": 4470,
+                "n_anchor_oriented_pairs": 924
+              }
+            ]
+          },
+          {
+            "objective": "routed_depth",
+            "mode": "full",
+            "ranker": "pair_logit",
+            "train_families": 7,
+            "heldout_families": 4,
+            "heldout_originals": 17,
+            "rank_training_pairs": 5084,
+            "n_gate_examples": 28,
+            "n_positive": 16,
+            "positive_fraction": 0.5714285714285714,
+            "gate_model": "regularized_logistic",
+            "crossfit_fold_details": [
+              {
+                "fold": 0,
+                "train_families": 5,
+                "heldout_families": [
+                  "bernstein_vazirani",
+                  "multiplication"
+                ],
+                "originals_with_pairs": 19,
+                "n_oriented_pairs": 2842,
+                "n_anchor_oriented_pairs": 530
+              },
+              {
+                "fold": 1,
+                "train_families": 4,
+                "heldout_families": [
+                  "cc_n10",
+                  "cm",
+                  "system"
+                ],
+                "originals_with_pairs": 17,
+                "n_oriented_pairs": 2856,
+                "n_anchor_oriented_pairs": 610
+              },
+              {
+                "fold": 2,
+                "train_families": 5,
+                "heldout_families": [
+                  "alu",
+                  "entangled_states"
+                ],
+                "originals_with_pairs": 20,
+                "n_oriented_pairs": 4470,
+                "n_anchor_oriented_pairs": 924
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "objective": "routed_depth",
+    "outer_fold": 1,
+    "inner_audits": [
+      {
+        "inner_fold": 0,
+        "training_families": [
+          "alu",
+          "cnt3_5",
+          "entangled_states",
+          "lpn",
+          "symmetry",
+          "system",
+          "variational"
+        ],
+        "heldout_families": [
+          "bernstein_vazirani",
+          "cm",
+          "graycode6",
+          "rd"
+        ],
+        "models": [
+          {
+            "objective": "routed_depth",
+            "mode": "compiled",
+            "ranker": "pair_logit",
+            "train_families": 7,
+            "heldout_families": 4,
+            "heldout_originals": 18,
+            "rank_training_pairs": 7198,
+            "n_gate_examples": 29,
+            "n_positive": 16,
+            "positive_fraction": 0.5517241379310345,
+            "gate_model": "regularized_logistic",
+            "crossfit_fold_details": [
+              {
+                "fold": 0,
+                "train_families": 5,
+                "heldout_families": [
+                  "cnt3_5",
+                  "system"
+                ],
+                "originals_with_pairs": 17,
+                "n_oriented_pairs": 2994,
+                "n_anchor_oriented_pairs": 478
+              },
+              {
+                "fold": 1,
+                "train_families": 5,
+                "heldout_families": [
+                  "alu",
+                  "symmetry"
+                ],
+                "originals_with_pairs": 18,
+                "n_oriented_pairs": 5152,
+                "n_anchor_oriented_pairs": 934
+              },
+              {
+                "fold": 2,
+                "train_families": 4,
+                "heldout_families": [
+                  "entangled_states",
+                  "lpn",
+                  "variational"
+                ],
+                "originals_with_pairs": 23,
+                "n_oriented_pairs": 6250,
+                "n_anchor_oriented_pairs": 1232
+              }
+            ]
+          },
+          {
+            "objective": "routed_depth",
+            "mode": "structural",
+            "ranker": "pair_logit",
+            "train_families": 7,
+            "heldout_families": 4,
+            "heldout_originals": 18,
+            "rank_training_pairs": 7198,
+            "n_gate_examples": 29,
+            "n_positive": 17,
+            "positive_fraction": 0.5862068965517241,
+            "gate_model": "regularized_logistic",
+            "crossfit_fold_details": [
+              {
+                "fold": 0,
+                "train_families": 5,
+                "heldout_families": [
+                  "cnt3_5",
+                  "system"
+                ],
+                "originals_with_pairs": 17,
+                "n_oriented_pairs": 2994,
+                "n_anchor_oriented_pairs": 478
+              },
+              {
+                "fold": 1,
+                "train_families": 5,
+                "heldout_families": [
+                  "alu",
+                  "symmetry"
+                ],
+                "originals_with_pairs": 18,
+                "n_oriented_pairs": 5152,
+                "n_anchor_oriented_pairs": 934
+              },
+              {
+                "fold": 2,
+                "train_families": 4,
+                "heldout_families": [
+                  "entangled_states",
+                  "lpn",
+                  "variational"
+                ],
+                "originals_with_pairs": 23,
+                "n_oriented_pairs": 6250,
+                "n_anchor_oriented_pairs": 1232
+              }
+            ]
+          },
+          {
+            "objective": "routed_depth",
+            "mode": "full",
+            "ranker": "pair_logit",
+            "train_families": 7,
+            "heldout_families": 4,
+            "heldout_originals": 18,
+            "rank_training_pairs": 7198,
+            "n_gate_examples": 29,
+            "n_positive": 20,
+            "positive_fraction": 0.6896551724137931,
+            "gate_model": "regularized_logistic",
+            "crossfit_fold_details": [
+              {
+                "fold": 0,
+                "train_families": 5,
+                "heldout_families": [
+                  "cnt3_5",
+                  "system"
+                ],
+                "originals_with_pairs": 17,
+                "n_oriented_pairs": 2994,
+                "n_anchor_oriented_pairs": 478
+              },
+              {
+                "fold": 1,
+                "train_families": 5,
+                "heldout_families": [
+                  "alu",
+                  "symmetry"
+                ],
+                "originals_with_pairs": 18,
+                "n_oriented_pairs": 5152,
+                "n_anchor_oriented_pairs": 934
+              },
+              {
+                "fold": 2,
+                "train_families": 4,
+                "heldout_families": [
+                  "entangled_states",
+                  "lpn",
+                  "variational"
+                ],
+                "originals_with_pairs": 23,
+                "n_oriented_pairs": 6250,
+                "n_anchor_oriented_pairs": 1232
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "inner_fold": 1,
+        "training_families": [
+          "bernstein_vazirani",
+          "cm",
+          "cnt3_5",
+          "graycode6",
+          "lpn",
+          "rd",
+          "symmetry",
+          "variational"
+        ],
+        "heldout_families": [
+          "alu",
+          "entangled_states",
+          "system"
+        ],
+        "models": [
+          {
+            "objective": "routed_depth",
+            "mode": "compiled",
+            "ranker": "pair_logit",
+            "train_families": 8,
+            "heldout_families": 3,
+            "heldout_originals": 17,
+            "rank_training_pairs": 6930,
+            "n_gate_examples": 29,
+            "n_positive": 18,
+            "positive_fraction": 0.6206896551724138,
+            "gate_model": "regularized_logistic",
+            "crossfit_fold_details": [
+              {
+                "fold": 0,
+                "train_families": 6,
+                "heldout_families": [
+                  "bernstein_vazirani",
+                  "rd"
+                ],
+                "originals_with_pairs": 20,
+                "n_oriented_pairs": 4700,
+                "n_anchor_oriented_pairs": 884
+              },
+              {
+                "fold": 1,
+                "train_families": 5,
+                "heldout_families": [
+                  "cm",
+                  "graycode6",
+                  "symmetry"
+                ],
+                "originals_with_pairs": 18,
+                "n_oriented_pairs": 5290,
+                "n_anchor_oriented_pairs": 1030
+              },
+              {
+                "fold": 2,
+                "train_families": 5,
+                "heldout_families": [
+                  "cnt3_5",
+                  "lpn",
+                  "variational"
+                ],
+                "originals_with_pairs": 20,
+                "n_oriented_pairs": 3870,
+                "n_anchor_oriented_pairs": 834
+              }
+            ]
+          },
+          {
+            "objective": "routed_depth",
+            "mode": "structural",
+            "ranker": "pair_logit",
+            "train_families": 8,
+            "heldout_families": 3,
+            "heldout_originals": 17,
+            "rank_training_pairs": 6930,
+            "n_gate_examples": 29,
+            "n_positive": 13,
+            "positive_fraction": 0.4482758620689655,
+            "gate_model": "regularized_logistic",
+            "crossfit_fold_details": [
+              {
+                "fold": 0,
+                "train_families": 6,
+                "heldout_families": [
+                  "bernstein_vazirani",
+                  "rd"
+                ],
+                "originals_with_pairs": 20,
+                "n_oriented_pairs": 4700,
+                "n_anchor_oriented_pairs": 884
+              },
+              {
+                "fold": 1,
+                "train_families": 5,
+                "heldout_families": [
+                  "cm",
+                  "graycode6",
+                  "symmetry"
+                ],
+                "originals_with_pairs": 18,
+                "n_oriented_pairs": 5290,
+                "n_anchor_oriented_pairs": 1030
+              },
+              {
+                "fold": 2,
+                "train_families": 5,
+                "heldout_families": [
+                  "cnt3_5",
+                  "lpn",
+                  "variational"
+                ],
+                "originals_with_pairs": 20,
+                "n_oriented_pairs": 3870,
+                "n_anchor_oriented_pairs": 834
+              }
+            ]
+          },
+          {
+            "objective": "routed_depth",
+            "mode": "full",
+            "ranker": "pair_logit",
+            "train_families": 8,
+            "heldout_families": 3,
+            "heldout_originals": 17,
+            "rank_training_pairs": 6930,
+            "n_gate_examples": 29,
+            "n_positive": 19,
+            "positive_fraction": 0.6551724137931034,
+            "gate_model": "regularized_logistic",
+            "crossfit_fold_details": [
+              {
+                "fold": 0,
+                "train_families": 6,
+                "heldout_families": [
+                  "bernstein_vazirani",
+                  "rd"
+                ],
+                "originals_with_pairs": 20,
+                "n_oriented_pairs": 4700,
+                "n_anchor_oriented_pairs": 884
+              },
+              {
+                "fold": 1,
+                "train_families": 5,
+                "heldout_families": [
+                  "cm",
+                  "graycode6",
+                  "symmetry"
+                ],
+                "originals_with_pairs": 18,
+                "n_oriented_pairs": 5290,
+                "n_anchor_oriented_pairs": 1030
+              },
+              {
+                "fold": 2,
+                "train_families": 5,
+                "heldout_families": [
+                  "cnt3_5",
+                  "lpn",
+                  "variational"
+                ],
+                "originals_with_pairs": 20,
+                "n_oriented_pairs": 3870,
+                "n_anchor_oriented_pairs": 834
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "inner_fold": 2,
+        "training_families": [
+          "alu",
+          "bernstein_vazirani",
+          "cm",
+          "entangled_states",
+          "graycode6",
+          "rd",
+          "system"
+        ],
+        "heldout_families": [
+          "cnt3_5",
+          "lpn",
+          "symmetry",
+          "variational"
+        ],
+        "models": [
+          {
+            "objective": "routed_depth",
+            "mode": "compiled",
+            "ranker": "pair_logit",
+            "train_families": 7,
+            "heldout_families": 4,
+            "heldout_originals": 17,
+            "rank_training_pairs": 5072,
+            "n_gate_examples": 28,
+            "n_positive": 21,
+            "positive_fraction": 0.75,
+            "gate_model": "regularized_logistic",
+            "crossfit_fold_details": [
+              {
+                "fold": 0,
+                "train_families": 5,
+                "heldout_families": [
+                  "bernstein_vazirani",
+                  "rd"
+                ],
+                "originals_with_pairs": 19,
+                "n_oriented_pairs": 2842,
+                "n_anchor_oriented_pairs": 530
+              },
+              {
+                "fold": 1,
+                "train_families": 4,
+                "heldout_families": [
+                  "cm",
+                  "graycode6",
+                  "system"
+                ],
+                "originals_with_pairs": 17,
+                "n_oriented_pairs": 2844,
+                "n_anchor_oriented_pairs": 598
+              },
+              {
+                "fold": 2,
+                "train_families": 5,
+                "heldout_families": [
+                  "alu",
+                  "entangled_states"
+                ],
+                "originals_with_pairs": 20,
+                "n_oriented_pairs": 4458,
+                "n_anchor_oriented_pairs": 912
+              }
+            ]
+          },
+          {
+            "objective": "routed_depth",
+            "mode": "structural",
+            "ranker": "pair_logit",
+            "train_families": 7,
+            "heldout_families": 4,
+            "heldout_originals": 17,
+            "rank_training_pairs": 5072,
+            "n_gate_examples": 28,
+            "n_positive": 18,
+            "positive_fraction": 0.6428571428571429,
+            "gate_model": "regularized_logistic",
+            "crossfit_fold_details": [
+              {
+                "fold": 0,
+                "train_families": 5,
+                "heldout_families": [
+                  "bernstein_vazirani",
+                  "rd"
+                ],
+                "originals_with_pairs": 19,
+                "n_oriented_pairs": 2842,
+                "n_anchor_oriented_pairs": 530
+              },
+              {
+                "fold": 1,
+                "train_families": 4,
+                "heldout_families": [
+                  "cm",
+                  "graycode6",
+                  "system"
+                ],
+                "originals_with_pairs": 17,
+                "n_oriented_pairs": 2844,
+                "n_anchor_oriented_pairs": 598
+              },
+              {
+                "fold": 2,
+                "train_families": 5,
+                "heldout_families": [
+                  "alu",
+                  "entangled_states"
+                ],
+                "originals_with_pairs": 20,
+                "n_oriented_pairs": 4458,
+                "n_anchor_oriented_pairs": 912
+              }
+            ]
+          },
+          {
+            "objective": "routed_depth",
+            "mode": "full",
+            "ranker": "pair_logit",
+            "train_families": 7,
+            "heldout_families": 4,
+            "heldout_originals": 17,
+            "rank_training_pairs": 5072,
+            "n_gate_examples": 28,
+            "n_positive": 19,
+            "positive_fraction": 0.6785714285714286,
+            "gate_model": "regularized_logistic",
+            "crossfit_fold_details": [
+              {
+                "fold": 0,
+                "train_families": 5,
+                "heldout_families": [
+                  "bernstein_vazirani",
+                  "rd"
+                ],
+                "originals_with_pairs": 19,
+                "n_oriented_pairs": 2842,
+                "n_anchor_oriented_pairs": 530
+              },
+              {
+                "fold": 1,
+                "train_families": 4,
+                "heldout_families": [
+                  "cm",
+                  "graycode6",
+                  "system"
+                ],
+                "originals_with_pairs": 17,
+                "n_oriented_pairs": 2844,
+                "n_anchor_oriented_pairs": 598
+              },
+              {
+                "fold": 2,
+                "train_families": 5,
+                "heldout_families": [
+                  "alu",
+                  "entangled_states"
+                ],
+                "originals_with_pairs": 20,
+                "n_oriented_pairs": 4458,
+                "n_anchor_oriented_pairs": 912
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "objective": "routed_depth",
+    "outer_fold": 2,
+    "inner_audits": [
+      {
+        "inner_fold": 0,
+        "training_families": [
+          "alu",
+          "bernstein_vazirani",
+          "cc_n10",
+          "entangled_states",
+          "lpn",
+          "multiplication",
+          "symmetry",
+          "variational"
+        ],
+        "heldout_families": [
+          "cm",
+          "gcm_h6",
+          "graycode6",
+          "rd"
+        ],
+        "models": [
+          {
+            "objective": "routed_depth",
+            "mode": "compiled",
+            "ranker": "pair_logit",
+            "train_families": 8,
+            "heldout_families": 4,
+            "heldout_originals": 18,
+            "rank_training_pairs": 5236,
+            "n_gate_examples": 26,
+            "n_positive": 13,
+            "positive_fraction": 0.5,
+            "gate_model": "regularized_logistic",
+            "crossfit_fold_details": [
+              {
+                "fold": 0,
+                "train_families": 6,
+                "heldout_families": [
+                  "bernstein_vazirani",
+                  "multiplication"
+                ],
+                "originals_with_pairs": 17,
+                "n_oriented_pairs": 2994,
+                "n_anchor_oriented_pairs": 478
+              },
+              {
+                "fold": 1,
+                "train_families": 5,
+                "heldout_families": [
+                  "alu",
+                  "cc_n10",
+                  "symmetry"
+                ],
+                "originals_with_pairs": 15,
+                "n_oriented_pairs": 3190,
+                "n_anchor_oriented_pairs": 592
+              },
+              {
+                "fold": 2,
+                "train_families": 5,
+                "heldout_families": [
+                  "entangled_states",
+                  "lpn",
+                  "variational"
+                ],
+                "originals_with_pairs": 20,
+                "n_oriented_pairs": 4288,
+                "n_anchor_oriented_pairs": 890
+              }
+            ]
+          },
+          {
+            "objective": "routed_depth",
+            "mode": "structural",
+            "ranker": "pair_logit",
+            "train_families": 8,
+            "heldout_families": 4,
+            "heldout_originals": 18,
+            "rank_training_pairs": 5236,
+            "n_gate_examples": 26,
+            "n_positive": 13,
+            "positive_fraction": 0.5,
+            "gate_model": "regularized_logistic",
+            "crossfit_fold_details": [
+              {
+                "fold": 0,
+                "train_families": 6,
+                "heldout_families": [
+                  "bernstein_vazirani",
+                  "multiplication"
+                ],
+                "originals_with_pairs": 17,
+                "n_oriented_pairs": 2994,
+                "n_anchor_oriented_pairs": 478
+              },
+              {
+                "fold": 1,
+                "train_families": 5,
+                "heldout_families": [
+                  "alu",
+                  "cc_n10",
+                  "symmetry"
+                ],
+                "originals_with_pairs": 15,
+                "n_oriented_pairs": 3190,
+                "n_anchor_oriented_pairs": 592
+              },
+              {
+                "fold": 2,
+                "train_families": 5,
+                "heldout_families": [
+                  "entangled_states",
+                  "lpn",
+                  "variational"
+                ],
+                "originals_with_pairs": 20,
+                "n_oriented_pairs": 4288,
+                "n_anchor_oriented_pairs": 890
+              }
+            ]
+          },
+          {
+            "objective": "routed_depth",
+            "mode": "full",
+            "ranker": "pair_logit",
+            "train_families": 8,
+            "heldout_families": 4,
+            "heldout_originals": 18,
+            "rank_training_pairs": 5236,
+            "n_gate_examples": 26,
+            "n_positive": 13,
+            "positive_fraction": 0.5,
+            "gate_model": "regularized_logistic",
+            "crossfit_fold_details": [
+              {
+                "fold": 0,
+                "train_families": 6,
+                "heldout_families": [
+                  "bernstein_vazirani",
+                  "multiplication"
+                ],
+                "originals_with_pairs": 17,
+                "n_oriented_pairs": 2994,
+                "n_anchor_oriented_pairs": 478
+              },
+              {
+                "fold": 1,
+                "train_families": 5,
+                "heldout_families": [
+                  "alu",
+                  "cc_n10",
+                  "symmetry"
+                ],
+                "originals_with_pairs": 15,
+                "n_oriented_pairs": 3190,
+                "n_anchor_oriented_pairs": 592
+              },
+              {
+                "fold": 2,
+                "train_families": 5,
+                "heldout_families": [
+                  "entangled_states",
+                  "lpn",
+                  "variational"
+                ],
+                "originals_with_pairs": 20,
+                "n_oriented_pairs": 4288,
+                "n_anchor_oriented_pairs": 890
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "inner_fold": 1,
+        "training_families": [
+          "cm",
+          "entangled_states",
+          "gcm_h6",
+          "graycode6",
+          "lpn",
+          "rd",
+          "symmetry",
+          "variational"
+        ],
+        "heldout_families": [
+          "alu",
+          "bernstein_vazirani",
+          "cc_n10",
+          "multiplication"
+        ],
+        "models": [
+          {
+            "objective": "routed_depth",
+            "mode": "compiled",
+            "ranker": "pair_logit",
+            "train_families": 8,
+            "heldout_families": 4,
+            "heldout_originals": 18,
+            "rank_training_pairs": 5894,
+            "n_gate_examples": 29,
+            "n_positive": 19,
+            "positive_fraction": 0.6551724137931034,
+            "gate_model": "regularized_logistic",
+            "crossfit_fold_details": [
+              {
+                "fold": 0,
+                "train_families": 6,
+                "heldout_families": [
+                  "gcm_h6",
+                  "rd"
+                ],
+                "originals_with_pairs": 17,
+                "n_oriented_pairs": 2588,
+                "n_anchor_oriented_pairs": 434
+              },
+              {
+                "fold": 1,
+                "train_families": 5,
+                "heldout_families": [
+                  "cm",
+                  "graycode6",
+                  "symmetry"
+                ],
+                "originals_with_pairs": 18,
+                "n_oriented_pairs": 4254,
+                "n_anchor_oriented_pairs": 816
+              },
+              {
+                "fold": 2,
+                "train_families": 5,
+                "heldout_families": [
+                  "entangled_states",
+                  "lpn",
+                  "variational"
+                ],
+                "originals_with_pairs": 23,
+                "n_oriented_pairs": 4946,
+                "n_anchor_oriented_pairs": 1070
+              }
+            ]
+          },
+          {
+            "objective": "routed_depth",
+            "mode": "structural",
+            "ranker": "pair_logit",
+            "train_families": 8,
+            "heldout_families": 4,
+            "heldout_originals": 18,
+            "rank_training_pairs": 5894,
+            "n_gate_examples": 29,
+            "n_positive": 8,
+            "positive_fraction": 0.27586206896551724,
+            "gate_model": "regularized_logistic",
+            "crossfit_fold_details": [
+              {
+                "fold": 0,
+                "train_families": 6,
+                "heldout_families": [
+                  "gcm_h6",
+                  "rd"
+                ],
+                "originals_with_pairs": 17,
+                "n_oriented_pairs": 2588,
+                "n_anchor_oriented_pairs": 434
+              },
+              {
+                "fold": 1,
+                "train_families": 5,
+                "heldout_families": [
+                  "cm",
+                  "graycode6",
+                  "symmetry"
+                ],
+                "originals_with_pairs": 18,
+                "n_oriented_pairs": 4254,
+                "n_anchor_oriented_pairs": 816
+              },
+              {
+                "fold": 2,
+                "train_families": 5,
+                "heldout_families": [
+                  "entangled_states",
+                  "lpn",
+                  "variational"
+                ],
+                "originals_with_pairs": 23,
+                "n_oriented_pairs": 4946,
+                "n_anchor_oriented_pairs": 1070
+              }
+            ]
+          },
+          {
+            "objective": "routed_depth",
+            "mode": "full",
+            "ranker": "pair_logit",
+            "train_families": 8,
+            "heldout_families": 4,
+            "heldout_originals": 18,
+            "rank_training_pairs": 5894,
+            "n_gate_examples": 29,
+            "n_positive": 14,
+            "positive_fraction": 0.4827586206896552,
+            "gate_model": "regularized_logistic",
+            "crossfit_fold_details": [
+              {
+                "fold": 0,
+                "train_families": 6,
+                "heldout_families": [
+                  "gcm_h6",
+                  "rd"
+                ],
+                "originals_with_pairs": 17,
+                "n_oriented_pairs": 2588,
+                "n_anchor_oriented_pairs": 434
+              },
+              {
+                "fold": 1,
+                "train_families": 5,
+                "heldout_families": [
+                  "cm",
+                  "graycode6",
+                  "symmetry"
+                ],
+                "originals_with_pairs": 18,
+                "n_oriented_pairs": 4254,
+                "n_anchor_oriented_pairs": 816
+              },
+              {
+                "fold": 2,
+                "train_families": 5,
+                "heldout_families": [
+                  "entangled_states",
+                  "lpn",
+                  "variational"
+                ],
+                "originals_with_pairs": 23,
+                "n_oriented_pairs": 4946,
+                "n_anchor_oriented_pairs": 1070
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "inner_fold": 2,
+        "training_families": [
+          "alu",
+          "bernstein_vazirani",
+          "cc_n10",
+          "cm",
+          "gcm_h6",
+          "graycode6",
+          "multiplication",
+          "rd"
+        ],
+        "heldout_families": [
+          "entangled_states",
+          "lpn",
+          "symmetry",
+          "variational"
+        ],
+        "models": [
+          {
+            "objective": "routed_depth",
+            "mode": "compiled",
+            "ranker": "pair_logit",
+            "train_families": 8,
+            "heldout_families": 4,
+            "heldout_originals": 17,
+            "rank_training_pairs": 6298,
+            "n_gate_examples": 31,
+            "n_positive": 18,
+            "positive_fraction": 0.5806451612903226,
+            "gate_model": "regularized_logistic",
+            "crossfit_fold_details": [
+              {
+                "fold": 0,
+                "train_families": 6,
+                "heldout_families": [
+                  "gcm_h6",
+                  "rd"
+                ],
+                "originals_with_pairs": 19,
+                "n_oriented_pairs": 2992,
+                "n_anchor_oriented_pairs": 638
+              },
+              {
+                "fold": 1,
+                "train_families": 6,
+                "heldout_families": [
+                  "bernstein_vazirani",
+                  "multiplication"
+                ],
+                "originals_with_pairs": 22,
+                "n_oriented_pairs": 4056,
+                "n_anchor_oriented_pairs": 862
+              },
+              {
+                "fold": 2,
+                "train_families": 4,
+                "heldout_families": [
+                  "alu",
+                  "cc_n10",
+                  "cm",
+                  "graycode6"
+                ],
+                "originals_with_pairs": 21,
+                "n_oriented_pairs": 5548,
+                "n_anchor_oriented_pairs": 1228
+              }
+            ]
+          },
+          {
+            "objective": "routed_depth",
+            "mode": "structural",
+            "ranker": "pair_logit",
+            "train_families": 8,
+            "heldout_families": 4,
+            "heldout_originals": 17,
+            "rank_training_pairs": 6298,
+            "n_gate_examples": 31,
+            "n_positive": 14,
+            "positive_fraction": 0.45161290322580644,
+            "gate_model": "regularized_logistic",
+            "crossfit_fold_details": [
+              {
+                "fold": 0,
+                "train_families": 6,
+                "heldout_families": [
+                  "gcm_h6",
+                  "rd"
+                ],
+                "originals_with_pairs": 19,
+                "n_oriented_pairs": 2992,
+                "n_anchor_oriented_pairs": 638
+              },
+              {
+                "fold": 1,
+                "train_families": 6,
+                "heldout_families": [
+                  "bernstein_vazirani",
+                  "multiplication"
+                ],
+                "originals_with_pairs": 22,
+                "n_oriented_pairs": 4056,
+                "n_anchor_oriented_pairs": 862
+              },
+              {
+                "fold": 2,
+                "train_families": 4,
+                "heldout_families": [
+                  "alu",
+                  "cc_n10",
+                  "cm",
+                  "graycode6"
+                ],
+                "originals_with_pairs": 21,
+                "n_oriented_pairs": 5548,
+                "n_anchor_oriented_pairs": 1228
+              }
+            ]
+          },
+          {
+            "objective": "routed_depth",
+            "mode": "full",
+            "ranker": "pair_logit",
+            "train_families": 8,
+            "heldout_families": 4,
+            "heldout_originals": 17,
+            "rank_training_pairs": 6298,
+            "n_gate_examples": 31,
+            "n_positive": 16,
+            "positive_fraction": 0.5161290322580645,
+            "gate_model": "regularized_logistic",
+            "crossfit_fold_details": [
+              {
+                "fold": 0,
+                "train_families": 6,
+                "heldout_families": [
+                  "gcm_h6",
+                  "rd"
+                ],
+                "originals_with_pairs": 19,
+                "n_oriented_pairs": 2992,
+                "n_anchor_oriented_pairs": 638
+              },
+              {
+                "fold": 1,
+                "train_families": 6,
+                "heldout_families": [
+                  "bernstein_vazirani",
+                  "multiplication"
+                ],
+                "originals_with_pairs": 22,
+                "n_oriented_pairs": 4056,
+                "n_anchor_oriented_pairs": 862
+              },
+              {
+                "fold": 2,
+                "train_families": 4,
+                "heldout_families": [
+                  "alu",
+                  "cc_n10",
+                  "cm",
+                  "graycode6"
+                ],
+                "originals_with_pairs": 21,
+                "n_oriented_pairs": 5548,
+                "n_anchor_oriented_pairs": 1228
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "objective": "routed_depth",
+    "outer_fold": 3,
+    "inner_audits": [
+      {
+        "inner_fold": 0,
+        "training_families": [
+          "alu",
+          "cc_n10",
+          "entangled_states",
+          "gcm_h6",
+          "graycode6",
+          "lpn",
+          "multiplication",
+          "system"
+        ],
+        "heldout_families": [
+          "cnt3_5",
+          "rd",
+          "variational"
+        ],
+        "models": [
+          {
+            "objective": "routed_depth",
+            "mode": "compiled",
+            "ranker": "pair_logit",
+            "train_families": 8,
+            "heldout_families": 3,
+            "heldout_originals": 17,
+            "rank_training_pairs": 6900,
+            "n_gate_examples": 29,
+            "n_positive": 18,
+            "positive_fraction": 0.6206896551724138,
+            "gate_model": "regularized_logistic",
+            "crossfit_fold_details": [
+              {
+                "fold": 0,
+                "train_families": 6,
+                "heldout_families": [
+                  "gcm_h6",
+                  "multiplication"
+                ],
+                "originals_with_pairs": 17,
+                "n_oriented_pairs": 3582,
+                "n_anchor_oriented_pairs": 556
+              },
+              {
+                "fold": 1,
+                "train_families": 6,
+                "heldout_families": [
+                  "alu",
+                  "system"
+                ],
+                "originals_with_pairs": 18,
+                "n_oriented_pairs": 4266,
+                "n_anchor_oriented_pairs": 828
+              },
+              {
+                "fold": 2,
+                "train_families": 4,
+                "heldout_families": [
+                  "cc_n10",
+                  "entangled_states",
+                  "graycode6",
+                  "lpn"
+                ],
+                "originals_with_pairs": 23,
+                "n_oriented_pairs": 5952,
+                "n_anchor_oriented_pairs": 1204
+              }
+            ]
+          },
+          {
+            "objective": "routed_depth",
+            "mode": "structural",
+            "ranker": "pair_logit",
+            "train_families": 8,
+            "heldout_families": 3,
+            "heldout_originals": 17,
+            "rank_training_pairs": 6900,
+            "n_gate_examples": 29,
+            "n_positive": 14,
+            "positive_fraction": 0.4827586206896552,
+            "gate_model": "regularized_logistic",
+            "crossfit_fold_details": [
+              {
+                "fold": 0,
+                "train_families": 6,
+                "heldout_families": [
+                  "gcm_h6",
+                  "multiplication"
+                ],
+                "originals_with_pairs": 17,
+                "n_oriented_pairs": 3582,
+                "n_anchor_oriented_pairs": 556
+              },
+              {
+                "fold": 1,
+                "train_families": 6,
+                "heldout_families": [
+                  "alu",
+                  "system"
+                ],
+                "originals_with_pairs": 18,
+                "n_oriented_pairs": 4266,
+                "n_anchor_oriented_pairs": 828
+              },
+              {
+                "fold": 2,
+                "train_families": 4,
+                "heldout_families": [
+                  "cc_n10",
+                  "entangled_states",
+                  "graycode6",
+                  "lpn"
+                ],
+                "originals_with_pairs": 23,
+                "n_oriented_pairs": 5952,
+                "n_anchor_oriented_pairs": 1204
+              }
+            ]
+          },
+          {
+            "objective": "routed_depth",
+            "mode": "full",
+            "ranker": "pair_logit",
+            "train_families": 8,
+            "heldout_families": 3,
+            "heldout_originals": 17,
+            "rank_training_pairs": 6900,
+            "n_gate_examples": 29,
+            "n_positive": 18,
+            "positive_fraction": 0.6206896551724138,
+            "gate_model": "regularized_logistic",
+            "crossfit_fold_details": [
+              {
+                "fold": 0,
+                "train_families": 6,
+                "heldout_families": [
+                  "gcm_h6",
+                  "multiplication"
+                ],
+                "originals_with_pairs": 17,
+                "n_oriented_pairs": 3582,
+                "n_anchor_oriented_pairs": 556
+              },
+              {
+                "fold": 1,
+                "train_families": 6,
+                "heldout_families": [
+                  "alu",
+                  "system"
+                ],
+                "originals_with_pairs": 18,
+                "n_oriented_pairs": 4266,
+                "n_anchor_oriented_pairs": 828
+              },
+              {
+                "fold": 2,
+                "train_families": 4,
+                "heldout_families": [
+                  "cc_n10",
+                  "entangled_states",
+                  "graycode6",
+                  "lpn"
+                ],
+                "originals_with_pairs": 23,
+                "n_oriented_pairs": 5952,
+                "n_anchor_oriented_pairs": 1204
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "inner_fold": 1,
+        "training_families": [
+          "cc_n10",
+          "cnt3_5",
+          "entangled_states",
+          "graycode6",
+          "lpn",
+          "rd",
+          "system",
+          "variational"
+        ],
+        "heldout_families": [
+          "alu",
+          "gcm_h6",
+          "multiplication"
+        ],
+        "models": [
+          {
+            "objective": "routed_depth",
+            "mode": "compiled",
+            "ranker": "pair_logit",
+            "train_families": 8,
+            "heldout_families": 3,
+            "heldout_originals": 17,
+            "rank_training_pairs": 7382,
+            "n_gate_examples": 27,
+            "n_positive": 18,
+            "positive_fraction": 0.6666666666666666,
+            "gate_model": "regularized_logistic",
+            "crossfit_fold_details": [
+              {
+                "fold": 0,
+                "train_families": 6,
+                "heldout_families": [
+                  "rd",
+                  "variational"
+                ],
+                "originals_with_pairs": 18,
+                "n_oriented_pairs": 5152,
+                "n_anchor_oriented_pairs": 934
+              },
+              {
+                "fold": 1,
+                "train_families": 6,
+                "heldout_families": [
+                  "cnt3_5",
+                  "system"
+                ],
+                "originals_with_pairs": 15,
+                "n_oriented_pairs": 3178,
+                "n_anchor_oriented_pairs": 580
+              },
+              {
+                "fold": 2,
+                "train_families": 4,
+                "heldout_families": [
+                  "cc_n10",
+                  "entangled_states",
+                  "graycode6",
+                  "lpn"
+                ],
+                "originals_with_pairs": 21,
+                "n_oriented_pairs": 6434,
+                "n_anchor_oriented_pairs": 1334
+              }
+            ]
+          },
+          {
+            "objective": "routed_depth",
+            "mode": "structural",
+            "ranker": "pair_logit",
+            "train_families": 8,
+            "heldout_families": 3,
+            "heldout_originals": 17,
+            "rank_training_pairs": 7382,
+            "n_gate_examples": 27,
+            "n_positive": 19,
+            "positive_fraction": 0.7037037037037037,
+            "gate_model": "regularized_logistic",
+            "crossfit_fold_details": [
+              {
+                "fold": 0,
+                "train_families": 6,
+                "heldout_families": [
+                  "rd",
+                  "variational"
+                ],
+                "originals_with_pairs": 18,
+                "n_oriented_pairs": 5152,
+                "n_anchor_oriented_pairs": 934
+              },
+              {
+                "fold": 1,
+                "train_families": 6,
+                "heldout_families": [
+                  "cnt3_5",
+                  "system"
+                ],
+                "originals_with_pairs": 15,
+                "n_oriented_pairs": 3178,
+                "n_anchor_oriented_pairs": 580
+              },
+              {
+                "fold": 2,
+                "train_families": 4,
+                "heldout_families": [
+                  "cc_n10",
+                  "entangled_states",
+                  "graycode6",
+                  "lpn"
+                ],
+                "originals_with_pairs": 21,
+                "n_oriented_pairs": 6434,
+                "n_anchor_oriented_pairs": 1334
+              }
+            ]
+          },
+          {
+            "objective": "routed_depth",
+            "mode": "full",
+            "ranker": "pair_logit",
+            "train_families": 8,
+            "heldout_families": 3,
+            "heldout_originals": 17,
+            "rank_training_pairs": 7382,
+            "n_gate_examples": 27,
+            "n_positive": 19,
+            "positive_fraction": 0.7037037037037037,
+            "gate_model": "regularized_logistic",
+            "crossfit_fold_details": [
+              {
+                "fold": 0,
+                "train_families": 6,
+                "heldout_families": [
+                  "rd",
+                  "variational"
+                ],
+                "originals_with_pairs": 18,
+                "n_oriented_pairs": 5152,
+                "n_anchor_oriented_pairs": 934
+              },
+              {
+                "fold": 1,
+                "train_families": 6,
+                "heldout_families": [
+                  "cnt3_5",
+                  "system"
+                ],
+                "originals_with_pairs": 15,
+                "n_oriented_pairs": 3178,
+                "n_anchor_oriented_pairs": 580
+              },
+              {
+                "fold": 2,
+                "train_families": 4,
+                "heldout_families": [
+                  "cc_n10",
+                  "entangled_states",
+                  "graycode6",
+                  "lpn"
+                ],
+                "originals_with_pairs": 21,
+                "n_oriented_pairs": 6434,
+                "n_anchor_oriented_pairs": 1334
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "inner_fold": 2,
+        "training_families": [
+          "alu",
+          "cnt3_5",
+          "gcm_h6",
+          "multiplication",
+          "rd",
+          "variational"
+        ],
+        "heldout_families": [
+          "cc_n10",
+          "entangled_states",
+          "graycode6",
+          "lpn",
+          "system"
+        ],
+        "models": [
+          {
+            "objective": "routed_depth",
+            "mode": "compiled",
+            "ranker": "pair_logit",
+            "train_families": 6,
+            "heldout_families": 5,
+            "heldout_originals": 17,
+            "rank_training_pairs": 8274,
+            "n_gate_examples": 32,
+            "n_positive": 18,
+            "positive_fraction": 0.5625,
+            "gate_model": "regularized_logistic",
+            "crossfit_fold_details": [
+              {
+                "fold": 0,
+                "train_families": 4,
+                "heldout_families": [
+                  "gcm_h6",
+                  "rd"
+                ],
+                "originals_with_pairs": 20,
+                "n_oriented_pairs": 4968,
+                "n_anchor_oriented_pairs": 1060
+              },
+              {
+                "fold": 1,
+                "train_families": 4,
+                "heldout_families": [
+                  "multiplication",
+                  "variational"
+                ],
+                "originals_with_pairs": 23,
+                "n_oriented_pairs": 6032,
+                "n_anchor_oriented_pairs": 1284
+              },
+              {
+                "fold": 2,
+                "train_families": 4,
+                "heldout_families": [
+                  "alu",
+                  "cnt3_5"
+                ],
+                "originals_with_pairs": 21,
+                "n_oriented_pairs": 5548,
+                "n_anchor_oriented_pairs": 1228
+              }
+            ]
+          },
+          {
+            "objective": "routed_depth",
+            "mode": "structural",
+            "ranker": "pair_logit",
+            "train_families": 6,
+            "heldout_families": 5,
+            "heldout_originals": 17,
+            "rank_training_pairs": 8274,
+            "n_gate_examples": 32,
+            "n_positive": 13,
+            "positive_fraction": 0.40625,
+            "gate_model": "regularized_logistic",
+            "crossfit_fold_details": [
+              {
+                "fold": 0,
+                "train_families": 4,
+                "heldout_families": [
+                  "gcm_h6",
+                  "rd"
+                ],
+                "originals_with_pairs": 20,
+                "n_oriented_pairs": 4968,
+                "n_anchor_oriented_pairs": 1060
+              },
+              {
+                "fold": 1,
+                "train_families": 4,
+                "heldout_families": [
+                  "multiplication",
+                  "variational"
+                ],
+                "originals_with_pairs": 23,
+                "n_oriented_pairs": 6032,
+                "n_anchor_oriented_pairs": 1284
+              },
+              {
+                "fold": 2,
+                "train_families": 4,
+                "heldout_families": [
+                  "alu",
+                  "cnt3_5"
+                ],
+                "originals_with_pairs": 21,
+                "n_oriented_pairs": 5548,
+                "n_anchor_oriented_pairs": 1228
+              }
+            ]
+          },
+          {
+            "objective": "routed_depth",
+            "mode": "full",
+            "ranker": "pair_logit",
+            "train_families": 6,
+            "heldout_families": 5,
+            "heldout_originals": 17,
+            "rank_training_pairs": 8274,
+            "n_gate_examples": 32,
+            "n_positive": 16,
+            "positive_fraction": 0.5,
+            "gate_model": "regularized_logistic",
+            "crossfit_fold_details": [
+              {
+                "fold": 0,
+                "train_families": 4,
+                "heldout_families": [
+                  "gcm_h6",
+                  "rd"
+                ],
+                "originals_with_pairs": 20,
+                "n_oriented_pairs": 4968,
+                "n_anchor_oriented_pairs": 1060
+              },
+              {
+                "fold": 1,
+                "train_families": 4,
+                "heldout_families": [
+                  "multiplication",
+                  "variational"
+                ],
+                "originals_with_pairs": 23,
+                "n_oriented_pairs": 6032,
+                "n_anchor_oriented_pairs": 1284
+              },
+              {
+                "fold": 2,
+                "train_families": 4,
+                "heldout_families": [
+                  "alu",
+                  "cnt3_5"
+                ],
+                "originals_with_pairs": 21,
+                "n_oriented_pairs": 5548,
+                "n_anchor_oriented_pairs": 1228
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "objective": "routed_depth",
+    "outer_fold": 4,
+    "inner_audits": [
+      {
+        "inner_fold": 0,
+        "training_families": [
+          "cc_n10",
+          "cm",
+          "gcm_h6",
+          "graycode6",
+          "lpn",
+          "multiplication",
+          "symmetry",
+          "system"
+        ],
+        "heldout_families": [
+          "bernstein_vazirani",
+          "cnt3_5",
+          "rd"
+        ],
+        "models": [
+          {
+            "objective": "routed_depth",
+            "mode": "compiled",
+            "ranker": "pair_logit",
+            "train_families": 8,
+            "heldout_families": 3,
+            "heldout_originals": 18,
+            "rank_training_pairs": 7926,
+            "n_gate_examples": 32,
+            "n_positive": 19,
+            "positive_fraction": 0.59375,
+            "gate_model": "regularized_logistic",
+            "crossfit_fold_details": [
+              {
+                "fold": 0,
+                "train_families": 6,
+                "heldout_families": [
+                  "gcm_h6",
+                  "multiplication"
+                ],
+                "originals_with_pairs": 20,
+                "n_oriented_pairs": 4608,
+                "n_anchor_oriented_pairs": 792
+              },
+              {
+                "fold": 1,
+                "train_families": 6,
+                "heldout_families": [
+                  "cm",
+                  "system"
+                ],
+                "originals_with_pairs": 21,
+                "n_oriented_pairs": 5698,
+                "n_anchor_oriented_pairs": 1108
+              },
+              {
+                "fold": 2,
+                "train_families": 4,
+                "heldout_families": [
+                  "cc_n10",
+                  "graycode6",
+                  "lpn",
+                  "symmetry"
+                ],
+                "originals_with_pairs": 23,
+                "n_oriented_pairs": 5546,
+                "n_anchor_oriented_pairs": 1160
+              }
+            ]
+          },
+          {
+            "objective": "routed_depth",
+            "mode": "structural",
+            "ranker": "pair_logit",
+            "train_families": 8,
+            "heldout_families": 3,
+            "heldout_originals": 18,
+            "rank_training_pairs": 7926,
+            "n_gate_examples": 32,
+            "n_positive": 16,
+            "positive_fraction": 0.5,
+            "gate_model": "regularized_logistic",
+            "crossfit_fold_details": [
+              {
+                "fold": 0,
+                "train_families": 6,
+                "heldout_families": [
+                  "gcm_h6",
+                  "multiplication"
+                ],
+                "originals_with_pairs": 20,
+                "n_oriented_pairs": 4608,
+                "n_anchor_oriented_pairs": 792
+              },
+              {
+                "fold": 1,
+                "train_families": 6,
+                "heldout_families": [
+                  "cm",
+                  "system"
+                ],
+                "originals_with_pairs": 21,
+                "n_oriented_pairs": 5698,
+                "n_anchor_oriented_pairs": 1108
+              },
+              {
+                "fold": 2,
+                "train_families": 4,
+                "heldout_families": [
+                  "cc_n10",
+                  "graycode6",
+                  "lpn",
+                  "symmetry"
+                ],
+                "originals_with_pairs": 23,
+                "n_oriented_pairs": 5546,
+                "n_anchor_oriented_pairs": 1160
+              }
+            ]
+          },
+          {
+            "objective": "routed_depth",
+            "mode": "full",
+            "ranker": "pair_logit",
+            "train_families": 8,
+            "heldout_families": 3,
+            "heldout_originals": 18,
+            "rank_training_pairs": 7926,
+            "n_gate_examples": 32,
+            "n_positive": 17,
+            "positive_fraction": 0.53125,
+            "gate_model": "regularized_logistic",
+            "crossfit_fold_details": [
+              {
+                "fold": 0,
+                "train_families": 6,
+                "heldout_families": [
+                  "gcm_h6",
+                  "multiplication"
+                ],
+                "originals_with_pairs": 20,
+                "n_oriented_pairs": 4608,
+                "n_anchor_oriented_pairs": 792
+              },
+              {
+                "fold": 1,
+                "train_families": 6,
+                "heldout_families": [
+                  "cm",
+                  "system"
+                ],
+                "originals_with_pairs": 21,
+                "n_oriented_pairs": 5698,
+                "n_anchor_oriented_pairs": 1108
+              },
+              {
+                "fold": 2,
+                "train_families": 4,
+                "heldout_families": [
+                  "cc_n10",
+                  "graycode6",
+                  "lpn",
+                  "symmetry"
+                ],
+                "originals_with_pairs": 23,
+                "n_oriented_pairs": 5546,
+                "n_anchor_oriented_pairs": 1160
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "inner_fold": 1,
+        "training_families": [
+          "bernstein_vazirani",
+          "cc_n10",
+          "cnt3_5",
+          "graycode6",
+          "lpn",
+          "rd",
+          "symmetry",
+          "system"
+        ],
+        "heldout_families": [
+          "cm",
+          "gcm_h6",
+          "multiplication"
+        ],
+        "models": [
+          {
+            "objective": "routed_depth",
+            "mode": "compiled",
+            "ranker": "pair_logit",
+            "train_families": 8,
+            "heldout_families": 3,
+            "heldout_originals": 17,
+            "rank_training_pairs": 8814,
+            "n_gate_examples": 30,
+            "n_positive": 19,
+            "positive_fraction": 0.6333333333333333,
+            "gate_model": "regularized_logistic",
+            "crossfit_fold_details": [
+              {
+                "fold": 0,
+                "train_families": 6,
+                "heldout_families": [
+                  "bernstein_vazirani",
+                  "rd"
+                ],
+                "originals_with_pairs": 21,
+                "n_oriented_pairs": 6584,
+                "n_anchor_oriented_pairs": 1214
+              },
+              {
+                "fold": 1,
+                "train_families": 6,
+                "heldout_families": [
+                  "cnt3_5",
+                  "system"
+                ],
+                "originals_with_pairs": 18,
+                "n_oriented_pairs": 4610,
+                "n_anchor_oriented_pairs": 860
+              },
+              {
+                "fold": 2,
+                "train_families": 4,
+                "heldout_families": [
+                  "cc_n10",
+                  "graycode6",
+                  "lpn",
+                  "symmetry"
+                ],
+                "originals_with_pairs": 21,
+                "n_oriented_pairs": 6434,
+                "n_anchor_oriented_pairs": 1334
+              }
+            ]
+          },
+          {
+            "objective": "routed_depth",
+            "mode": "structural",
+            "ranker": "pair_logit",
+            "train_families": 8,
+            "heldout_families": 3,
+            "heldout_originals": 17,
+            "rank_training_pairs": 8814,
+            "n_gate_examples": 30,
+            "n_positive": 21,
+            "positive_fraction": 0.7,
+            "gate_model": "regularized_logistic",
+            "crossfit_fold_details": [
+              {
+                "fold": 0,
+                "train_families": 6,
+                "heldout_families": [
+                  "bernstein_vazirani",
+                  "rd"
+                ],
+                "originals_with_pairs": 21,
+                "n_oriented_pairs": 6584,
+                "n_anchor_oriented_pairs": 1214
+              },
+              {
+                "fold": 1,
+                "train_families": 6,
+                "heldout_families": [
+                  "cnt3_5",
+                  "system"
+                ],
+                "originals_with_pairs": 18,
+                "n_oriented_pairs": 4610,
+                "n_anchor_oriented_pairs": 860
+              },
+              {
+                "fold": 2,
+                "train_families": 4,
+                "heldout_families": [
+                  "cc_n10",
+                  "graycode6",
+                  "lpn",
+                  "symmetry"
+                ],
+                "originals_with_pairs": 21,
+                "n_oriented_pairs": 6434,
+                "n_anchor_oriented_pairs": 1334
+              }
+            ]
+          },
+          {
+            "objective": "routed_depth",
+            "mode": "full",
+            "ranker": "pair_logit",
+            "train_families": 8,
+            "heldout_families": 3,
+            "heldout_originals": 17,
+            "rank_training_pairs": 8814,
+            "n_gate_examples": 30,
+            "n_positive": 15,
+            "positive_fraction": 0.5,
+            "gate_model": "regularized_logistic",
+            "crossfit_fold_details": [
+              {
+                "fold": 0,
+                "train_families": 6,
+                "heldout_families": [
+                  "bernstein_vazirani",
+                  "rd"
+                ],
+                "originals_with_pairs": 21,
+                "n_oriented_pairs": 6584,
+                "n_anchor_oriented_pairs": 1214
+              },
+              {
+                "fold": 1,
+                "train_families": 6,
+                "heldout_families": [
+                  "cnt3_5",
+                  "system"
+                ],
+                "originals_with_pairs": 18,
+                "n_oriented_pairs": 4610,
+                "n_anchor_oriented_pairs": 860
+              },
+              {
+                "fold": 2,
+                "train_families": 4,
+                "heldout_families": [
+                  "cc_n10",
+                  "graycode6",
+                  "lpn",
+                  "symmetry"
+                ],
+                "originals_with_pairs": 21,
+                "n_oriented_pairs": 6434,
+                "n_anchor_oriented_pairs": 1334
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "inner_fold": 2,
+        "training_families": [
+          "bernstein_vazirani",
+          "cm",
+          "cnt3_5",
+          "gcm_h6",
+          "multiplication",
+          "rd"
+        ],
+        "heldout_families": [
+          "cc_n10",
+          "graycode6",
+          "lpn",
+          "symmetry",
+          "system"
+        ],
+        "models": [
+          {
+            "objective": "routed_depth",
+            "mode": "compiled",
+            "ranker": "pair_logit",
+            "train_families": 6,
+            "heldout_families": 5,
+            "heldout_originals": 17,
+            "rank_training_pairs": 7868,
+            "n_gate_examples": 32,
+            "n_positive": 18,
+            "positive_fraction": 0.5625,
+            "gate_model": "regularized_logistic",
+            "crossfit_fold_details": [
+              {
+                "fold": 0,
+                "train_families": 4,
+                "heldout_families": [
+                  "gcm_h6",
+                  "rd"
+                ],
+                "originals_with_pairs": 20,
+                "n_oriented_pairs": 4562,
+                "n_anchor_oriented_pairs": 1016
+              },
+              {
+                "fold": 1,
+                "train_families": 4,
+                "heldout_families": [
+                  "bernstein_vazirani",
+                  "multiplication"
+                ],
+                "originals_with_pairs": 23,
+                "n_oriented_pairs": 5626,
+                "n_anchor_oriented_pairs": 1240
+              },
+              {
+                "fold": 2,
+                "train_families": 4,
+                "heldout_families": [
+                  "cm",
+                  "cnt3_5"
+                ],
+                "originals_with_pairs": 21,
+                "n_oriented_pairs": 5548,
+                "n_anchor_oriented_pairs": 1228
+              }
+            ]
+          },
+          {
+            "objective": "routed_depth",
+            "mode": "structural",
+            "ranker": "pair_logit",
+            "train_families": 6,
+            "heldout_families": 5,
+            "heldout_originals": 17,
+            "rank_training_pairs": 7868,
+            "n_gate_examples": 32,
+            "n_positive": 10,
+            "positive_fraction": 0.3125,
+            "gate_model": "regularized_logistic",
+            "crossfit_fold_details": [
+              {
+                "fold": 0,
+                "train_families": 4,
+                "heldout_families": [
+                  "gcm_h6",
+                  "rd"
+                ],
+                "originals_with_pairs": 20,
+                "n_oriented_pairs": 4562,
+                "n_anchor_oriented_pairs": 1016
+              },
+              {
+                "fold": 1,
+                "train_families": 4,
+                "heldout_families": [
+                  "bernstein_vazirani",
+                  "multiplication"
+                ],
+                "originals_with_pairs": 23,
+                "n_oriented_pairs": 5626,
+                "n_anchor_oriented_pairs": 1240
+              },
+              {
+                "fold": 2,
+                "train_families": 4,
+                "heldout_families": [
+                  "cm",
+                  "cnt3_5"
+                ],
+                "originals_with_pairs": 21,
+                "n_oriented_pairs": 5548,
+                "n_anchor_oriented_pairs": 1228
+              }
+            ]
+          },
+          {
+            "objective": "routed_depth",
+            "mode": "full",
+            "ranker": "pair_logit",
+            "train_families": 6,
+            "heldout_families": 5,
+            "heldout_originals": 17,
+            "rank_training_pairs": 7868,
+            "n_gate_examples": 32,
+            "n_positive": 12,
+            "positive_fraction": 0.375,
+            "gate_model": "regularized_logistic",
+            "crossfit_fold_details": [
+              {
+                "fold": 0,
+                "train_families": 4,
+                "heldout_families": [
+                  "gcm_h6",
+                  "rd"
+                ],
+                "originals_with_pairs": 20,
+                "n_oriented_pairs": 4562,
+                "n_anchor_oriented_pairs": 1016
+              },
+              {
+                "fold": 1,
+                "train_families": 4,
+                "heldout_families": [
+                  "bernstein_vazirani",
+                  "multiplication"
+                ],
+                "originals_with_pairs": 23,
+                "n_oriented_pairs": 5626,
+                "n_anchor_oriented_pairs": 1240
+              },
+              {
+                "fold": 2,
+                "train_families": 4,
+                "heldout_families": [
+                  "cm",
+                  "cnt3_5"
+                ],
+                "originals_with_pairs": 21,
+                "n_oriented_pairs": 5548,
+                "n_anchor_oriented_pairs": 1228
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "objective": "routed_depth",
+    "outer_fold": "all_training_for_final_lock",
+    "inner_audits": [
+      {
+        "inner_fold": 0,
+        "training_families": [
+          "bernstein_vazirani",
+          "cc_n10",
+          "cm",
+          "cnt3_5",
+          "gcm_h6",
+          "graycode6",
+          "lpn",
+          "multiplication",
+          "symmetry",
+          "system"
+        ],
+        "heldout_families": [
+          "alu",
+          "entangled_states",
+          "rd",
+          "variational"
+        ],
+        "models": [
+          {
+            "objective": "routed_depth",
+            "mode": "compiled",
+            "ranker": "pair_logit",
+            "train_families": 10,
+            "heldout_families": 4,
+            "heldout_originals": 22,
+            "rank_training_pairs": 10074,
+            "n_gate_examples": 38,
+            "n_positive": 19,
+            "positive_fraction": 0.5,
+            "gate_model": "regularized_logistic",
+            "crossfit_fold_details": [
+              {
+                "fold": 0,
+                "train_families": 7,
+                "heldout_families": [
+                  "bernstein_vazirani",
+                  "lpn",
+                  "multiplication"
+                ],
+                "originals_with_pairs": 26,
+                "n_oriented_pairs": 6920,
+                "n_anchor_oriented_pairs": 1424
+              },
+              {
+                "fold": 1,
+                "train_families": 6,
+                "heldout_families": [
+                  "cc_n10",
+                  "cnt3_5",
+                  "graycode6",
+                  "system"
+                ],
+                "originals_with_pairs": 26,
+                "n_oriented_pairs": 5870,
+                "n_anchor_oriented_pairs": 1154
+              },
+              {
+                "fold": 2,
+                "train_families": 7,
+                "heldout_families": [
+                  "cm",
+                  "gcm_h6",
+                  "symmetry"
+                ],
+                "originals_with_pairs": 24,
+                "n_oriented_pairs": 7358,
+                "n_anchor_oriented_pairs": 1418
+              }
+            ]
+          },
+          {
+            "objective": "routed_depth",
+            "mode": "structural",
+            "ranker": "pair_logit",
+            "train_families": 10,
+            "heldout_families": 4,
+            "heldout_originals": 22,
+            "rank_training_pairs": 10074,
+            "n_gate_examples": 38,
+            "n_positive": 15,
+            "positive_fraction": 0.39473684210526316,
+            "gate_model": "regularized_logistic",
+            "crossfit_fold_details": [
+              {
+                "fold": 0,
+                "train_families": 7,
+                "heldout_families": [
+                  "bernstein_vazirani",
+                  "lpn",
+                  "multiplication"
+                ],
+                "originals_with_pairs": 26,
+                "n_oriented_pairs": 6920,
+                "n_anchor_oriented_pairs": 1424
+              },
+              {
+                "fold": 1,
+                "train_families": 6,
+                "heldout_families": [
+                  "cc_n10",
+                  "cnt3_5",
+                  "graycode6",
+                  "system"
+                ],
+                "originals_with_pairs": 26,
+                "n_oriented_pairs": 5870,
+                "n_anchor_oriented_pairs": 1154
+              },
+              {
+                "fold": 2,
+                "train_families": 7,
+                "heldout_families": [
+                  "cm",
+                  "gcm_h6",
+                  "symmetry"
+                ],
+                "originals_with_pairs": 24,
+                "n_oriented_pairs": 7358,
+                "n_anchor_oriented_pairs": 1418
+              }
+            ]
+          },
+          {
+            "objective": "routed_depth",
+            "mode": "full",
+            "ranker": "pair_logit",
+            "train_families": 10,
+            "heldout_families": 4,
+            "heldout_originals": 22,
+            "rank_training_pairs": 10074,
+            "n_gate_examples": 38,
+            "n_positive": 24,
+            "positive_fraction": 0.631578947368421,
+            "gate_model": "regularized_logistic",
+            "crossfit_fold_details": [
+              {
+                "fold": 0,
+                "train_families": 7,
+                "heldout_families": [
+                  "bernstein_vazirani",
+                  "lpn",
+                  "multiplication"
+                ],
+                "originals_with_pairs": 26,
+                "n_oriented_pairs": 6920,
+                "n_anchor_oriented_pairs": 1424
+              },
+              {
+                "fold": 1,
+                "train_families": 6,
+                "heldout_families": [
+                  "cc_n10",
+                  "cnt3_5",
+                  "graycode6",
+                  "system"
+                ],
+                "originals_with_pairs": 26,
+                "n_oriented_pairs": 5870,
+                "n_anchor_oriented_pairs": 1154
+              },
+              {
+                "fold": 2,
+                "train_families": 7,
+                "heldout_families": [
+                  "cm",
+                  "gcm_h6",
+                  "symmetry"
+                ],
+                "originals_with_pairs": 24,
+                "n_oriented_pairs": 7358,
+                "n_anchor_oriented_pairs": 1418
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "inner_fold": 1,
+        "training_families": [
+          "alu",
+          "cm",
+          "entangled_states",
+          "gcm_h6",
+          "graycode6",
+          "rd",
+          "symmetry",
+          "system",
+          "variational"
+        ],
+        "heldout_families": [
+          "bernstein_vazirani",
+          "cc_n10",
+          "cnt3_5",
+          "lpn",
+          "multiplication"
+        ],
+        "models": [
+          {
+            "objective": "routed_depth",
+            "mode": "compiled",
+            "ranker": "pair_logit",
+            "train_families": 9,
+            "heldout_families": 5,
+            "heldout_originals": 22,
+            "rank_training_pairs": 7616,
+            "n_gate_examples": 37,
+            "n_positive": 25,
+            "positive_fraction": 0.6756756756756757,
+            "gate_model": "regularized_logistic",
+            "crossfit_fold_details": [
+              {
+                "fold": 0,
+                "train_families": 6,
+                "heldout_families": [
+                  "alu",
+                  "graycode6",
+                  "rd"
+                ],
+                "originals_with_pairs": 23,
+                "n_oriented_pairs": 4808,
+                "n_anchor_oriented_pairs": 974
+              },
+              {
+                "fold": 1,
+                "train_families": 6,
+                "heldout_families": [
+                  "entangled_states",
+                  "system",
+                  "variational"
+                ],
+                "originals_with_pairs": 28,
+                "n_oriented_pairs": 5524,
+                "n_anchor_oriented_pairs": 1160
+              },
+              {
+                "fold": 2,
+                "train_families": 6,
+                "heldout_families": [
+                  "cm",
+                  "gcm_h6",
+                  "symmetry"
+                ],
+                "originals_with_pairs": 23,
+                "n_oriented_pairs": 4900,
+                "n_anchor_oriented_pairs": 974
+              }
+            ]
+          },
+          {
+            "objective": "routed_depth",
+            "mode": "structural",
+            "ranker": "pair_logit",
+            "train_families": 9,
+            "heldout_families": 5,
+            "heldout_originals": 22,
+            "rank_training_pairs": 7616,
+            "n_gate_examples": 37,
+            "n_positive": 17,
+            "positive_fraction": 0.4594594594594595,
+            "gate_model": "regularized_logistic",
+            "crossfit_fold_details": [
+              {
+                "fold": 0,
+                "train_families": 6,
+                "heldout_families": [
+                  "alu",
+                  "graycode6",
+                  "rd"
+                ],
+                "originals_with_pairs": 23,
+                "n_oriented_pairs": 4808,
+                "n_anchor_oriented_pairs": 974
+              },
+              {
+                "fold": 1,
+                "train_families": 6,
+                "heldout_families": [
+                  "entangled_states",
+                  "system",
+                  "variational"
+                ],
+                "originals_with_pairs": 28,
+                "n_oriented_pairs": 5524,
+                "n_anchor_oriented_pairs": 1160
+              },
+              {
+                "fold": 2,
+                "train_families": 6,
+                "heldout_families": [
+                  "cm",
+                  "gcm_h6",
+                  "symmetry"
+                ],
+                "originals_with_pairs": 23,
+                "n_oriented_pairs": 4900,
+                "n_anchor_oriented_pairs": 974
+              }
+            ]
+          },
+          {
+            "objective": "routed_depth",
+            "mode": "full",
+            "ranker": "pair_logit",
+            "train_families": 9,
+            "heldout_families": 5,
+            "heldout_originals": 22,
+            "rank_training_pairs": 7616,
+            "n_gate_examples": 37,
+            "n_positive": 20,
+            "positive_fraction": 0.5405405405405406,
+            "gate_model": "regularized_logistic",
+            "crossfit_fold_details": [
+              {
+                "fold": 0,
+                "train_families": 6,
+                "heldout_families": [
+                  "alu",
+                  "graycode6",
+                  "rd"
+                ],
+                "originals_with_pairs": 23,
+                "n_oriented_pairs": 4808,
+                "n_anchor_oriented_pairs": 974
+              },
+              {
+                "fold": 1,
+                "train_families": 6,
+                "heldout_families": [
+                  "entangled_states",
+                  "system",
+                  "variational"
+                ],
+                "originals_with_pairs": 28,
+                "n_oriented_pairs": 5524,
+                "n_anchor_oriented_pairs": 1160
+              },
+              {
+                "fold": 2,
+                "train_families": 6,
+                "heldout_families": [
+                  "cm",
+                  "gcm_h6",
+                  "symmetry"
+                ],
+                "originals_with_pairs": 23,
+                "n_oriented_pairs": 4900,
+                "n_anchor_oriented_pairs": 974
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "inner_fold": 2,
+        "training_families": [
+          "alu",
+          "bernstein_vazirani",
+          "cc_n10",
+          "cnt3_5",
+          "entangled_states",
+          "lpn",
+          "multiplication",
+          "rd",
+          "variational"
+        ],
+        "heldout_families": [
+          "cm",
+          "gcm_h6",
+          "graycode6",
+          "symmetry",
+          "system"
+        ],
+        "models": [
+          {
+            "objective": "routed_depth",
+            "mode": "compiled",
+            "ranker": "pair_logit",
+            "train_families": 9,
+            "heldout_families": 5,
+            "heldout_originals": 21,
+            "rank_training_pairs": 8146,
+            "n_gate_examples": 35,
+            "n_positive": 21,
+            "positive_fraction": 0.6,
+            "gate_model": "regularized_logistic",
+            "crossfit_fold_details": [
+              {
+                "fold": 0,
+                "train_families": 6,
+                "heldout_families": [
+                  "alu",
+                  "cc_n10",
+                  "rd"
+                ],
+                "originals_with_pairs": 21,
+                "n_oriented_pairs": 5338,
+                "n_anchor_oriented_pairs": 1060
+              },
+              {
+                "fold": 1,
+                "train_families": 6,
+                "heldout_families": [
+                  "bernstein_vazirani",
+                  "lpn",
+                  "multiplication"
+                ],
+                "originals_with_pairs": 23,
+                "n_oriented_pairs": 4992,
+                "n_anchor_oriented_pairs": 1066
+              },
+              {
+                "fold": 2,
+                "train_families": 6,
+                "heldout_families": [
+                  "cnt3_5",
+                  "entangled_states",
+                  "variational"
+                ],
+                "originals_with_pairs": 26,
+                "n_oriented_pairs": 5962,
+                "n_anchor_oriented_pairs": 1154
+              }
+            ]
+          },
+          {
+            "objective": "routed_depth",
+            "mode": "structural",
+            "ranker": "pair_logit",
+            "train_families": 9,
+            "heldout_families": 5,
+            "heldout_originals": 21,
+            "rank_training_pairs": 8146,
+            "n_gate_examples": 35,
+            "n_positive": 13,
+            "positive_fraction": 0.37142857142857144,
+            "gate_model": "regularized_logistic",
+            "crossfit_fold_details": [
+              {
+                "fold": 0,
+                "train_families": 6,
+                "heldout_families": [
+                  "alu",
+                  "cc_n10",
+                  "rd"
+                ],
+                "originals_with_pairs": 21,
+                "n_oriented_pairs": 5338,
+                "n_anchor_oriented_pairs": 1060
+              },
+              {
+                "fold": 1,
+                "train_families": 6,
+                "heldout_families": [
+                  "bernstein_vazirani",
+                  "lpn",
+                  "multiplication"
+                ],
+                "originals_with_pairs": 23,
+                "n_oriented_pairs": 4992,
+                "n_anchor_oriented_pairs": 1066
+              },
+              {
+                "fold": 2,
+                "train_families": 6,
+                "heldout_families": [
+                  "cnt3_5",
+                  "entangled_states",
+                  "variational"
+                ],
+                "originals_with_pairs": 26,
+                "n_oriented_pairs": 5962,
+                "n_anchor_oriented_pairs": 1154
+              }
+            ]
+          },
+          {
+            "objective": "routed_depth",
+            "mode": "full",
+            "ranker": "pair_logit",
+            "train_families": 9,
+            "heldout_families": 5,
+            "heldout_originals": 21,
+            "rank_training_pairs": 8146,
+            "n_gate_examples": 35,
+            "n_positive": 17,
+            "positive_fraction": 0.4857142857142857,
+            "gate_model": "regularized_logistic",
+            "crossfit_fold_details": [
+              {
+                "fold": 0,
+                "train_families": 6,
+                "heldout_families": [
+                  "alu",
+                  "cc_n10",
+                  "rd"
+                ],
+                "originals_with_pairs": 21,
+                "n_oriented_pairs": 5338,
+                "n_anchor_oriented_pairs": 1060
+              },
+              {
+                "fold": 1,
+                "train_families": 6,
+                "heldout_families": [
+                  "bernstein_vazirani",
+                  "lpn",
+                  "multiplication"
+                ],
+                "originals_with_pairs": 23,
+                "n_oriented_pairs": 4992,
+                "n_anchor_oriented_pairs": 1066
+              },
+              {
+                "fold": 2,
+                "train_families": 6,
+                "heldout_families": [
+                  "cnt3_5",
+                  "entangled_states",
+                  "variational"
+                ],
+                "originals_with_pairs": 26,
+                "n_oriented_pairs": 5962,
+                "n_anchor_oriented_pairs": 1154
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

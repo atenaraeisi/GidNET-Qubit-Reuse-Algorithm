@@ -1,0 +1,38 @@
+{
+  "status": "prepared_only_not_labeled",
+  "qiskit": "0.45.3",
+  "data_protocol": "sampled_depth_1_to_3_reuse_pilot_v1",
+  "qasm_paths": {
+    "CaQR::cnt3-5_179.qasm": "C:\\Users\\ASUS\\Documents\\Quantum computing\\Qiskit\\CaQR-main\\CaQR-main\\benchmarks\\cnt3-5_179.qasm"
+  },
+  "original_active_compaction": "reuse_feasibility_audit_fixed semantics",
+  "feature_code": "exp4d_features_robust_audit_v2.py",
+  "feature_count": 25,
+  "routing_config": "heavy_hex(7), sabre layout and routing, optimization_level=1, seed_transpiler",
+  "circuits_requested": [
+    "CaQR::cnt3-5_179.qasm"
+  ],
+  "circuits_prepared": [
+    "CaQR::cnt3-5_179.qasm"
+  ],
+  "errors": 0,
+  "selected_source_candidate_rows": 5,
+  "selected_unique_plans": 5,
+  "total_routing_jobs_for_2_seeds": 10,
+  "parameter_settings": {
+    "max_originals": 1,
+    "max_depth": 3,
+    "max_candidates": 4,
+    "per_op_keep": 4,
+    "max_frontier": 8,
+    "max_attempts_per_op": 180,
+    "max_discovered": 200,
+    "seed": 2026
+  },
+  "warnings": [
+    "No routing or learning has occurred.",
+    "Discovery depth is sampled path length, not global shortest path.",
+    "Measured features are NOT calibrated to a physical objective.",
+    "Reserved final-test circuits must not be chosen after inspecting outcomes."
+  ]
+}

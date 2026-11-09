@@ -1,0 +1,88 @@
+source,filename,feature_status,n_plans_profiled,n_neighbors_profiled,feature_profile_ms,preparation_ms,error,mutation_attempts
+CaQR,0410184_169.qasm,no_reuse_plan,0,0,0.0,12.0406,,0.0
+CaQR,4gt10-v1_81.qasm,no_reuse_plan,0,0,0.0,6.8819,,0.0
+CaQR,4gt11_84.qasm,error,0,0,,1.7768,UnboundLocalError: cannot access local variable 'local' where it is not associated with a value,
+CaQR,4gt12-v0_86.qasm,no_reuse_plan,0,0,0.0,11.032,,0.0
+CaQR,4gt13_92.qasm,no_reuse_plan,0,0,0.0,3.4676,,0.0
+CaQR,4gt4-v0_80.qasm,no_reuse_plan,0,0,0.0,56.7777,,0.0
+CaQR,4gt5_75.qasm,no_reuse_plan,0,0,0.0,7.0761,,0.0
+CaQR,4mod5-v0_18.qasm,error,0,0,,6.4102,UnboundLocalError: cannot access local variable 'local' where it is not associated with a value,
+CaQR,4mod5-v0_20.qasm,error,0,0,,1.8533,UnboundLocalError: cannot access local variable 'local' where it is not associated with a value,
+CaQR,4mod7-v0_94.qasm,no_reuse_plan,0,0,0.0,7.6006,,0.0
+CaQR,C17_204.qasm,no_reuse_plan,0,0,0.0,18.3293,,0.0
+CaQR,alu-v0_27.qasm,error,0,0,,2.3347,UnboundLocalError: cannot access local variable 'local' where it is not associated with a value,
+CaQR,alu-v2_30.qasm,no_reuse_plan,0,0,0.0,24.7383,,0.0
+CaQR,bv_n10.qasm,ok,1,0,0.4954,6.5568,,27.0
+CaQR,cc_n10.qasm,ok,1,0,1.1587,3.2278,,27.0
+CaQR,cm152a_212.qasm,error,0,0,,77.9334,UnboundLocalError: cannot access local variable 'local' where it is not associated with a value,
+CaQR,cm42a_207.qasm,error,0,0,,275.1793,UnboundLocalError: cannot access local variable 'local' where it is not associated with a value,
+CaQR,cm82a_208.qasm,no_reuse_plan,0,0,0.0,87.3625,,0.0
+CaQR,cnt3-5_179.qasm,ok,14,12,22.2698,38.0597,,566.0
+CaQR,cnt3-5_180.qasm,ok,14,12,26.564799999999998,54.4771,,582.0
+CaQR,con1_216.qasm,no_reuse_plan,0,0,0.0,103.6122,,0.0
+CaQR,decod24-v1_41.qasm,no_reuse_plan,0,0,0.0,12.889,,0.0
+CaQR,ex1_226.qasm,error,0,0,,4.0466,UnboundLocalError: cannot access local variable 'local' where it is not associated with a value,
+CaQR,graycode6_47.qasm,ok,1,0,1.089,3.2015,,33.0
+CaQR,ham7_104.qasm,no_reuse_plan,0,0,0.0,36.6122,,0.0
+CaQR,hwb4_49.qasm,no_reuse_plan,0,0,0.0,30.9179,,0.0
+CaQR,hwb5_53.qasm,no_reuse_plan,0,0,0.0,131.9949,,0.0
+CaQR,ising_model_10.qasm,no_reuse_plan,0,0,0.0,81.4932,,0.0
+CaQR,ising_model_16.qasm,ok,8,6,18.3145,123.0567,,710.0
+CaQR,majority_239.qasm,no_reuse_plan,0,0,0.0,228.9022,,0.0
+CaQR,mini-alu_167.qasm,no_reuse_plan,0,0,0.0,41.8743,,0.0
+CaQR,mini_alu_305.qasm,error,0,0,,24.3362,UnboundLocalError: cannot access local variable 'local' where it is not associated with a value,
+CaQR,mod10_176.qasm,no_reuse_plan,0,0,0.0,24.6785,,0.0
+CaQR,mod5adder_127.qasm,no_reuse_plan,0,0,0.0,77.1494,,0.0
+CaQR,mod5d1_63.qasm,no_reuse_plan,0,0,0.0,5.6963,,0.0
+CaQR,mod5mils_65.qasm,ok,4,2,5.7411,6.5592,,47.0
+CaQR,mod8-10_178.qasm,no_reuse_plan,0,0,0.0,50.1985,,0.0
+CaQR,multiply_n13.qasm,error,0,0,,25.2947,UnboundLocalError: cannot access local variable 'local' where it is not associated with a value,
+CaQR,one-two-three-v2_100.qasm,no_reuse_plan,0,0,0.0,14.0278,,0.0
+CaQR,qft_10.qasm,no_reuse_plan,0,0,0.0,39.3261,,0.0
+CaQR,qft_16.qasm,no_reuse_plan,0,0,0.0,116.8,,0.0
+CaQR,rd32_270.qasm,no_reuse_plan,0,0,0.0,15.0576,,0.0
+CaQR,rd53_311.qasm,error,0,0,,50.2449,UnboundLocalError: cannot access local variable 'local' where it is not associated with a value,
+CaQR,rd73_140.qasm,ok,8,6,14.2003,27.5009,,234.0
+CaQR,rd84_142.qasm,ok,18,16,37.592800000000004,51.6623,,248.0
+CaQR,sf_276.qasm,no_reuse_plan,0,0,0.0,82.7948,,0.0
+CaQR,squar5_261.qasm,ok,11,9,42.4948,323.3838,,320.0
+CaQR,sym6_316.qasm,ok,26,24,42.5533,37.3384,,332.0
+CaQR,sym9_146.qasm,ok,10,8,15.5922,35.9482,,330.0
+CaQR,sys6-v0_111.qasm,ok,14,12,18.4248,32.7587,,174.0
+CaQR,system9.qasm,ok,24,22,42.9431,38.1854,,270.0
+CaQR,wim_266.qasm,error,0,0,,167.9986,UnboundLocalError: cannot access local variable 'local' where it is not associated with a value,
+MQT,graphstate_indep_opt0_8.qasm,skip,0,0,,,Original screening flagged as parser/error,
+MQT,grover_indep_opt0_10.qasm,skip,0,0,,,Original screening flagged as parser/error,
+MQT,grover_indep_opt0_6.qasm,skip,0,0,,,Original screening flagged as parser/error,
+MQT,qaoa_indep_opt0_12.qasm,skip,0,0,,,Original screening flagged as parser/error,
+MQT,qaoa_indep_opt0_8.qasm,skip,0,0,,,Original screening flagged as parser/error,
+MQT,randomcircuit_indep_opt0_10.qasm,skip,0,0,,,Original screening flagged as parser/error,
+QASMBench,adder_n10.qasm,no_reuse_plan,0,0,0.0,28.3403,,0.0
+QASMBench,adder_n4.qasm,no_reuse_plan,0,0,0.0,5.1963,,0.0
+QASMBench,basis_test_n4.qasm,no_reuse_plan,0,0,0.0,17.4527,,0.0
+QASMBench,basis_trotter_n4.qasm,no_reuse_plan,0,0,0.0,254.251,,0.0
+QASMBench,bell_n4.qasm,error,0,0,,10.9512,UnboundLocalError: cannot access local variable 'local' where it is not associated with a value,
+QASMBench,bv_n14.qasm,ok,1,0,1.2292,7.9916,,39.0
+QASMBench,bv_n19.qasm,ok,1,0,1.4282,14.7503,,54.0
+QASMBench,cat_state_n22.qasm,ok,1,0,1.481,7.8922,,385.0
+QASMBench,cat_state_n4.qasm,ok,1,0,1.1533,4.8831,,16.0
+QASMBench,dnn_n16.qasm,error,0,0,,340.4582,UnboundLocalError: cannot access local variable 'local' where it is not associated with a value,
+QASMBench,dnn_n8.qasm,no_reuse_plan,0,0,0.0,116.7064,,0.0
+QASMBench,error_correctiond3_n5.qasm,no_reuse_plan,0,0,0.0,6.6638,,0.0
+QASMBench,gcm_h6.qasm,error,0,0,,237.5779,UnboundLocalError: cannot access local variable 'local' where it is not associated with a value,
+QASMBench,ghz_state_n23.qasm,ok,1,0,0.6667,3.8957,,419.0
+QASMBench,hhl_n7.qasm,no_reuse_plan,0,0,0.0,37.8041,,0.0
+QASMBench,hs4_n4.qasm,ok,4,2,1.3591,2.0454,,32.0
+QASMBench,ising_n10.qasm,no_reuse_plan,0,0,0.0,23.8765,,0.0
+QASMBench,lpn_n5.qasm,error,0,0,,3.2546,UnboundLocalError: cannot access local variable 'local' where it is not associated with a value,
+QASMBench,multiplier_n15.qasm,error,0,0,,7.0267,UnboundLocalError: cannot access local variable 'local' where it is not associated with a value,
+QASMBench,multiply_n13.qasm,error,0,0,,3.225,UnboundLocalError: cannot access local variable 'local' where it is not associated with a value,
+QASMBench,pea_n5.qasm,no_reuse_plan,0,0,0.0,25.6845,,0.0
+QASMBench,qaoa_n6.qasm,no_reuse_plan,0,0,0.0,81.0138,,0.0
+QASMBench,qec_en_n5.qasm,ok,1,0,0.3757,2.1384,,21.0
+QASMBench,qft_n18.qasm,no_reuse_plan,0,0,0.0,42.9951,,0.0
+QASMBench,qft_n4.qasm,no_reuse_plan,0,0,0.0,2.1237,,0.0
+QASMBench,qram_n20.qasm,error,0,0,,5.1829,UnboundLocalError: cannot access local variable 'local' where it is not associated with a value,
+QASMBench,simon_n6.qasm,skip,0,0,,,Original screening flagged as parser/error,
+QASMBench,variational_n4.qasm,error,0,0,,4.7566,UnboundLocalError: cannot access local variable 'local' where it is not associated with a value,
+QASMBench,vqe_n4.qasm,no_reuse_plan,0,0,0.0,4.9582,,0.0

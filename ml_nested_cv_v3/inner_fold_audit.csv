@@ -1,0 +1,37 @@
+﻿objective,outer_fold,inner_fold,train_families,heldout_families,train_originals,heldout_originals,originals_with_pairs,n_oriented_pairs,n_anchor_oriented_pairs
+swap_count,0,0,7,"['bernstein_vazirani', 'cc_n10', 'cm', 'multiplication']",34,18,29,7284,1420
+swap_count,0,1,8,"['alu', 'entangled_states', 'system']",35,17,29,7040,1490
+swap_count,0,2,7,"['cnt3_5', 'gcm_h6', 'symmetry', 'variational']",35,17,28,4980,946
+swap_count,1,0,7,"['bernstein_vazirani', 'cm', 'graycode6', 'rd']",34,18,26,6210,1186
+swap_count,1,1,8,"['alu', 'entangled_states', 'system']",35,17,26,5996,1286
+swap_count,1,2,7,"['cnt3_5', 'lpn', 'symmetry', 'variational']",35,17,28,5010,976
+swap_count,2,0,8,"['cm', 'gcm_h6', 'graycode6', 'rd']",35,18,23,4250,846
+swap_count,2,1,8,"['alu', 'bernstein_vazirani', 'cc_n10', 'multiplication']",35,18,26,4956,1074
+swap_count,2,2,8,"['entangled_states', 'lpn', 'symmetry', 'variational']",36,17,31,6238,1316
+swap_count,3,0,8,"['cnt3_5', 'rd', 'variational']",34,17,26,5888,1134
+swap_count,3,1,8,"['alu', 'gcm_h6', 'multiplication']",34,17,24,6418,1306
+swap_count,3,2,6,"['cc_n10', 'entangled_states', 'graycode6', 'lpn', 'system']",34,17,32,8210,1728
+swap_count,4,0,8,"['bernstein_vazirani', 'cnt3_5', 'rd']",34,18,29,6926,1376
+swap_count,4,1,8,"['cm', 'gcm_h6', 'multiplication']",35,17,27,7854,1584
+swap_count,4,2,6,"['cc_n10', 'graycode6', 'lpn', 'symmetry', 'system']",35,17,32,7812,1692
+swap_count,all_training_for_final_lock,0,10,"['alu', 'entangled_states', 'rd', 'variational']",43,22,35,9064,1834
+swap_count,all_training_for_final_lock,1,9,"['bernstein_vazirani', 'cc_n10', 'cnt3_5', 'lpn', 'multiplication']",43,22,37,7544,1500
+swap_count,all_training_for_final_lock,2,9,"['cm', 'gcm_h6', 'graycode6', 'symmetry', 'system']",44,21,32,7160,1506
+routed_depth,0,0,7,"['bernstein_vazirani', 'cc_n10', 'cm', 'multiplication']",34,18,29,7362,1486
+routed_depth,0,1,8,"['alu', 'entangled_states', 'system']",35,17,29,7106,1550
+routed_depth,0,2,7,"['cnt3_5', 'gcm_h6', 'symmetry', 'variational']",35,17,28,5084,1032
+routed_depth,1,0,7,"['bernstein_vazirani', 'cm', 'graycode6', 'rd']",34,18,29,7198,1322
+routed_depth,1,1,8,"['alu', 'entangled_states', 'system']",35,17,29,6930,1374
+routed_depth,1,2,7,"['cnt3_5', 'lpn', 'symmetry', 'variational']",35,17,28,5072,1020
+routed_depth,2,0,8,"['cm', 'gcm_h6', 'graycode6', 'rd']",35,18,26,5236,980
+routed_depth,2,1,8,"['alu', 'bernstein_vazirani', 'cc_n10', 'multiplication']",35,18,29,5894,1160
+routed_depth,2,2,8,"['entangled_states', 'lpn', 'symmetry', 'variational']",36,17,31,6298,1364
+routed_depth,3,0,8,"['cnt3_5', 'rd', 'variational']",34,17,29,6900,1294
+routed_depth,3,1,8,"['alu', 'gcm_h6', 'multiplication']",34,17,27,7382,1424
+routed_depth,3,2,6,"['cc_n10', 'entangled_states', 'graycode6', 'lpn', 'system']",34,17,32,8274,1786
+routed_depth,4,0,8,"['bernstein_vazirani', 'cnt3_5', 'rd']",34,18,32,7926,1530
+routed_depth,4,1,8,"['cm', 'gcm_h6', 'multiplication']",35,17,30,8814,1704
+routed_depth,4,2,6,"['cc_n10', 'graycode6', 'lpn', 'symmetry', 'system']",35,17,32,7868,1742
+routed_depth,all_training_for_final_lock,0,10,"['alu', 'entangled_states', 'rd', 'variational']",43,22,38,10074,1998
+routed_depth,all_training_for_final_lock,1,9,"['bernstein_vazirani', 'cc_n10', 'cnt3_5', 'lpn', 'multiplication']",43,22,37,7616,1554
+routed_depth,all_training_for_final_lock,2,9,"['cm', 'gcm_h6', 'graycode6', 'symmetry', 'system']",44,21,35,8146,1640

@@ -1,0 +1,28 @@
+{
+  "schema": "targeted_disagreement_routing_v2",
+  "training_only": true,
+  "routing_seeds": [
+    300,
+    301,
+    302,
+    303,
+    304
+  ],
+  "n_all_paired_runs": 195,
+  "n_measured_disagreements": 50,
+  "n_exact_zero_same_picks": 145,
+  "n_families": 14,
+  "n_disagreement_families": 6,
+  "mean_paired_swap_difference_all": -0.028717948717948315,
+  "mean_paired_swap_difference_disagreement_only": -0.11199999999999843,
+  "mean_of_family_mean_paired_swap_difference": 0.020370370370370924,
+  "mean_paired_depth_difference_all": -0.27897435897435957,
+  "structural_wins": 29,
+  "random_wins": 21,
+  "ties": 145,
+  "mean_structural_swap_gain_on_disagreements": 1.1920000000000035,
+  "mean_random_swap_gain_on_disagreements": 1.3040000000000018,
+  "n_same_raw_attempts_in_disagreements": 50,
+  "n_same_valid_count_in_disagreements": 4,
+  "note": "TRAIN exploratory, not independent held-out circuit evaluation; 3 reps per Original and 5 physical seeds are correlated. Same selected plan => EXACT zero relative difference and requires no routing. To claim improvement vs initial plans over full corpus, route same-selected nonoriginal plans and originals too."
+}

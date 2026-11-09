@@ -1,0 +1,62 @@
+{
+  "status": "TRAIN ONLY cross-validation; not heldout external validation",
+  "n_train_circuits": 28,
+  "n_train_family_groups": 14,
+  "n_source_plans": 65,
+  "candidate_depth_counts": {
+    "1": 266,
+    "2": 346,
+    "3": 296,
+    "4": 245,
+    "5": 225
+  },
+  "n_features": 25,
+  "features": [
+    "quotient_unique_edges",
+    "quotient_density",
+    "max_degree",
+    "max_weighted_degree",
+    "max_edge_weight",
+    "mean_raw_jaccard_incompat",
+    "max_raw_jaccard_incompat",
+    "top2_raw_jaccard_incompat",
+    "mean_raw_weighted_incompat",
+    "max_raw_weighted_incompat",
+    "mean_chain_jaccard_incompat",
+    "max_chain_jaccard_incompat",
+    "top2_chain_jaccard_incompat",
+    "mean_chain_weighted_incompat",
+    "max_chain_weighted_incompat",
+    "mean_first_2q_local_delay",
+    "mean_first_2q_layer_delay",
+    "edge_weight_cv",
+    "max_edge_share",
+    "edge_weight_hhi",
+    "normalized_edge_entropy",
+    "edge_weight_concentration",
+    "weighted_degree_cv",
+    "logical_depth",
+    "norm_depth"
+  ],
+  "development_seeds": [
+    42,
+    43,
+    44,
+    45,
+    46
+  ],
+  "CV": "GroupKFold family_group; same heldout candidates for both arms",
+  "arms": {
+    "one_step": "train depth=1; score candidates depth1..5",
+    "multi_step": "train depth1..5; score candidates depth1..5"
+  },
+  "alpha_fixed": 10.0,
+  "notes": [
+    "No validation/final-test data accessed",
+    "No routing performed",
+    "One-step and multi-step training candidate distributions differ by construction",
+    "OOF is not independent final-test evidence",
+    "New 28-circuit training dataset is different from old 15-circuit Ridge-Beam benchmark",
+    "The selected-plan evaluation is fixed-pool, not re-running model-guided beam search"
+  ]
+}

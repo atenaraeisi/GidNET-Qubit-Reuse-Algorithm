@@ -1,0 +1,88 @@
+{
+  "protocol": "fixed_width_heldout_winners_v1",
+  "evaluation_seeds": [
+    200,
+    201,
+    202,
+    203,
+    204,
+    205,
+    206,
+    207,
+    208,
+    209,
+    210,
+    211,
+    212,
+    213,
+    214,
+    215,
+    216,
+    217,
+    218,
+    219,
+    220,
+    221,
+    222,
+    223,
+    224,
+    225,
+    226,
+    227,
+    228,
+    229
+  ],
+  "unique_plans": 45,
+  "routing_jobs": 1350,
+  "six_development_circuits_not_final_test": true,
+  "objectives": {
+    "swap_count": {
+      "depth3": {
+        "n_sources": 12,
+        "n_defined_percent": 10,
+        "mean_gain_pct_by_original": 7.787546170739209,
+        "harm_count": 0,
+        "no_repair_count": 2,
+        "development_positive_but_heldout_harm": 0
+      },
+      "depth5": {
+        "n_sources": 12,
+        "n_defined_percent": 10,
+        "mean_gain_pct_by_original": 8.325932557451608,
+        "harm_count": 0,
+        "no_repair_count": 2,
+        "development_positive_but_heldout_harm": 0
+      },
+      "depth5_vs_depth3": {
+        "depth5_better": 5,
+        "depth3_better": 2,
+        "tied": 5,
+        "same_winner": 5
+      }
+    },
+    "routed_depth": {
+      "depth3": {
+        "n_sources": 12,
+        "n_defined_percent": 12,
+        "mean_gain_pct_by_original": 5.4008239735657,
+        "harm_count": 1,
+        "no_repair_count": 0,
+        "development_positive_but_heldout_harm": 1
+      },
+      "depth5": {
+        "n_sources": 12,
+        "n_defined_percent": 12,
+        "mean_gain_pct_by_original": 5.172351723642651,
+        "harm_count": 1,
+        "no_repair_count": 0,
+        "development_positive_but_heldout_harm": 1
+      },
+      "depth5_vs_depth3": {
+        "depth5_better": 4,
+        "depth3_better": 4,
+        "tied": 4,
+        "same_winner": 3
+      }
+    }
+  }
+}

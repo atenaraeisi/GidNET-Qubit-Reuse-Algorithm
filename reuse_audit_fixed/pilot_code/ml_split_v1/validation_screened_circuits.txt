@@ -1,0 +1,7 @@
+QASMBench::dnn_n16.qasm
+CaQR::ex1_226.qasm
+CaQR::4gt11_84.qasm
+CaQR::ising_model_16.qasm
+CaQR::4mod5-v0_18.qasm
+CaQR::4mod5-v0_20.qasm
+CaQR::mod5mils_65.qasm

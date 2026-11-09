@@ -1,0 +1,16 @@
+{
+  "circuits_requested": 6,
+  "circuits_checked": 6,
+  "original_operator_checks": 24,
+  "failures": 0,
+  "all_pass": true,
+  "raw_attempts": 2468,
+  "legacy_valid_total": 144,
+  "fast_valid_total": 144,
+  "fast_reject_illegal_total": 1896,
+  "fast_reject_cycle_total": 73,
+  "legacy_scan_ms_total": 742.267,
+  "fast_scan_ms_total": 703.247,
+  "setup_ms_total_per_circuit": 14.711,
+  "explanation": "Static-feasibility parity only; scan times exclude engine setup, which is reported separately. No routing done."
+}

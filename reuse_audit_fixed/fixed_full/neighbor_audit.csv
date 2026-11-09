@@ -1,0 +1,129 @@
+﻿source,filename,plan_id,operator,attempted,unique_nontrivial,valid,invalid,duplicate,exhaustive,valid_plan_sigs_json
+CaQR,4gt12-v0_86.qasm,a844600669f75d6d329f9e3f,suffix_swap,15,0,0,0,15,1,[]
+CaQR,4gt12-v0_86.qasm,a844600669f75d6d329f9e3f,chain_transfer,0,0,0,0,0,1,[]
+CaQR,alu-v2_30.qasm,a844600669f75d6d329f9e3f,suffix_swap,15,0,0,0,15,1,[]
+CaQR,alu-v2_30.qasm,a844600669f75d6d329f9e3f,chain_transfer,0,0,0,0,0,1,[]
+CaQR,decod24-v1_41.qasm,8078f3e8dc614b7a976bec4c,suffix_swap,10,0,0,0,10,1,[]
+CaQR,decod24-v1_41.qasm,8078f3e8dc614b7a976bec4c,chain_transfer,0,0,0,0,0,1,[]
+CaQR,mini_alu_305.qasm,0b536ab5894904d365aa1b70,suffix_swap,40,25,3,22,15,1,"[""a9db5521d51defeedfe9d0c1"", ""c421474a94c18de81327c46d"", ""ede2d9b8982da6ac136c187e""]"
+CaQR,mini_alu_305.qasm,0b536ab5894904d365aa1b70,chain_transfer,88,88,4,84,0,1,"[""747ea1017adbfbced3553d54"", ""93c29f807562f9c8bfd05cbd"", ""a9db5521d51defeedfe9d0c1"", ""c421474a94c18de81327c46d""]"
+CaQR,mini_alu_305.qasm,7ff2ff64d98c68b0f6abf294,suffix_swap,40,25,3,22,15,1,"[""64a57b14485bfe59d1728740"", ""c421474a94c18de81327c46d"", ""ede2d9b8982da6ac136c187e""]"
+CaQR,mini_alu_305.qasm,7ff2ff64d98c68b0f6abf294,chain_transfer,88,88,3,85,0,1,"[""0ee51fe67c95c63e3cc23ef6"", ""5172e94b16032d250efd0294"", ""ede2d9b8982da6ac136c187e""]"
+CaQR,mini_alu_305.qasm,e4925b0c5f2e417e4cae4f60,suffix_swap,40,25,3,22,15,1,"[""0ee51fe67c95c63e3cc23ef6"", ""93c29f807562f9c8bfd05cbd"", ""df05a2818d9c9ddcc11e1420""]"
+CaQR,mini_alu_305.qasm,e4925b0c5f2e417e4cae4f60,chain_transfer,88,88,3,85,0,1,"[""5172e94b16032d250efd0294"", ""93c29f807562f9c8bfd05cbd"", ""c421474a94c18de81327c46d""]"
+CaQR,cm42a_207.qasm,8c1e7217b2ed096945397259,suffix_swap,84,39,1,38,45,1,"[""087f6bb1ab4b266c91581498""]"
+CaQR,cm42a_207.qasm,8c1e7217b2ed096945397259,chain_transfer,118,118,0,118,0,1,[]
+CaQR,cm42a_207.qasm,087f6bb1ab4b266c91581498,suffix_swap,84,39,1,38,45,1,"[""8c1e7217b2ed096945397259""]"
+CaQR,cm42a_207.qasm,087f6bb1ab4b266c91581498,chain_transfer,118,118,0,118,0,1,[]
+CaQR,cnt3-5_179.qasm,aa2be6a63b42261d5cf667ce,suffix_swap,94,88,12,76,6,1,"[""200ae5c55cf8b31bec597814"", ""284abe003a4a1c2febc0377e"", ""4845783a447929924fd344a2"", ""53088318fe0d23fdb8aac6fe"", ""6d2175a5f68f0dd3b521fba0"", ""a4d9256d89f402b2350c7ea9"", ""af5ec76be01da517aa820c14"", ""c1bc3938cc704f151b30c071"", ""d3d987cd5dc597d37571cc1e"", ""decbabe836e8e724a3e63960"", ""dfb1dee12f90b4ae7d6f4058"", ""e1ec58cad2b92340e7454a2a""]"
+CaQR,cnt3-5_179.qasm,aa2be6a63b42261d5cf667ce,chain_transfer,236,236,0,236,0,1,[]
+CaQR,cnt3-5_179.qasm,a31c66569f1978d9f12f9b49,suffix_swap,95,89,12,77,6,1,"[""02997d776228591777429120"", ""1981bf9c8fe77397c42c83f1"", ""1d83909fcbc90bcfc1f770c3"", ""5163035b0ce0111291a00538"", ""61e13c603c2e5abf6f5c9b7a"", ""71230c7a434afee97701a7f3"", ""7905afa1f49aced08939fb5a"", ""9ab193704cc424464e69c4e2"", ""b41a6a8ed23e2c499f48e2e9"", ""d9bee9baa694ad76308438ba"", ""dd65770fbd48ffda0f8706e8"", ""e6665657e9c3c6ce8ab82d6d""]"
+CaQR,cnt3-5_179.qasm,a31c66569f1978d9f12f9b49,chain_transfer,238,238,0,238,0,1,[]
+CaQR,cnt3-5_179.qasm,f25ff70f4b90190d9694e831,suffix_swap,94,88,12,76,6,1,"[""13646f7b3bf83c4f8776e45e"", ""2f40e819aa8079f5e6cc69ee"", ""4a73151d7e22daa23aa5d0dc"", ""7a7f5d25ca64dfdb71cf3fad"", ""8ec9f316f6b805089300b09b"", ""97b9915d26d929c2f684d761"", ""bfdcda8fa746dd3608551751"", ""d2508d12ba14ee3fe5e4261d"", ""e39907562dbbe50ca6e770f1"", ""e47590b23449e6bf2c73b71a"", ""e59251160e30d05544a909a3"", ""ed6375a78eb17140409223b7""]"
+CaQR,cnt3-5_179.qasm,f25ff70f4b90190d9694e831,chain_transfer,236,236,0,236,0,1,[]
+CaQR,cnt3-5_180.qasm,b1b73955229a1d480bf81e0f,suffix_swap,98,88,10,78,10,1,"[""109dc220e719c6a36936c30d"", ""10a02b7d6b34021ba93959d2"", ""1760176bab4c41a5444ff397"", ""2fb41a1d389dab1936380624"", ""2fe8b1ee7f98b92f539dac60"", ""663f674914cb6831244847da"", ""6922abca005747ed6a0d34b4"", ""8edfd0f86d7e6823d453b7c2"", ""d576367cccab8406e32e025a"", ""ebbdd60743894bae39b65fe3""]"
+CaQR,cnt3-5_180.qasm,b1b73955229a1d480bf81e0f,chain_transfer,241,241,0,241,0,1,[]
+CaQR,cnt3-5_180.qasm,5fe3e90506a0721beebc1cfc,suffix_swap,98,88,10,78,10,1,"[""2d3e8ce04a9e8651b2a7fa87"", ""36c7f6a40e58f847c5a7492c"", ""3912684f310dbb1a6f7e687a"", ""4f54267983fc059ca53c9248"", ""51aad66a3582b7ce845d91cc"", ""56d3656cac66e169032f8440"", ""6fa0da06d5ff56956c9c2efc"", ""79bd274da7ec6ad47536f1e7"", ""89ae7f2ccb4ff175991282ea"", ""d613457c3563d299d9456f42""]"
+CaQR,cnt3-5_180.qasm,5fe3e90506a0721beebc1cfc,chain_transfer,241,241,0,241,0,1,[]
+CaQR,cnt3-5_180.qasm,79bd274da7ec6ad47536f1e7,suffix_swap,98,88,10,78,10,1,"[""077d1d238c0c719ddb2ea482"", ""0bb289fa61a5d6f341f5c383"", ""127a018ff36ca54e9f60d538"", ""328d67948a1de101ca19c807"", ""38c915855086b8a23cf57798"", ""5fe3e90506a0721beebc1cfc"", ""8d82ef2319a35da84c7fe0a7"", ""9e1fb79bed01cdf5286cfc74"", ""b73cc31011f16784f1be8cd6"", ""e1c862fe938e4da7c9d01180""]"
+CaQR,cnt3-5_180.qasm,79bd274da7ec6ad47536f1e7,chain_transfer,241,241,0,241,0,1,[]
+CaQR,rd53_311.qasm,293e5773685b535199430caf,suffix_swap,71,50,3,47,21,1,"[""1a1d068f815a53b30a32a0b1"", ""d332dc556146a136ac29ad82"", ""e82b537b848ea414e6816041""]"
+CaQR,rd53_311.qasm,293e5773685b535199430caf,chain_transfer,184,184,7,177,0,1,"[""0ce72776131628804b657107"", ""1a1d068f815a53b30a32a0b1"", ""919b7fef0648ace26de3a65d"", ""9b1be0de90030ac67aca06b7"", ""9e57503e540d9a06017f71ee"", ""bd647561209203d919a4b902"", ""ffa34c065c8866eb41a1df99""]"
+CaQR,rd53_311.qasm,183b02608a026b0fe5194516,suffix_swap,71,50,5,45,21,1,"[""703bb364fe262ba89c05d7f5"", ""734ace3fd927f52066a94ee4"", ""a7688629aaa42fdf952dfacc"", ""b91921f609680d1ecb1cb963"", ""c5c116af8a6646201e637b88""]"
+CaQR,rd53_311.qasm,183b02608a026b0fe5194516,chain_transfer,184,184,6,178,0,1,"[""015e3646f04524e6aaf54f37"", ""20715ff3f146987829ab5217"", ""895a74bc628498ca0bfbca2c"", ""c5c116af8a6646201e637b88"", ""d5f9dc9b8bd7d97130dafc77"", ""edc7478ef342faf94e6f75da""]"
+CaQR,rd53_311.qasm,02ded755d0a81802dc6df839,suffix_swap,70,49,6,43,21,1,"[""0c724ea64fc08b52ecf460bc"", ""0f8071fdfbfa5018f3f516aa"", ""29ddb06f37f1b281f38a020c"", ""45e5293c77a171fe19bae48f"", ""5bd9344fc752df1a4af28bac"", ""f6951a1b2a5344fd3e313e14""]"
+CaQR,rd53_311.qasm,02ded755d0a81802dc6df839,chain_transfer,164,164,7,157,0,1,"[""0c724ea64fc08b52ecf460bc"", ""3d23fc61096efb8579a06f9b"", ""508b3e52f21bb11f40d0409d"", ""5bd9344fc752df1a4af28bac"", ""66706fad1a3780861faf48e1"", ""a444c8d29ea411dc49ba4695"", ""a551b1e13f9c1fa108666ce7""]"
+CaQR,rd73_140.qasm,6dab983698acff5ac9553927,suffix_swap,36,26,0,26,10,1,[]
+CaQR,rd73_140.qasm,6dab983698acff5ac9553927,chain_transfer,73,73,3,70,0,1,"[""2b0f002d83ae25a2e910c1d9"", ""cb8b133409992a252eed1860"", ""dbac523639ac45b0fe0b9267""]"
+CaQR,rd73_140.qasm,dbac523639ac45b0fe0b9267,suffix_swap,37,27,0,27,10,1,[]
+CaQR,rd73_140.qasm,dbac523639ac45b0fe0b9267,chain_transfer,88,88,3,85,0,1,"[""5eb7f00146cee5e83f709eb8"", ""6dab983698acff5ac9553927"", ""c7b6295364fdb290257f73f9""]"
+CaQR,rd73_140.qasm,2b0f002d83ae25a2e910c1d9,suffix_swap,38,28,0,28,10,1,[]
+CaQR,rd73_140.qasm,2b0f002d83ae25a2e910c1d9,chain_transfer,90,90,3,87,0,1,"[""6dab983698acff5ac9553927"", ""c7b6295364fdb290257f73f9"", ""cb8b133409992a252eed1860""]"
+CaQR,rd84_142.qasm,1433fd8cd2624925799089d3,suffix_swap,91,70,2,68,21,1,"[""1dbb49f6a0c6c3511027ae77"", ""84838f8281e72ecbc94e2110""]"
+CaQR,rd84_142.qasm,1433fd8cd2624925799089d3,chain_transfer,212,212,10,202,0,1,"[""1123a2282539c18aa191dbf9"", ""165a34a894d826c46de36884"", ""16d68b8a022cae8aa36d2799"", ""3c1326638d0fa3c2b221c0c0"", ""70529aa04e24bc5c7134c08d"", ""796c253aa5e9676004541cee"", ""7da7c19d3104a0f4bff3f0f5"", ""a5392a1249d17aa8e2c9be46"", ""f77e9d4b921712ac1d3746aa"", ""ffa9e89a7d9707bae21caa85""]"
+CaQR,rd84_142.qasm,1578317d232cc5193363ace2,suffix_swap,93,72,2,70,21,1,"[""3580f3afb218008985317706"", ""5bc4a450c64a2c8c94d48098""]"
+CaQR,rd84_142.qasm,1578317d232cc5193363ace2,chain_transfer,236,236,10,226,0,1,"[""036e9a02fe3f2f729510fe69"", ""057130fa8f9f739c0f366081"", ""254cf7c473397b5385c058a8"", ""2c71c338b18ca63015fafafa"", ""403562c8a3586bc0ae4f0b78"", ""69525164dd2d05222edf1373"", ""830ad360a66d55d1d0368827"", ""91e55081ab1b312eaba8ca6e"", ""9846498d34870e9a21392796"", ""efe99b2831fd8b4746d15685""]"
+CaQR,rd84_142.qasm,84d41cbe5d231c9db2f55114,suffix_swap,92,71,3,68,21,1,"[""109d7f23bafbc87f8f89e305"", ""1378dfa8863f250c0b2895fc"", ""196d858bac33b1c0446e9f13""]"
+CaQR,rd84_142.qasm,84d41cbe5d231c9db2f55114,chain_transfer,214,214,9,205,0,1,"[""1a6b5b664cd2abb1aae403b7"", ""5d91409ee9dbbefe56d9c65c"", ""63fb60ea8b6b95b974d0e56e"", ""9a934f42df70df0867f44a36"", ""b569b3d7137e6510122e633e"", ""bb78f64f7db0b7241656a9d2"", ""e81b5ecb10b289f66a56c049"", ""ecddb508708b0b8961ddcbed"", ""f2636295ca88334c36af3e7f""]"
+CaQR,sym6_316.qasm,44cfe4611ed5703993208f29,suffix_swap,80,65,11,54,15,1,"[""0b3428ace74cf44704965808"", ""319e0c0aa6db26dd11d907b7"", ""5ab2e0f7fb3a621da53494dd"", ""9476e40dd44a80bd9b97d2da"", ""a59ede300dee82786075524d"", ""a866ddc2eb2c33119214c60d"", ""bc6fb481b031ca0c4783d8e5"", ""c8f45a208afe2c706ba5319d"", ""cdde1e814a4e989ea857178f"", ""d6b65771800b215a79458367"", ""db72ab8f9f3d383f39f47995""]"
+CaQR,sym6_316.qasm,44cfe4611ed5703993208f29,chain_transfer,212,212,10,202,0,1,"[""0b3428ace74cf44704965808"", ""12727c0e6805b3d7f1e840df"", ""5ab2e0f7fb3a621da53494dd"", ""97f52513a2e81735c31af869"", ""a59ede300dee82786075524d"", ""bc6fb481b031ca0c4783d8e5"", ""db72ab8f9f3d383f39f47995"", ""ddde30a38eb446e9e63abf23"", ""f3bc6147d7adb8687f5d5ed3"", ""ff0db95aae18e3da64ded0ed""]"
+CaQR,sym6_316.qasm,81121d2868c51d99239cb8df,suffix_swap,78,63,8,55,15,1,"[""04ddfe9822fae4fd841d26ae"", ""1c9df7fd4bd157822ca8b5b7"", ""2c45a1023cc6e2fb2f84ea6a"", ""4760aa7de5b488acac8d2504"", ""78379ce3b58ac45e24ce8a6f"", ""813ef3b85f2d8f6a7e72987f"", ""d3cabbab9807564ad74088f5"", ""ff0db95aae18e3da64ded0ed""]"
+CaQR,sym6_316.qasm,81121d2868c51d99239cb8df,chain_transfer,190,190,12,178,0,1,"[""04ddfe9822fae4fd841d26ae"", ""1ae2c4abaeb39ccf35f844c8"", ""1c9df7fd4bd157822ca8b5b7"", ""3569718a00ac067c93e9eb0e"", ""3e634e525d1fb29d2fddce5b"", ""4760aa7de5b488acac8d2504"", ""5f28c3f8f8ad41dc5edf8fcc"", ""746e1266424812a868837ef1"", ""78379ce3b58ac45e24ce8a6f"", ""a052014b26c2ba8e606bbf4b"", ""a866ddc2eb2c33119214c60d"", ""d3cabbab9807564ad74088f5""]"
+CaQR,sym6_316.qasm,878299fb278319c883d69238,suffix_swap,79,64,11,53,15,1,"[""0dff84490227f403319cc0d0"", ""12cf45ff072ab9ec62cab28a"", ""32c806c75350efdf3d34fd89"", ""50fa9031b9662c17d06d877e"", ""51cce41c9bb26bd4d5680b91"", ""551ec162402c670a9aca8765"", ""7b9cb143fe192cd1cd0a591b"", ""88618ebb5e1685a2c5b5c1d5"", ""91b95ebbc16307a1ae2f8e51"", ""a85df490860a18dd6557b8e1"", ""ba85772dcd6ca0decf4549b5""]"
+CaQR,sym6_316.qasm,878299fb278319c883d69238,chain_transfer,210,210,10,200,0,1,"[""0dff84490227f403319cc0d0"", ""1a15afc1041dcd55e0fb76f4"", ""50fa9031b9662c17d06d877e"", ""50ff4d39e63bcccef9032cfe"", ""86cf71a91a3c778a8712113a"", ""88618ebb5e1685a2c5b5c1d5"", ""8e8ee4240c0839ebe0d6504e"", ""9032bf9508acf7688ce7f899"", ""a85df490860a18dd6557b8e1"", ""ba85772dcd6ca0decf4549b5""]"
+CaQR,system9.qasm,2f5ef51cf1529f39b964b453,suffix_swap,57,36,5,31,21,1,"[""028e73618c63e23bbf00cbc7"", ""5b5f33d941f5e42ff4749c65"", ""7866a90f0e7570e1fb9174f0"", ""82c46047253a32fd1f5442ef"", ""eecdf0c5144b61d9ae68614c""]"
+CaQR,system9.qasm,2f5ef51cf1529f39b964b453,chain_transfer,101,101,10,91,0,1,"[""028e73618c63e23bbf00cbc7"", ""19e1d99d18f765dc066c12b4"", ""1e3ab4b1e28cadeb043839c2"", ""33e9350b90ee368447ece3cf"", ""58eecc8eae81daeeadd0953e"", ""5b5f33d941f5e42ff4749c65"", ""8d3c7c4e32d913e3f7131a71"", ""d018d09af5740f4ebe63b4fa"", ""d9c92ee899eecb2a8d3b6379"", ""eecdf0c5144b61d9ae68614c""]"
+CaQR,system9.qasm,7866a90f0e7570e1fb9174f0,suffix_swap,57,36,5,31,21,1,"[""1cfdc18d8520616b4a603b53"", ""2f5ef51cf1529f39b964b453"", ""82c46047253a32fd1f5442ef"", ""8d3c7c4e32d913e3f7131a71"", ""95d9909ca840dcc4c98541cf""]"
+CaQR,system9.qasm,7866a90f0e7570e1fb9174f0,chain_transfer,101,101,10,91,0,1,"[""1cfdc18d8520616b4a603b53"", ""51af5a3d78c38c7c80a21318"", ""5ac6b26fcc421deb33019df8"", ""8d3c7c4e32d913e3f7131a71"", ""95d9909ca840dcc4c98541cf"", ""b9bfcc577e274fb906147e47"", ""be9210568e8178b0b6f19610"", ""eecdf0c5144b61d9ae68614c"", ""f97ea2e6d224d944a7915a64"", ""fbc9199e13b4fc0e4664cca1""]"
+CaQR,system9.qasm,028e73618c63e23bbf00cbc7,suffix_swap,55,34,5,29,21,1,"[""1cfdc18d8520616b4a603b53"", ""2f5ef51cf1529f39b964b453"", ""5b5f33d941f5e42ff4749c65"", ""61de9dbecd797ea94f6bf2c2"", ""eecdf0c5144b61d9ae68614c""]"
+CaQR,system9.qasm,028e73618c63e23bbf00cbc7,chain_transfer,97,97,10,87,0,1,"[""14c838dec708d3d6e53b7d2f"", ""1cfdc18d8520616b4a603b53"", ""2f5ef51cf1529f39b964b453"", ""3053c3d5045027e28962eb0a"", ""5b5f33d941f5e42ff4749c65"", ""61de9dbecd797ea94f6bf2c2"", ""d2eb7005e1b8f56031534b9b"", ""eecdf0c5144b61d9ae68614c"", ""fab5bc0892141b4e3a21eeab"", ""fc903d249ae8b592066f4d4b""]"
+CaQR,hwb4_49.qasm,8078f3e8dc614b7a976bec4c,suffix_swap,10,0,0,0,10,1,[]
+CaQR,hwb4_49.qasm,8078f3e8dc614b7a976bec4c,chain_transfer,0,0,0,0,0,1,[]
+CaQR,ising_model_10.qasm,b4cee96465376f6d71a21778,suffix_swap,45,0,0,0,45,1,[]
+CaQR,ising_model_10.qasm,b4cee96465376f6d71a21778,chain_transfer,0,0,0,0,0,1,[]
+CaQR,qft_10.qasm,b4cee96465376f6d71a21778,suffix_swap,45,0,0,0,45,1,[]
+CaQR,qft_10.qasm,b4cee96465376f6d71a21778,chain_transfer,0,0,0,0,0,1,[]
+CaQR,multiply_n13.qasm,38cad313af9a4e58a8d512ce,suffix_swap,69,41,7,34,28,1,"[""0afc9cf3ebbeb35acc2aaac4"", ""12e0db02eeac39e9e41b4c5a"", ""960793af582c4f9978cd2e69"", ""98ed89bb9befa51bd8ef79a2"", ""b3dce74b17d58408c9fd7c12"", ""ead46a820c0330bdaf6be732"", ""f2081791d5cb0a8fddfdf490""]"
+CaQR,multiply_n13.qasm,38cad313af9a4e58a8d512ce,chain_transfer,115,115,11,104,0,1,"[""0afc9cf3ebbeb35acc2aaac4"", ""137242c6563de89ab574bd6a"", ""1c62b243c3eb8f9333ac57a5"", ""28a80bb514007b38793b6035"", ""2e1f6420a07b167681008679"", ""960793af582c4f9978cd2e69"", ""98ed89bb9befa51bd8ef79a2"", ""b3dce74b17d58408c9fd7c12"", ""ba1e3f527b020e3232a1d392"", ""c92f0b946a42cb74c8ce26d6"", ""d0f8beda4e83291b530f2433""]"
+CaQR,multiply_n13.qasm,de8e8f3332016c34ba985071,suffix_swap,70,42,12,30,28,1,"[""01d6267cd9e54d314fd4ded2"", ""04fd671fa3cef150997b633c"", ""191c53bc7587389dc7fb057c"", ""2423879c8680a9a017badb74"", ""5ad97578803aaf13d3702683"", ""640570929d245f679a1394d7"", ""6c4368c567c87a7f92f9b4e2"", ""7ce1db207990fdc274d50c42"", ""9f05e4847e8bb45cf8609bc2"", ""a95bc2e547f53e5ca85f6541"", ""cdf801fcf5bb05eaeca9d7cf"", ""e6c102ffac4ddf3778f62d22""]"
+CaQR,multiply_n13.qasm,de8e8f3332016c34ba985071,chain_transfer,136,136,15,121,0,1,"[""01d6267cd9e54d314fd4ded2"", ""04fd671fa3cef150997b633c"", ""0c5422cf357020228ab8b5d1"", ""14adade7ee01a863032f46bd"", ""191c53bc7587389dc7fb057c"", ""2423879c8680a9a017badb74"", ""27633b1fc4ab724c59a50214"", ""2f27788e01125c3c05d597b6"", ""52d1f1789c90ae356d9043c5"", ""5ad97578803aaf13d3702683"", ""6c4368c567c87a7f92f9b4e2"", ""a0d1161478b7c23766b1df83"", ""a95bc2e547f53e5ca85f6541"", ""c7b4cdc60fd1a159e1e6e5cc"", ""e6c102ffac4ddf3778f62d22""]"
+CaQR,multiply_n13.qasm,b1c0cbb6511adb39bfbe089f,suffix_swap,69,41,9,32,28,1,"[""03a1c8fa66a3e486a18c8f4e"", ""05e6a55f66cd37e9145c8b81"", ""11cce937b3fea55fd5eff181"", ""830ad959d8ba0e93fab694f2"", ""91bf16e7884e413b78e35e8b"", ""951289672dcd087798080154"", ""ab04ddb2edd17122333d96f0"", ""b30562c93be7a0c89b1c18c8"", ""be0cc630d2e72d6d1f22a2a2""]"
+CaQR,multiply_n13.qasm,b1c0cbb6511adb39bfbe089f,chain_transfer,115,115,15,100,0,1,"[""03a1c8fa66a3e486a18c8f4e"", ""11cce937b3fea55fd5eff181"", ""47845edaf91da43b73273b78"", ""47fd39ecb9fd3f06eaee80d7"", ""56f1afe11f952c740bc7f068"", ""5edb45d3c86990d41b985d8e"", ""830ad959d8ba0e93fab694f2"", ""8368c44353a17e3fba52fcbb"", ""89244e60db492806d2515cbf"", ""91bf16e7884e413b78e35e8b"", ""ab04ddb2edd17122333d96f0"", ""b30562c93be7a0c89b1c18c8"", ""bcdfb4fe45b6d845750de6f6"", ""f51a09648c7e0100c7023d68"", ""fc7c2d104076cb3f0f36ebbb""]"
+CaQR,bv_n10.qasm,94ad76b96571c592ce0f52e2,suffix_swap,9,8,0,8,1,1,[]
+CaQR,bv_n10.qasm,94ad76b96571c592ce0f52e2,chain_transfer,18,18,0,18,0,1,[]
+CaQR,cc_n10.qasm,94ad76b96571c592ce0f52e2,suffix_swap,9,8,0,8,1,1,[]
+CaQR,cc_n10.qasm,94ad76b96571c592ce0f52e2,chain_transfer,18,18,0,18,0,1,[]
+CaQR,graycode6_47.qasm,ef62fe6ae8d6b2397b85769a,suffix_swap,9,8,0,8,1,1,[]
+CaQR,graycode6_47.qasm,ef62fe6ae8d6b2397b85769a,chain_transfer,24,24,0,24,0,1,[]
+CaQR,mod5adder_127.qasm,a844600669f75d6d329f9e3f,suffix_swap,15,0,0,0,15,1,[]
+CaQR,mod5adder_127.qasm,a844600669f75d6d329f9e3f,chain_transfer,0,0,0,0,0,1,[]
+CaQR,ham7_104.qasm,bbf2f7fc9b5e43d39932e466,suffix_swap,21,0,0,0,21,1,[]
+CaQR,ham7_104.qasm,bbf2f7fc9b5e43d39932e466,chain_transfer,0,0,0,0,0,1,[]
+CaQR,4mod5-v0_18.qasm,909f19c000b80c6124af495e,suffix_swap,9,3,0,3,6,1,[]
+CaQR,4mod5-v0_18.qasm,909f19c000b80c6124af495e,chain_transfer,12,12,0,12,0,1,[]
+QASMBench,adder_n4.qasm,59e571bf37115cb3633844b8,suffix_swap,6,0,0,0,6,1,[]
+QASMBench,adder_n4.qasm,59e571bf37115cb3633844b8,chain_transfer,0,0,0,0,0,1,[]
+QASMBench,adder_n10.qasm,b4cee96465376f6d71a21778,suffix_swap,45,0,0,0,45,1,[]
+QASMBench,adder_n10.qasm,b4cee96465376f6d71a21778,chain_transfer,0,0,0,0,0,1,[]
+QASMBench,basis_trotter_n4.qasm,59e571bf37115cb3633844b8,suffix_swap,6,0,0,0,6,1,[]
+QASMBench,basis_trotter_n4.qasm,59e571bf37115cb3633844b8,chain_transfer,0,0,0,0,0,1,[]
+QASMBench,bell_n4.qasm,23592c7ce92b73188f886f4f,suffix_swap,5,2,1,1,3,1,"[""177c54c7940fefc80021aaa3""]"
+QASMBench,bell_n4.qasm,23592c7ce92b73188f886f4f,chain_transfer,8,8,2,6,0,1,"[""177c54c7940fefc80021aaa3"", ""354c028ac0abf012edc189c3""]"
+QASMBench,bell_n4.qasm,294643abc215ee50523d96c9,suffix_swap,5,2,1,1,3,1,"[""354c028ac0abf012edc189c3""]"
+QASMBench,bell_n4.qasm,294643abc215ee50523d96c9,chain_transfer,8,8,2,6,0,1,"[""177c54c7940fefc80021aaa3"", ""354c028ac0abf012edc189c3""]"
+QASMBench,bell_n4.qasm,354c028ac0abf012edc189c3,suffix_swap,5,2,1,1,3,1,"[""294643abc215ee50523d96c9""]"
+QASMBench,bell_n4.qasm,354c028ac0abf012edc189c3,chain_transfer,8,8,2,6,0,1,"[""23592c7ce92b73188f886f4f"", ""294643abc215ee50523d96c9""]"
+QASMBench,bv_n14.qasm,06e67e94225f0dacb9416ec5,suffix_swap,13,12,0,12,1,1,[]
+QASMBench,bv_n14.qasm,06e67e94225f0dacb9416ec5,chain_transfer,26,26,0,26,0,1,[]
+QASMBench,cat_state_n4.qasm,7cee6319d2ba1554fac78982,suffix_swap,4,3,0,3,1,1,[]
+QASMBench,cat_state_n4.qasm,7cee6319d2ba1554fac78982,chain_transfer,12,12,0,12,0,1,[]
+QASMBench,dnn_n8.qasm,34508b2ee36090eec976986f,suffix_swap,28,0,0,0,28,1,[]
+QASMBench,dnn_n8.qasm,34508b2ee36090eec976986f,chain_transfer,0,0,0,0,0,1,[]
+QASMBench,hhl_n7.qasm,bbf2f7fc9b5e43d39932e466,suffix_swap,21,0,0,0,21,1,[]
+QASMBench,hhl_n7.qasm,bbf2f7fc9b5e43d39932e466,chain_transfer,0,0,0,0,0,1,[]
+QASMBench,lpn_n5.qasm,e6f892574d19604bea0cf622,suffix_swap,4,3,0,3,1,1,[]
+QASMBench,lpn_n5.qasm,e6f892574d19604bea0cf622,chain_transfer,8,8,4,4,0,1,"[""2ab0f4a80823e9b47f6e749b"", ""9ae7b17ca2870fccac08134e"", ""c574c0e71e47a2b2c4ad7aff"", ""f68a124ac1344a38187dfbb4""]"
+QASMBench,lpn_n5.qasm,6a9ac828508908b2c8448d37,suffix_swap,4,3,2,1,1,1,"[""6afcc7541ddfe37135cfa121"", ""bdd28696fffb7bbb0ba84429""]"
+QASMBench,lpn_n5.qasm,6a9ac828508908b2c8448d37,chain_transfer,8,8,4,4,0,1,"[""1c218cea9fbbd7b15e0b74a8"", ""275cdc6989d15cb7b7776a7a"", ""bdd28696fffb7bbb0ba84429"", ""d412b9a13e53c2af80b9ce79""]"
+QASMBench,lpn_n5.qasm,7e1622e217677dcda39689d5,suffix_swap,4,3,2,1,1,1,"[""275cdc6989d15cb7b7776a7a"", ""539623921bd32e40ee0caab9""]"
+QASMBench,lpn_n5.qasm,7e1622e217677dcda39689d5,chain_transfer,8,8,4,4,0,1,"[""1c218cea9fbbd7b15e0b74a8"", ""275cdc6989d15cb7b7776a7a"", ""bdd28696fffb7bbb0ba84429"", ""d412b9a13e53c2af80b9ce79""]"
+QASMBench,multiplier_n15.qasm,d2336038aa72e0ba46293ad9,suffix_swap,102,24,3,21,78,1,"[""73a943ba9c367314c31765fb"", ""abcbc2db0f032b37d9df342f"", ""f8645a9da7f97b5bed9cadab""]"
+QASMBench,multiplier_n15.qasm,d2336038aa72e0ba46293ad9,chain_transfer,72,72,3,69,0,1,"[""12a001cf77d3f666dda16ef9"", ""73a943ba9c367314c31765fb"", ""f8645a9da7f97b5bed9cadab""]"
+QASMBench,multiplier_n15.qasm,abcbc2db0f032b37d9df342f,suffix_swap,102,24,3,21,78,1,"[""0be384c0e30ed09c94d74d4e"", ""12a001cf77d3f666dda16ef9"", ""d2336038aa72e0ba46293ad9""]"
+QASMBench,multiplier_n15.qasm,abcbc2db0f032b37d9df342f,chain_transfer,72,72,3,69,0,1,"[""0be384c0e30ed09c94d74d4e"", ""12a001cf77d3f666dda16ef9"", ""73a943ba9c367314c31765fb""]"
+QASMBench,multiplier_n15.qasm,f8645a9da7f97b5bed9cadab,suffix_swap,103,25,3,22,78,1,"[""0be384c0e30ed09c94d74d4e"", ""73a943ba9c367314c31765fb"", ""d2336038aa72e0ba46293ad9""]"
+QASMBench,multiplier_n15.qasm,f8645a9da7f97b5bed9cadab,chain_transfer,100,100,3,97,0,1,"[""0be384c0e30ed09c94d74d4e"", ""73a943ba9c367314c31765fb"", ""d2336038aa72e0ba46293ad9""]"
+QASMBench,pea_n5.qasm,8078f3e8dc614b7a976bec4c,suffix_swap,10,0,0,0,10,1,[]
+QASMBench,pea_n5.qasm,8078f3e8dc614b7a976bec4c,chain_transfer,0,0,0,0,0,1,[]
+QASMBench,qaoa_n6.qasm,a844600669f75d6d329f9e3f,suffix_swap,15,0,0,0,15,1,[]
+QASMBench,qaoa_n6.qasm,a844600669f75d6d329f9e3f,chain_transfer,0,0,0,0,0,1,[]
+QASMBench,qft_n4.qasm,59e571bf37115cb3633844b8,suffix_swap,6,0,0,0,6,1,[]
+QASMBench,qft_n4.qasm,59e571bf37115cb3633844b8,chain_transfer,0,0,0,0,0,1,[]
+QASMBench,variational_n4.qasm,177c54c7940fefc80021aaa3,suffix_swap,5,2,0,2,3,1,[]
+QASMBench,variational_n4.qasm,177c54c7940fefc80021aaa3,chain_transfer,8,8,0,8,0,1,[]
+QASMBench,variational_n4.qasm,af1996ed232bb8fdcd65dbe5,suffix_swap,5,2,0,2,3,1,[]
+QASMBench,variational_n4.qasm,af1996ed232bb8fdcd65dbe5,chain_transfer,8,8,0,8,0,1,[]
+QASMBench,vqe_n4.qasm,59e571bf37115cb3633844b8,suffix_swap,6,0,0,0,6,1,[]
+QASMBench,vqe_n4.qasm,59e571bf37115cb3633844b8,chain_transfer,0,0,0,0,0,1,[]
+QASMBench,ising_n10.qasm,b4cee96465376f6d71a21778,suffix_swap,45,0,0,0,45,1,[]
+QASMBench,ising_n10.qasm,b4cee96465376f6d71a21778,chain_transfer,0,0,0,0,0,1,[]

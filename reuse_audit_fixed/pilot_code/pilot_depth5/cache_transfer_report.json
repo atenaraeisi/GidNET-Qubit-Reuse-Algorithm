@@ -1,0 +1,30 @@
+{
+  "old_unique_plans": 236,
+  "new_unique_plans": 234,
+  "overlapping_plans": 154,
+  "new_plans_needing_routing": 80,
+  "reused_routing_rows": 770,
+  "new_routing_jobs": 400,
+  "total_new_pilot_routing_jobs": 1170,
+  "cached_compiled_plans": 154,
+  "seeds": [
+    42,
+    43,
+    44,
+    45,
+    46
+  ],
+  "new_dir": "C:\\Users\\ASUS\\Downloads\\reuse_audit_fixed\\pilot_code\\pilot_depth5",
+  "old_dir": "C:\\Users\\ASUS\\Downloads\\reuse_audit_fixed\\pilot_code\\pilot_six",
+  "strict_match": [
+    "qasm_paths",
+    "qiskit",
+    "routing_config",
+    "original_active_compaction",
+    "plan_json",
+    "active_width",
+    "source",
+    "filename",
+    "seed_set"
+  ]
+}

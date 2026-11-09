@@ -1,0 +1,8 @@
+feature_a,feature_b,delta_spearman
+quotient_unique_edges,quotient_density,1.0
+normalized_edge_entropy,edge_weight_concentration,-1.0
+max_edge_weight,max_edge_share,0.9945760897296603
+mean_first_2q_local_delay,mean_first_2q_layer_delay,0.9402065544279762
+edge_weight_cv,normalized_edge_entropy,-0.9392436541736833
+edge_weight_cv,edge_weight_concentration,0.9392436541736833
+max_weighted_degree,weighted_degree_cv,0.9004112559928024

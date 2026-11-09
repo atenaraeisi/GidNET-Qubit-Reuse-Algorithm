@@ -1,0 +1,16 @@
+{
+  "schema": "targeted_disagreement_routing_v2",
+  "is_train_only": true,
+  "original_search_dir": "C:\\Users\\ASUS\\Downloads\\reuse_audit_fixed\\pilot_code\\ml_structural_beam_train_v1",
+  "n_all_pairs": 195,
+  "n_same_picks": 145,
+  "n_disagreement_pairs": 50,
+  "n_routed_plans": 74,
+  "n_disagreement_circuits": 9,
+  "n_disagreement_families": 6,
+  "n_all_equal_raw_attempt_pairs": 177,
+  "n_all_equal_valid_scored_pairs": 119,
+  "disagreement_equal_raw_attempts": true,
+  "expected_routing_jobs_for_five_seeds": 370,
+  "note": "Search/policies never rerun. Same-plan pairs are exact paired zero. Random-uniform not evaluated."
+}

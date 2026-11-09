@@ -1,0 +1,36 @@
+{
+  "protocol": "fixed_width_family_split_v1_2026_11_04",
+  "splits": {
+    "train": {
+      "all_shortlisted": 68,
+      "reuse_eligible": 28,
+      "observed_with_neighbor": 19,
+      "reuse_but_no_neighbor_observed": 9,
+      "no_reuse_observed": 33,
+      "unsupported": 7,
+      "distinct_family_groups": 43,
+      "prior_pilot_physical_results": 6
+    },
+    "validation": {
+      "all_shortlisted": 14,
+      "reuse_eligible": 7,
+      "observed_with_neighbor": 5,
+      "reuse_but_no_neighbor_observed": 2,
+      "no_reuse_observed": 7,
+      "unsupported": 0,
+      "distinct_family_groups": 5,
+      "prior_pilot_physical_results": 0
+    },
+    "final_test": {
+      "all_shortlisted": 5,
+      "reuse_eligible": 5,
+      "observed_with_neighbor": 4,
+      "reuse_but_no_neighbor_observed": 1,
+      "no_reuse_observed": 0,
+      "unsupported": 0,
+      "distinct_family_groups": 5,
+      "prior_pilot_physical_results": 0
+    }
+  },
+  "unique_circuit_ids": 87
+}

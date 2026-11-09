@@ -1,0 +1,37 @@
+{
+  "mode": "APPLY",
+  "training_circuits": 28,
+  "training_original_candidate_rows": 1443,
+  "training_unique_plans": 1162,
+  "training_seeds": [
+    42,
+    43,
+    44,
+    45,
+    46
+  ],
+  "sources": [
+    {
+      "directory": "C:\\Users\\ASUS\\Downloads\\reuse_audit_fixed\\pilot_code\\pilot_six",
+      "matching_plans": 236
+    },
+    {
+      "directory": "C:\\Users\\ASUS\\Downloads\\reuse_audit_fixed\\pilot_code\\pilot_depth5",
+      "matching_plans": 234
+    }
+  ],
+  "reusable_unique_plans": 316,
+  "reusable_routing_jobs": 1580,
+  "new_unique_plans": 846,
+  "new_routing_jobs_to_run": 4230,
+  "training_total_jobs": 5810,
+  "checks": [
+    "same QASM path",
+    "Qiskit & router",
+    "active compaction",
+    "same plan chains",
+    "width",
+    "complete seed set",
+    "cross-cache numeric equality"
+  ]
+}

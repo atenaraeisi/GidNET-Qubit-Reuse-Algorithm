@@ -1,0 +1,50 @@
+{
+  "protocol": "fixed_width_family_split_v1_2026_11_04",
+  "assignment_sha256": "a873fcb30e0fc124433395a1ad798da71fd916c71d92e77b6915e5651b90ca69",
+  "structural_audit_sha256": [
+    {
+      "wave": "fixed_full",
+      "file": "circuit_audit.csv",
+      "sha256": "a5d126e25b428fb9223599114fe57769f5e0a29afc25e121c1388516e6e7621c"
+    },
+    {
+      "wave": "wave2",
+      "file": "circuit_audit.csv",
+      "sha256": "04e7bb42c489109f6be01dfdb998486be60d83709571ea46f16cc3cde3209091"
+    }
+  ],
+  "holdout_family_groups": {
+    "validation": [
+      "dnn",
+      "ex1",
+      "four_gt",
+      "ising_model",
+      "modular_arithmetic"
+    ],
+    "final_test": [
+      "hs4",
+      "qec_en",
+      "qram",
+      "squar5",
+      "wim"
+    ]
+  },
+  "known_development_pilot_ids": [
+    "CaQR::cnt3-5_179.qasm",
+    "CaQR::multiply_n13.qasm",
+    "CaQR::sym6_316.qasm",
+    "QASMBench::gcm_h6.qasm",
+    "QASMBench::lpn_n5.qasm",
+    "QASMBench::multiply_n13.qasm"
+  ],
+  "notes": [
+    "Only corrected structural audits were used for split allocation; no routing outcomes read.",
+    "All members of one canonical family remain in the same split.",
+    "The six pilot circuits are training/development, not unbiased test circuits.",
+    "No-reuse-observed means under bounded generator runs only; not proof of impossibility.",
+    "No-neighbor-observed means under bounded two-operator structural screening only.",
+    "Final-test families are reserved and must not be routed or used to tune methods until policy is frozen.",
+    "Validation families are for hyperparameter/threshold/model selection; never fit them.",
+    "Two physically different files named multiply_n13 are always keyed by source::filename."
+  ]
+}

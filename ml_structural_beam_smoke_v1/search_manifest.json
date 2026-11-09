@@ -1,0 +1,29 @@
+{
+  "schema": "structural_beam_control_v1_2026_11_04",
+  "status": "search_only_no_routing",
+  "train_dir": "C:\\Users\\ASUS\\Downloads\\reuse_audit_fixed\\pilot_code\\ml_train_prepare_v1",
+  "split_ledger": "C:\\Users\\ASUS\\Downloads\\reuse_audit_fixed\\pilot_code\\ml_split_v1\\split_ledger.csv",
+  "qasm_paths": {
+    "CaQR::cnt3-5_179.qasm": "C:\\Users\\ASUS\\Documents\\Quantum computing\\Qiskit\\CaQR-main\\CaQR-main\\benchmarks\\cnt3-5_179.qasm"
+  },
+  "search_config": {
+    "seed": 20261104,
+    "repetitions": 2,
+    "budget": 120,
+    "beam_width": 5,
+    "max_depth": 5,
+    "raw_budget": 2400,
+    "per_op_keep": 10,
+    "max_attempts_per_op": 180,
+    "operator_list": [
+      "suffix_swap",
+      "chain_transfer"
+    ]
+  },
+  "n_originals": 3,
+  "n_decisions": 18,
+  "n_unique_routing_plans": 14,
+  "qiskit_version": "0.45.3",
+  "scoring": "quotient_unique_edges ASC, edge_weight_HHI DESC, max_degree ASC; strict improvement to repair",
+  "note": "ALL INPUT TRAIN only. No routing or labels read during search. RandomBeam shares final structural selector; RandomUniform uses random-beam visited pool."
+}

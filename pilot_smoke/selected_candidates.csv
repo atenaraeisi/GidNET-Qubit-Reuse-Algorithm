@@ -1,0 +1,6 @@
+﻿circuit_id,source,filename,family,original_sig,sig,is_original,discovery_move_depth,parent_sig,operator,active_width,active_qubits
+CaQR::cnt3-5_179.qasm,CaQR,cnt3-5_179.qasm,cnt3-5,0ef45d1e5a4d574824458f02,0ef45d1e5a4d574824458f02,1,0,,original,4,16
+CaQR::cnt3-5_179.qasm,CaQR,cnt3-5_179.qasm,cnt3-5,0ef45d1e5a4d574824458f02,02f38d5811c10aa2ac035288,0,1,0ef45d1e5a4d574824458f02,suffix_swap,4,16
+CaQR::cnt3-5_179.qasm,CaQR,cnt3-5_179.qasm,cnt3-5,0ef45d1e5a4d574824458f02,2048d5b0eef33d2189ec25eb,0,1,0ef45d1e5a4d574824458f02,suffix_swap,4,16
+CaQR::cnt3-5_179.qasm,CaQR,cnt3-5_179.qasm,cnt3-5,0ef45d1e5a4d574824458f02,581fe6ab86ef1a5a062ed9fc,0,2,2048d5b0eef33d2189ec25eb,suffix_swap,4,16
+CaQR::cnt3-5_179.qasm,CaQR,cnt3-5_179.qasm,cnt3-5,0ef45d1e5a4d574824458f02,8911d4b3dd5797c235056373,0,3,6123660aa9323dcf86bb12a6,suffix_swap,4,16

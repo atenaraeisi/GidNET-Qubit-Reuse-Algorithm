@@ -1,0 +1,9 @@
+feature_a,feature_b,delta_spearman
+max_raw_weighted_incompat,max_chain_weighted_incompat,1.0
+normalized_edge_entropy,edge_weight_concentration,-1.0
+quotient_unique_edges,quotient_density,0.991943504964558
+max_edge_weight,max_edge_share,0.9818791757962356
+edge_weight_cv,normalized_edge_entropy,-0.9367779659042742
+edge_weight_cv,edge_weight_concentration,0.9367779659042742
+max_raw_weighted_incompat,max_chain_jaccard_incompat,0.9347426844261839
+max_chain_jaccard_incompat,max_chain_weighted_incompat,0.9347426844261839

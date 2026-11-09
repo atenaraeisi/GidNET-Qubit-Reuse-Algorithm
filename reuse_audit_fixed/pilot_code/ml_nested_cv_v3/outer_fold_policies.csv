@@ -1,0 +1,11 @@
+﻿objective,outer_fold,n_outer_train_families,n_outer_test_families,heldout_families,n_train_originals,n_test_originals,inner_chosen_policy,inner_chosen_score
+swap_count,0,11,3,graycode6|lpn|rd,52,13,pair_logit_gate_0.65,0.49353535353535605
+swap_count,1,11,3,cc_n10|gcm_h6|multiplication,52,13,no_repair,0.0
+swap_count,2,12,2,cnt3_5|system,53,12,pair_logit_gate_0.65,0.378148148148149
+swap_count,3,11,3,bernstein_vazirani|cm|symmetry,51,14,pair_hgb_gate_0.50,0.3383838383838392
+swap_count,4,11,3,alu|entangled_states|variational,52,13,pair_logit_gate_0.65,0.49676767676767924
+routed_depth,0,11,3,graycode6|lpn|rd,52,13,logical_depth_rule,1.0153535353535341
+routed_depth,1,11,3,cc_n10|gcm_h6|multiplication,52,13,logical_depth_rule,2.1143434343434335
+routed_depth,2,12,2,cnt3_5|system,53,12,logical_depth_rule,1.4288888888888889
+routed_depth,3,11,3,bernstein_vazirani|cm|symmetry,51,14,pair_hgb_gate_0.50,2.3636363636363678
+routed_depth,4,11,3,alu|entangled_states|variational,52,13,logical_depth_rule,2.3727272727272712

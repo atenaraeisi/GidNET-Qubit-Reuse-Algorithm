@@ -1,0 +1,53 @@
+{
+  "status": "prepared_only_not_labeled",
+  "qiskit": "0.45.3",
+  "data_protocol": "sampled_depth_1_to_3_reuse_pilot_v1",
+  "qasm_paths": {
+    "CaQR::cnt3-5_179.qasm": "C:\\Users\\ASUS\\Documents\\Quantum computing\\Qiskit\\CaQR-main\\CaQR-main\\benchmarks\\cnt3-5_179.qasm",
+    "CaQR::sym6_316.qasm": "C:\\Users\\ASUS\\Documents\\Quantum computing\\Qiskit\\CaQR-main\\CaQR-main\\benchmarks\\sym6_316.qasm",
+    "CaQR::multiply_n13.qasm": "C:\\Users\\ASUS\\Documents\\Quantum computing\\Qiskit\\CaQR-main\\CaQR-main\\benchmarks\\multiply_n13.qasm",
+    "QASMBench::multiply_n13.qasm": "C:\\Users\\ASUS\\Downloads\\QASMBench-master\\QASMBench-master\\medium\\multiply_n13\\multiply_n13.qasm",
+    "QASMBench::gcm_h6.qasm": "C:\\Users\\ASUS\\Downloads\\QASMBench-master\\QASMBench-master\\medium\\gcm_n13\\gcm_h6.qasm",
+    "QASMBench::lpn_n5.qasm": "C:\\Users\\ASUS\\Downloads\\QASMBench-master\\QASMBench-master\\small\\lpn_n5\\lpn_n5.qasm"
+  },
+  "original_active_compaction": "reuse_feasibility_audit_fixed semantics",
+  "feature_code": "exp4d_features_robust_audit_v2.py",
+  "feature_count": 25,
+  "routing_config": "heavy_hex(7), sabre layout and routing, optimization_level=1, seed_transpiler",
+  "circuits_requested": [
+    "CaQR::cnt3-5_179.qasm",
+    "CaQR::sym6_316.qasm",
+    "CaQR::multiply_n13.qasm",
+    "QASMBench::multiply_n13.qasm",
+    "QASMBench::gcm_h6.qasm",
+    "QASMBench::lpn_n5.qasm"
+  ],
+  "circuits_prepared": [
+    "CaQR::cnt3-5_179.qasm",
+    "CaQR::multiply_n13.qasm",
+    "CaQR::sym6_316.qasm",
+    "QASMBench::gcm_h6.qasm",
+    "QASMBench::lpn_n5.qasm",
+    "QASMBench::multiply_n13.qasm"
+  ],
+  "errors": 0,
+  "selected_source_candidate_rows": 252,
+  "selected_unique_plans": 236,
+  "total_routing_jobs_for_2_seeds": 472,
+  "parameter_settings": {
+    "max_originals": 2,
+    "max_depth": 3,
+    "max_candidates": 20,
+    "per_op_keep": 4,
+    "max_frontier": 8,
+    "max_attempts_per_op": 180,
+    "max_discovered": 200,
+    "seed": 2026
+  },
+  "warnings": [
+    "No routing or learning has occurred.",
+    "Discovery depth is sampled path length, not global shortest path.",
+    "Measured features are NOT calibrated to a physical objective.",
+    "Reserved final-test circuits must not be chosen after inspecting outcomes."
+  ]
+}

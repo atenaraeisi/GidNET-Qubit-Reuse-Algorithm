@@ -1,0 +1,7 @@
+{
+  "input_selected": "adaptive_traced\\per_source.csv",
+  "input_trace": "adaptive_traced\\candidate_trace.csv",
+  "objective": "swap_count",
+  "searches": 537,
+  "note": "Post-hoc heldout oracle for diagnosis only; no routing"
+}

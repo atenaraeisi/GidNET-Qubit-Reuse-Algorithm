@@ -1,0 +1,5 @@
+objective,arm,policy,mean_gain_pct,n_circuits,n_evaluated_circuits
+swap_count,old_one_step,adaptive_beam,6.897931711964117,3,3
+swap_count,old_one_step,random_beam,7.212108747842773,3,3
+swap_count,old_plus_deep,adaptive_beam,6.483223585623432,3,3
+swap_count,old_plus_deep,random_beam,7.144735908596414,3,3

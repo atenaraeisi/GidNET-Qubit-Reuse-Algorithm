@@ -1,0 +1,13 @@
+{
+  "circuits_requested": 3,
+  "circuits_with_feature_profiles": 3,
+  "profiled_plan_rows": 47,
+  "feature_count": 25,
+  "note": "No routing, no training. Only 25 plan_features attributes; logical_depth and norm_depth from 4C-1 are excluded. Low-candidate sampling is not full-search evaluation.",
+  "dependencies": [
+    "Qiskit 0.45.x",
+    "exp4d_features.py",
+    "reuse_validity.py",
+    "reuse_adversarial.py"
+  ]
+}

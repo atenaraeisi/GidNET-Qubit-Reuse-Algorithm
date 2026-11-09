@@ -1,0 +1,5 @@
+objective,arm,policy,gain_pct_equal_circuit,n_circuits,n_circuits_evaluated,mean_scored,mean_search_time_sec
+swap_count,multi_step,adaptive_beam,-3.9730639730639767,1,1,120.0,6.398968900000909
+swap_count,multi_step,random_beam,-2.558922558922557,1,1,120.0,6.260261499999615
+swap_count,one_step,adaptive_beam,-3.9730639730639767,1,1,120.0,6.39900950000083
+swap_count,one_step,random_beam,-2.558922558922557,1,1,120.0,6.317272500000399

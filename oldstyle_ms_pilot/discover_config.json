@@ -1,0 +1,13 @@
+{
+  "c1": "C:\\Users\\ASUS\\Documents\\Quantum computing\\Qiskit\\GidNET-Qubit-Reuse-Algorithm\\exp4c1_all",
+  "features": "C:\\Users\\ASUS\\Documents\\Quantum computing\\Qiskit\\GidNET-Qubit-Reuse-Algorithm\\exp4d_features_all.csv",
+  "circuits": "rd84_142.qasm,mini_alu_305.qasm,ising_model_16.qasm",
+  "max_sources": 2,
+  "seed": 7,
+  "max_depth": 5,
+  "beam_width": 5,
+  "budget": 60,
+  "per_expand": 30,
+  "max_attempts_per_expand": 500,
+  "ops": "suffix_swap,chain_transfer"
+}

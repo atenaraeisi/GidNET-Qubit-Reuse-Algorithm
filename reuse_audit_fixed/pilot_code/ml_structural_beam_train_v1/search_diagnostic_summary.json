@@ -1,0 +1,12 @@
+{
+  "schema": "structural_beam_control_v1_2026_11_04",
+  "train_only": true,
+  "n_originals": 65,
+  "n_paired_runs": 195,
+  "same_selected_plan": 145,
+  "structural_score_better": 36,
+  "both_no_repair": 75,
+  "equal_n_valid_scored": 119,
+  "n_unique_final_plan_plus_original": 225,
+  "note": "Search-only, not routed cost. If most plans identical or no structural changes, postpone routing and redesign the heuristic."
+}

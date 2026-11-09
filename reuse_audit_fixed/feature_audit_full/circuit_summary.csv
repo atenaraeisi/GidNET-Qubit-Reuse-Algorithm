@@ -1,0 +1,88 @@
+source,filename,feature_status,n_plans_profiled,n_neighbors_profiled,feature_profile_ms,preparation_ms,error,mutation_attempts
+CaQR,0410184_169.qasm,no_reuse_plan,0,0,0.0,18.8128,,0.0
+CaQR,4gt10-v1_81.qasm,no_reuse_plan,0,0,0.0,14.3334,,0.0
+CaQR,4gt11_84.qasm,ok,4,2,1.8064,19.7567,,26.0
+CaQR,4gt12-v0_86.qasm,no_reuse_plan,0,0,0.0,29.1381,,0.0
+CaQR,4gt13_92.qasm,no_reuse_plan,0,0,0.0,15.2249,,0.0
+CaQR,4gt4-v0_80.qasm,no_reuse_plan,0,0,0.0,53.2099,,0.0
+CaQR,4gt5_75.qasm,no_reuse_plan,0,0,0.0,16.3805,,0.0
+CaQR,4mod5-v0_18.qasm,ok,1,0,0.6105,22.2807,,21.0
+CaQR,4mod5-v0_20.qasm,ok,6,4,2.2434,18.5188,,38.0
+CaQR,4mod7-v0_94.qasm,no_reuse_plan,0,0,0.0,24.2638,,0.0
+CaQR,C17_204.qasm,no_reuse_plan,0,0,0.0,27.7439,,0.0
+CaQR,alu-v0_27.qasm,ok,4,2,0.9953000000000001,10.7598,,42.0
+CaQR,alu-v2_30.qasm,no_reuse_plan,0,0,0.0,35.9878,,0.0
+CaQR,bv_n10.qasm,ok,1,0,0.3817,10.1036,,27.0
+CaQR,cc_n10.qasm,ok,1,0,0.7615,22.7101,,27.0
+CaQR,cm152a_212.qasm,ok,10,8,13.5806,65.908,,279.0
+CaQR,cm42a_207.qasm,ok,4,2,5.2836,111.9967,,404.0
+CaQR,cm82a_208.qasm,no_reuse_plan,0,0,0.0,105.9293,,0.0
+CaQR,cnt3-5_179.qasm,ok,14,12,8.3079,8.1831,,566.0
+CaQR,cnt3-5_180.qasm,ok,14,12,11.0505,53.1239,,582.0
+CaQR,con1_216.qasm,no_reuse_plan,0,0,0.0,53.2444,,0.0
+CaQR,decod24-v1_41.qasm,no_reuse_plan,0,0,0.0,10.4916,,0.0
+CaQR,ex1_226.qasm,ok,1,0,0.4219,14.4519,,15.0
+CaQR,graycode6_47.qasm,ok,1,0,1.3076,15.3962,,33.0
+CaQR,ham7_104.qasm,no_reuse_plan,0,0,0.0,34.7405,,0.0
+CaQR,hwb4_49.qasm,no_reuse_plan,0,0,0.0,23.0271,,0.0
+CaQR,hwb5_53.qasm,no_reuse_plan,0,0,0.0,120.8399,,0.0
+CaQR,ising_model_10.qasm,no_reuse_plan,0,0,0.0,42.0971,,0.0
+CaQR,ising_model_16.qasm,ok,8,6,4.7877,46.9697,,710.0
+CaQR,majority_239.qasm,no_reuse_plan,0,0,0.0,104.1541,,0.0
+CaQR,mini-alu_167.qasm,no_reuse_plan,0,0,0.0,30.3711,,0.0
+CaQR,mini_alu_305.qasm,ok,12,10,4.6819,28.3163,,256.0
+CaQR,mod10_176.qasm,no_reuse_plan,0,0,0.0,14.7656,,0.0
+CaQR,mod5adder_127.qasm,no_reuse_plan,0,0,0.0,51.3012,,0.0
+CaQR,mod5d1_63.qasm,no_reuse_plan,0,0,0.0,19.3592,,0.0
+CaQR,mod5mils_65.qasm,ok,4,2,1.6841,17.3823,,47.0
+CaQR,mod8-10_178.qasm,no_reuse_plan,0,0,0.0,31.6669,,0.0
+CaQR,multiply_n13.qasm,ok,26,24,8.4844,27.0152,,234.0
+CaQR,one-two-three-v2_100.qasm,no_reuse_plan,0,0,0.0,11.9858,,0.0
+CaQR,qft_10.qasm,no_reuse_plan,0,0,0.0,30.4363,,0.0
+CaQR,qft_16.qasm,no_reuse_plan,0,0,0.0,56.6871,,0.0
+CaQR,rd32_270.qasm,no_reuse_plan,0,0,0.0,11.8308,,0.0
+CaQR,rd53_311.qasm,ok,21,19,17.3884,19.5301,,480.0
+CaQR,rd73_140.qasm,ok,8,6,4.388,36.7509,,234.0
+CaQR,rd84_142.qasm,ok,18,16,9.4854,39.7911,,248.0
+CaQR,sf_276.qasm,no_reuse_plan,0,0,0.0,40.8935,,0.0
+CaQR,squar5_261.qasm,ok,11,9,15.656699999999999,157.8434,,320.0
+CaQR,sym6_316.qasm,ok,26,24,14.3152,12.1641,,332.0
+CaQR,sym9_146.qasm,ok,10,8,4.8721,41.063,,330.0
+CaQR,sys6-v0_111.qasm,ok,14,12,5.1004000000000005,17.0487,,174.0
+CaQR,system9.qasm,ok,24,22,10.9286,40.9128,,270.0
+CaQR,wim_266.qasm,ok,10,8,10.7012,90.7718,,242.0
+MQT,graphstate_indep_opt0_8.qasm,skip,0,0,,,Original screening flagged as parser/error,
+MQT,grover_indep_opt0_10.qasm,skip,0,0,,,Original screening flagged as parser/error,
+MQT,grover_indep_opt0_6.qasm,skip,0,0,,,Original screening flagged as parser/error,
+MQT,qaoa_indep_opt0_12.qasm,skip,0,0,,,Original screening flagged as parser/error,
+MQT,qaoa_indep_opt0_8.qasm,skip,0,0,,,Original screening flagged as parser/error,
+MQT,randomcircuit_indep_opt0_10.qasm,skip,0,0,,,Original screening flagged as parser/error,
+QASMBench,adder_n10.qasm,no_reuse_plan,0,0,0.0,22.9072,,0.0
+QASMBench,adder_n4.qasm,no_reuse_plan,0,0,0.0,8.5362,,0.0
+QASMBench,basis_test_n4.qasm,no_reuse_plan,0,0,0.0,15.7754,,0.0
+QASMBench,basis_trotter_n4.qasm,no_reuse_plan,0,0,0.0,141.518,,0.0
+QASMBench,bell_n4.qasm,ok,6,4,2.0536,19.0949,,26.0
+QASMBench,bv_n14.qasm,ok,1,0,0.4554,19.1523,,39.0
+QASMBench,bv_n19.qasm,ok,1,0,0.4995,13.2542,,54.0
+QASMBench,cat_state_n22.qasm,ok,1,0,0.8638,11.1474,,385.0
+QASMBench,cat_state_n4.qasm,ok,1,0,0.6025,14.0569,,16.0
+QASMBench,dnn_n16.qasm,ok,6,4,9.1478,184.557,,632.0
+QASMBench,dnn_n8.qasm,no_reuse_plan,0,0,0.0,82.9001,,0.0
+QASMBench,error_correctiond3_n5.qasm,no_reuse_plan,0,0,0.0,15.8687,,0.0
+QASMBench,gcm_h6.qasm,ok,14,12,22.7459,256.27,,474.0
+QASMBench,ghz_state_n23.qasm,ok,1,0,0.6613,11.9866,,419.0
+QASMBench,hhl_n7.qasm,no_reuse_plan,0,0,0.0,60.1902,,0.0
+QASMBench,hs4_n4.qasm,ok,4,2,1.5067,14.9818,,32.0
+QASMBench,ising_n10.qasm,no_reuse_plan,0,0,0.0,51.6044,,0.0
+QASMBench,lpn_n5.qasm,error,0,0,,16.4679,TypeError: unsupported operand type(s) for +: 'NoneType' and 'int',
+QASMBench,multiplier_n15.qasm,error,0,0,,25.3373,TypeError: unsupported operand type(s) for +: 'NoneType' and 'NoneType',
+QASMBench,multiply_n13.qasm,error,0,0,,12.4468,TypeError: unsupported operand type(s) for +: 'NoneType' and 'NoneType',
+QASMBench,pea_n5.qasm,no_reuse_plan,0,0,0.0,43.446,,0.0
+QASMBench,qaoa_n6.qasm,no_reuse_plan,0,0,0.0,96.1719,,0.0
+QASMBench,qec_en_n5.qasm,ok,1,0,0.5305,19.2515,,21.0
+QASMBench,qft_n18.qasm,no_reuse_plan,0,0,0.0,57.3933,,0.0
+QASMBench,qft_n4.qasm,no_reuse_plan,0,0,0.0,21.313,,0.0
+QASMBench,qram_n20.qasm,error,0,0,,18.9283,TypeError: unsupported operand type(s) for +: 'NoneType' and 'NoneType',
+QASMBench,simon_n6.qasm,skip,0,0,,,Original screening flagged as parser/error,
+QASMBench,variational_n4.qasm,ok,2,0,0.7874,14.3896,,26.0
+QASMBench,vqe_n4.qasm,no_reuse_plan,0,0,0.0,17.1063,,0.0

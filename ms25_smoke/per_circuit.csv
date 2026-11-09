@@ -1,0 +1,5 @@
+objective,arm,policy,circuit,gain_pct,n_eval,n_sources,harm_rate,no_repair_rate,mean_scored,mean_time_sec
+swap_count,multi_step,adaptive_beam,cnt3-5_179.qasm,-3.9730639730639767,1,1,1.0,0.0,120.0,6.398968900000909
+swap_count,multi_step,random_beam,cnt3-5_179.qasm,-2.558922558922557,1,1,1.0,0.0,120.0,6.260261499999615
+swap_count,one_step,adaptive_beam,cnt3-5_179.qasm,-3.9730639730639767,1,1,1.0,0.0,120.0,6.39900950000083
+swap_count,one_step,random_beam,cnt3-5_179.qasm,-2.558922558922557,1,1,1.0,0.0,120.0,6.317272500000399

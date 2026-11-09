@@ -1,0 +1,11 @@
+﻿circuit_id,source,filename,family,original_sig,sig,is_original,discovery_move_depth,objective,baseline_mean,candidate_mean,abs_gain,gain_pct,n_seeds,harm
+CaQR::cnt3-5_179.qasm,CaQR,cnt3-5_179.qasm,cnt3-5,0ef45d1e5a4d574824458f02,0ef45d1e5a4d574824458f02,1,0,swap_count,50.0,50.0,0.0,0.0,2,0
+CaQR::cnt3-5_179.qasm,CaQR,cnt3-5_179.qasm,cnt3-5,0ef45d1e5a4d574824458f02,0ef45d1e5a4d574824458f02,1,0,routed_depth,168.0,168.0,0.0,0.0,2,0
+CaQR::cnt3-5_179.qasm,CaQR,cnt3-5_179.qasm,cnt3-5,0ef45d1e5a4d574824458f02,02f38d5811c10aa2ac035288,0,1,swap_count,50.0,49.0,1.0,2.0,2,0
+CaQR::cnt3-5_179.qasm,CaQR,cnt3-5_179.qasm,cnt3-5,0ef45d1e5a4d574824458f02,02f38d5811c10aa2ac035288,0,1,routed_depth,168.0,168.5,-0.5,-0.2976190476190476,2,1
+CaQR::cnt3-5_179.qasm,CaQR,cnt3-5_179.qasm,cnt3-5,0ef45d1e5a4d574824458f02,2048d5b0eef33d2189ec25eb,0,1,swap_count,50.0,51.0,-1.0,-2.0,2,1
+CaQR::cnt3-5_179.qasm,CaQR,cnt3-5_179.qasm,cnt3-5,0ef45d1e5a4d574824458f02,2048d5b0eef33d2189ec25eb,0,1,routed_depth,168.0,167.5,0.5,0.2976190476190476,2,0
+CaQR::cnt3-5_179.qasm,CaQR,cnt3-5_179.qasm,cnt3-5,0ef45d1e5a4d574824458f02,581fe6ab86ef1a5a062ed9fc,0,2,swap_count,50.0,50.0,0.0,0.0,2,0
+CaQR::cnt3-5_179.qasm,CaQR,cnt3-5_179.qasm,cnt3-5,0ef45d1e5a4d574824458f02,581fe6ab86ef1a5a062ed9fc,0,2,routed_depth,168.0,166.0,2.0,1.1904761904761905,2,0
+CaQR::cnt3-5_179.qasm,CaQR,cnt3-5_179.qasm,cnt3-5,0ef45d1e5a4d574824458f02,8911d4b3dd5797c235056373,0,3,swap_count,50.0,48.5,1.5,3.0,2,0
+CaQR::cnt3-5_179.qasm,CaQR,cnt3-5_179.qasm,cnt3-5,0ef45d1e5a4d574824458f02,8911d4b3dd5797c235056373,0,3,routed_depth,168.0,174.5,-6.5,-3.869047619047619,2,1

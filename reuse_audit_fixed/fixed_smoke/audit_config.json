@@ -1,0 +1,15 @@
+{
+  "iterations": 10,
+  "restarts": 2,
+  "max_originals": 3,
+  "max_mutations_per_op": 300,
+  "operators": [
+    "suffix_swap",
+    "chain_transfer"
+  ],
+  "seed": 2026,
+  "max_circuits": 0,
+  "only_circuits": "cnt3-5_179.qasm,rd53_311.qasm,sym6_316.qasm",
+  "gidnet_candidate_matrix_fix": "quantum_only_input_output_maps_audit_patch_v1",
+  "note": "Best observed active width; first-step neighbor screen, not physical improvement or exact plan-space count"
+}

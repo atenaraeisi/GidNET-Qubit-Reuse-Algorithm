@@ -1,0 +1,12 @@
+{
+  "schema": "structural_beam_control_v1_2026_11_04",
+  "seed_set": [
+    300,
+    301,
+    302,
+    303,
+    304
+  ],
+  "router": "router_template.py heavy_hex(7) sabre v0.45.3",
+  "gidnet_source": "C:\\Users\\ASUS\\Downloads\\reuse_audit_fixed\\pilot_code\\qubitreuse.py"
+}

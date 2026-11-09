@@ -1,0 +1,242 @@
+{
+  "routing_rows": 5810,
+  "unique_plans": 1162,
+  "label_rows": 2886,
+  "source_candidate_rows": 1443,
+  "source_originals": 65,
+  "seed_set": [
+    42,
+    43,
+    44,
+    45,
+    46
+  ],
+  "n_circuits": 28,
+  "feature_mode": "compiled",
+  "n_predictor_columns": 10,
+  "feature_columns": [
+    "compiled_logical_depth",
+    "orig_compiled_logical_depth",
+    "delta_compiled_logical_depth",
+    "compiled_norm_depth",
+    "orig_compiled_norm_depth",
+    "delta_compiled_norm_depth",
+    "compiled_dyn_width",
+    "orig_compiled_dyn_width",
+    "delta_compiled_dyn_width",
+    "move_depth"
+  ],
+  "cv_split_method": "GroupKFold, family_group only (TRAIN data)",
+  "cv_folds": 5,
+  "oof_regression": {
+    "swap_count": {
+      "ridge": {
+        "oof_mae": 3.0284073364226063,
+        "oof_r2": -0.3394420575715025
+      },
+      "hgb": {
+        "oof_mae": 2.761133076567375,
+        "oof_r2": -0.12148538559958699
+      }
+    },
+    "routed_depth": {
+      "ridge": {
+        "oof_mae": 5.63746892491272,
+        "oof_r2": 0.2535231087775123
+      },
+      "hgb": {
+        "oof_mae": 5.505213642092731,
+        "oof_r2": 0.2746317124690133
+      }
+    }
+  },
+  "method_comparison": [
+    {
+      "objective": "routed_depth",
+      "method": "hgb",
+      "n_originals": 65,
+      "n_circuits": 28,
+      "n_family_groups": 14,
+      "n_pct_defined": 65,
+      "mean_gain_abs_by_original": 3.1784615384615362,
+      "mean_gain_pct_by_original": 2.010280263705089,
+      "mean_gain_abs_by_circuit": 2.459523809523808,
+      "mean_gain_abs_by_family": 2.1492063492063473,
+      "harm_count": 13,
+      "no_repair_count": 25,
+      "mean_regret": 5.97230769230769
+    },
+    {
+      "objective": "routed_depth",
+      "method": "logical_depth_rule",
+      "n_originals": 65,
+      "n_circuits": 28,
+      "n_family_groups": 14,
+      "n_pct_defined": 65,
+      "mean_gain_abs_by_original": 3.283076923076922,
+      "mean_gain_pct_by_original": 2.0642146580293916,
+      "mean_gain_abs_by_circuit": 2.54047619047619,
+      "mean_gain_abs_by_family": 2.087619047619047,
+      "harm_count": 4,
+      "no_repair_count": 32,
+      "mean_regret": 5.867692307692304
+    },
+    {
+      "objective": "routed_depth",
+      "method": "no_repair",
+      "n_originals": 65,
+      "n_circuits": 28,
+      "n_family_groups": 14,
+      "n_pct_defined": 65,
+      "mean_gain_abs_by_original": 0.0,
+      "mean_gain_pct_by_original": 0.0,
+      "mean_gain_abs_by_circuit": 0.0,
+      "mean_gain_abs_by_family": 0.0,
+      "harm_count": 0,
+      "no_repair_count": 65,
+      "mean_regret": 9.150769230769226
+    },
+    {
+      "objective": "routed_depth",
+      "method": "oracle",
+      "n_originals": 65,
+      "n_circuits": 28,
+      "n_family_groups": 14,
+      "n_pct_defined": 65,
+      "mean_gain_abs_by_original": 9.150769230769226,
+      "mean_gain_pct_by_original": 4.5003203620422765,
+      "mean_gain_abs_by_circuit": 7.158333333333331,
+      "mean_gain_abs_by_family": 7.036666666666663,
+      "harm_count": 0,
+      "no_repair_count": 16,
+      "mean_regret": 0.0
+    },
+    {
+      "objective": "routed_depth",
+      "method": "random_one",
+      "n_originals": 65,
+      "n_circuits": 28,
+      "n_family_groups": 14,
+      "n_pct_defined": 65,
+      "mean_gain_abs_by_original": -0.06769230769230723,
+      "mean_gain_pct_by_original": 0.044096449415586284,
+      "mean_gain_abs_by_circuit": -0.05238095238095201,
+      "mean_gain_abs_by_family": -0.019999999999998685,
+      "harm_count": 23,
+      "no_repair_count": 16,
+      "mean_regret": 9.218461538461534
+    },
+    {
+      "objective": "routed_depth",
+      "method": "ridge",
+      "n_originals": 65,
+      "n_circuits": 28,
+      "n_family_groups": 14,
+      "n_pct_defined": 65,
+      "mean_gain_abs_by_original": 2.79076923076923,
+      "mean_gain_pct_by_original": 1.8261253504711037,
+      "mean_gain_abs_by_circuit": 2.159523809523809,
+      "mean_gain_abs_by_family": 1.7611111111111108,
+      "harm_count": 5,
+      "no_repair_count": 37,
+      "mean_regret": 6.359999999999997
+    },
+    {
+      "objective": "swap_count",
+      "method": "hgb",
+      "n_originals": 65,
+      "n_circuits": 28,
+      "n_family_groups": 14,
+      "n_pct_defined": 53,
+      "mean_gain_abs_by_original": 0.13538461538461583,
+      "mean_gain_pct_by_original": 1.2045685418002072,
+      "mean_gain_abs_by_circuit": 0.10476190476190508,
+      "mean_gain_abs_by_family": 0.2595238095238101,
+      "harm_count": 11,
+      "no_repair_count": 33,
+      "mean_regret": 2.8369230769230764
+    },
+    {
+      "objective": "swap_count",
+      "method": "logical_depth_rule",
+      "n_originals": 65,
+      "n_circuits": 28,
+      "n_family_groups": 14,
+      "n_pct_defined": 53,
+      "mean_gain_abs_by_original": -0.13846153846153872,
+      "mean_gain_pct_by_original": -1.00544406256005,
+      "mean_gain_abs_by_circuit": -0.10714285714285735,
+      "mean_gain_abs_by_family": -0.15476190476190493,
+      "harm_count": 13,
+      "no_repair_count": 32,
+      "mean_regret": 3.110769230769231
+    },
+    {
+      "objective": "swap_count",
+      "method": "no_repair",
+      "n_originals": 65,
+      "n_circuits": 28,
+      "n_family_groups": 14,
+      "n_pct_defined": 53,
+      "mean_gain_abs_by_original": 0.0,
+      "mean_gain_pct_by_original": 0.0,
+      "mean_gain_abs_by_circuit": 0.0,
+      "mean_gain_abs_by_family": 0.0,
+      "harm_count": 0,
+      "no_repair_count": 65,
+      "mean_regret": 2.9723076923076923
+    },
+    {
+      "objective": "swap_count",
+      "method": "oracle",
+      "n_originals": 65,
+      "n_circuits": 28,
+      "n_family_groups": 14,
+      "n_pct_defined": 53,
+      "mean_gain_abs_by_original": 2.9723076923076923,
+      "mean_gain_pct_by_original": 9.651162321564259,
+      "mean_gain_abs_by_circuit": 2.330952380952381,
+      "mean_gain_abs_by_family": 2.2887301587301585,
+      "harm_count": 0,
+      "no_repair_count": 19,
+      "mean_regret": 0.0
+    },
+    {
+      "objective": "swap_count",
+      "method": "random_one",
+      "n_originals": 65,
+      "n_circuits": 28,
+      "n_family_groups": 14,
+      "n_pct_defined": 53,
+      "mean_gain_abs_by_original": -0.3138461538461526,
+      "mean_gain_pct_by_original": 0.16340725063711095,
+      "mean_gain_abs_by_circuit": -0.21785714285714203,
+      "mean_gain_abs_by_family": -0.144444444444443,
+      "harm_count": 26,
+      "no_repair_count": 16,
+      "mean_regret": 3.2861538461538453
+    },
+    {
+      "objective": "swap_count",
+      "method": "ridge",
+      "n_originals": 65,
+      "n_circuits": 28,
+      "n_family_groups": 14,
+      "n_pct_defined": 53,
+      "mean_gain_abs_by_original": -0.21538461538461506,
+      "mean_gain_pct_by_original": -0.24129331157339953,
+      "mean_gain_abs_by_circuit": -0.16666666666666638,
+      "mean_gain_abs_by_family": -0.17476190476190445,
+      "harm_count": 8,
+      "no_repair_count": 53,
+      "mean_regret": 3.1876923076923074
+    }
+  ],
+  "trained_models": {
+    "swap_count_ridge": "swap_count_ridge_compiled_TRAIN_ONLY.joblib",
+    "swap_count_hgb": "swap_count_hgb_compiled_TRAIN_ONLY.joblib",
+    "routed_depth_ridge": "routed_depth_ridge_compiled_TRAIN_ONLY.joblib",
+    "routed_depth_hgb": "routed_depth_hgb_compiled_TRAIN_ONLY.joblib"
+  },
+  "warning": "Train-only grouped OOF experiment. NOT untouched validation or final-test evaluation. All candidates were discovered OFFLINE without the model; NOT learned beam expansion. OOF selection is on 5-seed averaged labels and may be noisy on unseen routing seeds."
+}

@@ -1,0 +1,95 @@
+{
+  "protocol": "fixed_width_heldout_winners_v1",
+  "selection_seeds": [
+    42,
+    43,
+    44,
+    45,
+    46
+  ],
+  "evaluation_seeds": [
+    200,
+    201,
+    202,
+    203,
+    204,
+    205,
+    206,
+    207,
+    208,
+    209,
+    210,
+    211,
+    212,
+    213,
+    214,
+    215,
+    216,
+    217,
+    218,
+    219,
+    220,
+    221,
+    222,
+    223,
+    224,
+    225,
+    226,
+    227,
+    228,
+    229
+  ],
+  "pools": [
+    "depth3",
+    "depth5"
+  ],
+  "winner_rows": 48,
+  "unique_plans": 45,
+  "unique_sources": 12,
+  "qasm_paths": {
+    "CaQR::cnt3-5_179.qasm": "C:\\Users\\ASUS\\Documents\\Quantum computing\\Qiskit\\CaQR-main\\CaQR-main\\benchmarks\\cnt3-5_179.qasm",
+    "CaQR::sym6_316.qasm": "C:\\Users\\ASUS\\Documents\\Quantum computing\\Qiskit\\CaQR-main\\CaQR-main\\benchmarks\\sym6_316.qasm",
+    "CaQR::multiply_n13.qasm": "C:\\Users\\ASUS\\Documents\\Quantum computing\\Qiskit\\CaQR-main\\CaQR-main\\benchmarks\\multiply_n13.qasm",
+    "QASMBench::multiply_n13.qasm": "C:\\Users\\ASUS\\Downloads\\QASMBench-master\\QASMBench-master\\medium\\multiply_n13\\multiply_n13.qasm",
+    "QASMBench::gcm_h6.qasm": "C:\\Users\\ASUS\\Downloads\\QASMBench-master\\QASMBench-master\\medium\\gcm_n13\\gcm_h6.qasm",
+    "QASMBench::lpn_n5.qasm": "C:\\Users\\ASUS\\Downloads\\QASMBench-master\\QASMBench-master\\small\\lpn_n5\\lpn_n5.qasm"
+  },
+  "qasm_sha256": {
+    "CaQR::cnt3-5_179.qasm": "d45d6766c6179071464001062635c6ffa103cc20e4fb36b3d574e87f7bcaa3de",
+    "CaQR::sym6_316.qasm": "f3ad3ae1b0a5f6650db422c7c7637e971c4a76c5c22d4602d3860e553e425d40",
+    "CaQR::multiply_n13.qasm": "c46c1135755a9a3899d4ebc495f105ae12502463645e8b0e45730d39439db2c8",
+    "QASMBench::multiply_n13.qasm": "6d00a50a97f2224ddbb993ed3d82b1928cc1397997fc0347296d7fc42d731755",
+    "QASMBench::gcm_h6.qasm": "2519fdb644635c9f21671c725c23d83893e2b62ccfd926fe2d85b868a01e2bcd",
+    "QASMBench::lpn_n5.qasm": "4216e9b4fdf9f22e6ae4f92a67aac8c634209093db4e3f0290f5413165b4de87"
+  },
+  "selection_csv_sha256": "06725342dfdf7ea7b17250579d7fd31c9b9611387783d4e70bf7ad37fb038ca5",
+  "catalog_csv_sha256": "0cb49c9f2802b44f94db509c857c602504a3c5d80aec49d669deae8d48e0c53d",
+  "source_input_sha256": {
+    "depth3": {
+      "manifest.json": "4d9b7bb230c74f5d5d90368ac45dba76ee9b77c9f09d318e9aa4dfb140754b98",
+      "routing_setup.json": "8f427fa017f47abf38dbe09fb041b5338e562d2adae92268525ab0a87112600b",
+      "plan_catalog.csv": "301a3967eebfd502b23781c303654777680cfa7a3bbe3b95b25c738453c873e3",
+      "selected_candidates.csv": "87a5119ee80d1841d67e72c6fad19696a2bcb326cc7b1e0650a0f50ab730bd37",
+      "labels.csv": "59de2d0b1c8bccd820a0b9f7c44b54bbfdc27b9e11fe1b6917b9719a3bc6620f",
+      "routing_results.csv": "d93f9faa95da56c1c6f6266a7e41f5895b83ce341f62a32b41df686256e48350"
+    },
+    "depth5": {
+      "manifest.json": "f82a42d4f382187dafb6cda8412d34b414521e7b43279f77d2fe8dd0e5a4e17b",
+      "routing_setup.json": "8f427fa017f47abf38dbe09fb041b5338e562d2adae92268525ab0a87112600b",
+      "plan_catalog.csv": "0d8c468c0f37b8220b58f2921744a6a3520a5f3eedbf87d64ce4490a3ecac40f",
+      "selected_candidates.csv": "ff38e574b335fec648207416ba21da512fc71657202c33122126becceeeab562",
+      "labels.csv": "ba17a9cecba46662447d2efa5f937be09613faaf506be8e38420b8642b7451d9",
+      "routing_results.csv": "f6c2c5f53afca89349d5818ca3bb922fda1ec9ef4a3b1e64d51388cbdff083fd"
+    }
+  },
+  "routing_config": {
+    "router": "router_template:route",
+    "backend": "Heavy-hex distance 7",
+    "layout_method": "sabre",
+    "routing_method": "sabre",
+    "optimization_level": 1,
+    "qiskit": "0.45.3",
+    "active_compaction": "reuse_feasibility_audit_fixed semantics"
+  },
+  "warning": "Selection frozen using only 42-46; evaluate 200-229 without reselection. Six development circuits; not paper final test."
+}

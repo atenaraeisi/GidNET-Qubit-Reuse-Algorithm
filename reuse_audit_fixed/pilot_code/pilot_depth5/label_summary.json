@@ -1,0 +1,17 @@
+{
+  "seed_set": [
+    42,
+    43,
+    44,
+    45,
+    46
+  ],
+  "rows_labeled": 504,
+  "incomplete_source_candidate_rows": 0,
+  "purpose": "5-seed development pilot. NOT training-ready; not held-out evaluation.",
+  "gain_pct_undefined_when_baseline_zero": true,
+  "separate_physical_objectives": [
+    "swap_count",
+    "routed_depth"
+  ]
+}

@@ -1,0 +1,4 @@
+first,second,mathematical_relation,n_checked,max_absolute_error
+normalized_edge_entropy,edge_weight_concentration,"second = 1 - first, for finite values",40,0.0
+quotient_unique_edges,quotient_density,"second = first / choose(fixed_width,2), if width > 1",40,0.0
+extra_internal_2q_frac,extra_cross_2q,"second = total_2q * (1 - first), for each fixed circuit",40,0.0
